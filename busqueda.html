@@ -6,12 +6,12 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="/styles/menu.css">
-    <link rel="stylesheet" href="/styles/busqueda.css">
+    <link rel="stylesheet" href="styles/busqueda.css">
     <title>Búsqueda</title>
 </head>
 
 <body>
-    <!-- <header class="header">
+    <!-- <header class="header"> 
         <nav class="header__navbar">
             <ul class="header__menu">
                 <div class="menu__logo">
@@ -41,7 +41,7 @@
                 </div>
             </ul>
         </nav>
-    </header> -->
+    </header>  -->
 
     <main class="layout">
         <div class="layout__cabecera">
@@ -56,7 +56,7 @@
                 <input type="date" name="dia" id="dia" required>
                 <input type="time" name="hora" id="hora" value="11:45" required>
                 <input type="number" name="pasajeros" id="pasajeros" placeholder="Pasajeros" min="1" required>
-                <input type="submit" value="Buscar">
+                <input type="submit" value="Buscar" class="boton">
             </form>
         </div>
 
@@ -66,11 +66,50 @@
                     <div class="datos__destinos">
                         <div class="destinos__origen">
                             <span>Destino A</span>
-                            <span>Hora de salida</span>
-                        </div>
-                        <span>Tiempo de viaje</span>
-                        <div class="destinos__destino">
+                            <span>Tiempo de viaje</span>
                             <span>Destino B</span>
+                        </div>
+                        <div class="destinos__destino">
+                            <span>Hora de salida</span>
+                            <span>Hora de llegada</span>
+                        </div>
+                    </div>
+
+                    <div class="datos__detalles">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Usuario</span>
+                        <i class="fa-regular fa-star"></i>
+                        <span>5,0</span>
+                        <i class="fa-solid fa-people-group"></i>
+                        <span>Max. 3 pasajeros</span>
+                    </div>
+                </div>
+
+                <div class="article__asientos">
+                    <div class="asientos__contenedor">
+                        <div class="asiento asiento--ocupado">5</div>
+                        <div class="asiento">4</div>
+                        <div class="asiento">3</div>
+                        <div class="asiento asiento--ocupado">2</div>
+                        <div class="asiento asiento--ocupado">1</div>
+                    </div>
+                </div>
+
+                <div class="article__precio">
+                    <span>38,90€</span>
+                    <input type="button" class="boton" value="Contratar">
+                </div>
+            </article>
+            <article class="section__article">
+                <div class="article__datos">
+                    <div class="datos__destinos">
+                        <div class="destinos__origen">
+                            <span>Destino A</span>
+                            <span>Tiempo de viaje</span>
+                            <span>Destino B</span>
+                        </div>
+                        <div class="destinos__destino">
+                            <span>Hora de salida</span>
                             <span>Hora de llegada</span>
                         </div>
                     </div>
@@ -105,11 +144,11 @@
                     <div class="datos__destinos">
                         <div class="destinos__origen">
                             <span>Destino A</span>
-                            <span>Hora de salida</span>
-                        </div>
-                        <span>Tiempo de viaje</span>
-                        <div class="destinos__destino">
+                            <span>Tiempo de viaje</span>
                             <span>Destino B</span>
+                        </div>
+                        <div class="destinos__destino">
+                            <span>Hora de salida</span>
                             <span>Hora de llegada</span>
                         </div>
                     </div>
@@ -144,50 +183,11 @@
                     <div class="datos__destinos">
                         <div class="destinos__origen">
                             <span>Destino A</span>
-                            <span>Hora de salida</span>
-                        </div>
-                        <span>Tiempo de viaje</span>
-                        <div class="destinos__destino">
+                            <span>Tiempo de viaje</span>
                             <span>Destino B</span>
-                            <span>Hora de llegada</span>
                         </div>
-                    </div>
-
-                    <div class="datos__detalles">
-                        <i class="fa-regular fa-user"></i>
-                        <span>Usuario</span>
-                        <i class="fa-regular fa-star"></i>
-                        <span>5,0</span>
-                        <i class="fa-solid fa-people-group"></i>
-                        <span>Max. 3 pasajeros</span>
-                    </div>
-                </div>
-
-                <div class="article__asientos">
-                    <div class="asientos__contenedor">
-                        <div class="asiento asiento--ocupado">5</div>
-                        <div class="asiento">4</div>
-                        <div class="asiento">3</div>
-                        <div class="asiento asiento--ocupado">2</div>
-                        <div class="asiento asiento--ocupado">1</div>
-                    </div>
-                </div>
-
-                <div class="article__precio">
-                    <span>38,90€</span>
-                    <input type="button" value="Contratar">
-                </div>
-            </article>
-            <article class="section__article">
-                <div class="article__datos">
-                    <div class="datos__destinos">
-                        <div class="destinos__origen">
-                            <span>Destino A</span>
-                            <span>Hora de salida</span>
-                        </div>
-                        <span>Tiempo de viaje</span>
                         <div class="destinos__destino">
-                            <span>Destino B</span>
+                            <span>Hora de salida</span>
                             <span>Hora de llegada</span>
                         </div>
                     </div>

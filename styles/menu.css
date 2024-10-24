@@ -1,75 +1,222 @@
+/* Estilos base */
 * {
     margin: 0;
     padding: 0;
-
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Afacad Flux", sans-serif;
     font-size: 16px;
+    width: auto;
+    background-color: #204b5e;
+    height: 100vh;
+
 }
+
+
 
 .header__navbar {
     width: 100%;
-    height: 8rem;
-    background-color: #204b5e;
+    height: 5rem;
+    background-color: white;
+    position: fixed;
+    /* Soporte para navegadores WebKit */
+
+    top: 0;
+    z-index: 1000;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -20px;
 }
 
 .header__menu {
     list-style: none;
     width: 100%;
-    height: 8rem;
+    height: 5rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.386);
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -20px;
-    font-size: 1.5rem;
+    border-bottom: 1px solid #204b5e;
+    box-shadow: rgb(255, 255, 255) 0px 20px 30px -20px;
+    font-size: 1rem;
+    z-index: 99;
 
+}
+
+/* Estilos del logo y el h1 */
+.menu__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    color: #204b5e;
+    width: 20%;
 }
 
 .header__menu-logo {
-    width: 8rem;
+    width: 7rem;
+}
+
+
+
+/* Estilos de los enlaces */
+
+.menu__enlaces {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    transition: all 300ms ease;
+    height: 5rem;
+    cursor: pointer;
 
 }
 
-.menu__enlaces,
-li {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+a {
+    color: #204b5e;
+    font-weight: bold;
     text-decoration: none;
+}
 
-    transition: all 300ms ease;
+a:hover {
+    font-weight: 1000;
 
-    li {
-        height: 8rem;
-        text-decoration: none;
-        cursor: pointer;
+    /* Valores correctos para text-shadow */
+}
 
 
-        a {
-            color: white;
-            transition: all 300ms ease;
-        }
+/* .menu__enlaces li:hover a {
+    color: #183846;
+    font-weight: bolder;
+} */
+
+.header__menu-icon {
+    margin-right: 0.5rem;
+}
+
+/* Main */
+.layout {
+    width: 75%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid white;
+    box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
+    background-color: white;
+
+}
+
+/* Estilos menu desplegable */
+.header__menu-dropdown {
+    position: relative;
+}
+
+.dropdown__menu {
+    position: absolute;
+    top: 100%;
+    left: 100;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: none;
+    /* Se oculta por defecto */
+    flex-direction: column;
+    width: 15rem;
+    padding: 0;
+    list-style: none;
+    z-index: 10;
+}
+
+.dropdown__menu li {
+    width: 100%;
+}
+
+.dropdown__menu li a {
+    padding: 1rem;
+    display: block;
+    color: #204b5e;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: left;
+}
+
+.dropdown__menu li a:hover {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* Mostrar el menú desplegable al hacer hover en el li */
+.header__menu-dropdown:hover .dropdown__menu {
+    display: flex;
+}
+
+/* Para dispositivos móviles, ajustamos el ancho del dropdown */
+@media (max-width: 768px) {
+    .dropdown__menu {
+        width: 100%;
+        /* Se ajusta al 100% en móviles */
+        position: static;
+        box-shadow: none;
+    }
+
+    .dropdown__menu li a {
+        text-align: center;
+    }
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .header__menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu__enlaces {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header__menu-item {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .header__menu-logo {
+        width: 4rem;
+        /* Reduce el tamaño del logo en pantallas pequeñas */
     }
 
     .header__menu-link {
-        text-decoration: none;
+        font-size: 1.2rem;
     }
-
 }
 
-.menu__enlaces {
+/* Media queries para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+    .header__menu {
+        font-size: 0.9rem;
+    }
 
-    li:hover {
-        background-color: #baab6a;
+    .header__menu-logo {
+        width: 3rem;
+        /* Tamaño más pequeño para el logo */
+    }
 
-        a {
-            color: #204b5e;
-        }
+    .menu__enlaces li {
+        padding: 0.8rem 0;
+    }
+
+    .header__menu-link {
+        font-size: 1rem;
+        /* Tamaño de fuente más pequeño en enlaces */
     }
 }

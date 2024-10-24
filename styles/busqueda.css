@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -9,12 +10,11 @@ html {
 }
 
 body {
-    height: 100%;
+    height: auto;
     background-color: #204b5e;
-
 }
 
-
+/* Diseño General */
 .layout {
     width: 75%;
     height: 100%;
@@ -22,7 +22,6 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-
     margin: 0 auto;
     border: 1px solid white;
     box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
@@ -30,59 +29,74 @@ body {
 }
 
 .layout__cabecera {
-
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    margin-top: 1rem;
-    gap: 1rem;
+    margin-top: 2rem;
+}
 
-    img {
-        width: 75%;
-        border-radius: 15px;
-    }
+.layout__cabecera img {
+    width: 75%;
+    border-radius: 15px;
+    margin-top: 1rem;
 }
 
 .layout__form {
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    /* Cambia este valor para mover el elemento hacia arriba o abajo */
+    left: 50%;
+    /* Centra horizontalmente */
+    transform: translate(-50%, -420%);
+    /* Asegura que el centro del formulario esté en el centro del contenedor */
+    width: 63%;
     height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: gold;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
 }
 
 input {
     width: 7rem;
     height: 2rem;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     outline: none;
     border: none;
-    margin-left: 1rem;
 }
 
 input::placeholder {
     text-indent: 0.5rem;
-
 }
 
-#dia::placeholder,
-#hora::content {
-    text-indent: 0.5rem;
+.boton {
+    cursor: pointer;
 }
 
 .layout__section {
-    width: 75%;
+    position: relative;
+    padding: 1rem;
+    width: calc(75% - 1rem);
     margin-top: 1rem;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     background-color: lightgoldenrodyellow;
     border-radius: 15px;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .section__article {
@@ -94,3 +108,151 @@ input::placeholder {
     align-items: center;
     border-radius: 15px;
 }
+
+.section__article:nth-child(1) {
+    margin-top: 2rem;
+}
+
+.article__datos {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.datos__destinos {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.article__asientos {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+
+}
+
+.article__precio {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+
+/* Media Queries para Responsividad */
+
+/* Móviles pequeños 
+@media (max-width: 600px) {
+    .layout {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .layout__cabecera img {
+        width: 90%;
+    }
+
+    .layout__form {
+        width: 90%;
+        top: 58%;
+        height: auto;
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    form {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    input {
+        width: 100%;
+        height: 2.5rem;
+    }
+
+    .layout__section {
+        width: 90%;
+    }
+
+    .section__article {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .article__asientos {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Tablets y pantallas medianas 
+@media (min-width: 601px) and (max-width: 1024px) {
+    .layout {
+        width: 85%;
+    }
+
+    .layout__cabecera img {
+        width: 80%;
+    }
+
+    .layout__form {
+        width: 80%;
+        top: 60%;
+    }
+
+    .layout__section {
+        width: 85%;
+    }
+
+    .section__article {
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article__asientos {
+        width: 50%;
+    }
+}
+
+/* Escritorio grandes 
+@media (min-width: 1025px) {
+    .layout {
+        width: 75%;
+    }
+
+    .layout__form {
+        width: 63%;
+        top: 66%;
+    }
+
+    .layout__section {
+        width: 75%;
+    }
+
+    .section__article {
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .article__asientos {
+        width: auto;
+    }
+}*/

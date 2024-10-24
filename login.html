@@ -4,36 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/28e986ba1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="./styles/login.css">
     <title>Login</title>
 </head>
 
 
 <body>
-    <main class="layout__container">
+    <!-- <header class="header">
+        <nav class="header__navbar">
+            <ul class="header__menu">
+                <div class="menu__logo">
+                    <li class="header__menu-item">
+                        <a href="menu.html" class="header__menu-link">
+                            <img src="./img/logoAulaRapida-removebg-preview.png" alt="Logo Aula Rápida"
+                                class="header__menu-logo" />
+                        </a>
+                    </li>
+                    <li class="header__menu-title">
+                        <h1>Aula Rápida</h1>
+                    </li>
+                </div>
+                <div class="menu__enlaces">
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">Sobre Aula Rápida</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#" class="header__menu-link">
+                            <i class="fa-solid fa-magnifying-glass header__menu-icon"></i>Buscar
+                        </a>
+                    </li>
+                    <li class="header__menu-item header__menu-dropdown">
+                        <a href="#" class="header__menu-link">
+                            <i class="fa-regular fa-user header__menu-icon"></i>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown__menu">
+                            <li><a href="#">Iniciar sesión</a></li>
+                            <li><a href="#">Registrarse</a></li>
+                        </ul>
+                    </li>
 
-        <form action="#" class="form">
+                </div>
+            </ul>
+        </nav>
+    </header> -->
+    <main class="layout">
+        <div class="layout__form">
+            <h2 class="form__title">Iniciar sesión</h2>
 
-            <div class="form__group form__group--user">
-                <input type="text" class="form__input" id="form__name" placeholder="Usuario" required>
-            </div>
+            <form action="#" class="form">
 
-            <div class="form__group form__group--password">
-                <input type="password" class="form__input" id="password" placeholder="Contraseña" required>
-                <i class="fa-solid fa-eye form__icon"></i>
-            </div>
-            <div class="form__group form__group--checkbox">
-                <input type="checkbox" name="recordarme" id="recordarme" class="form__checkbox">
-                <label for="recordarme" class="form__label">Recordarme</label>
-            </div>
-            <div class="form__group form__group--options">
-                <a href="#" class="form__link">¿Has olvidado tu contraseña?</a>
-                <a href="#" class="form__link">¿No tienes cuenta? Regístrate</a>
-            </div>
+                <div class="form__group form__group--user">
+                    <input type="text" class="form__input" id="form__name" placeholder="Usuario" required>
+                </div>
 
-            <input type="submit" class="form__submit" value="Siguiente">
-        </form>
+                <div class="form__group form__group--password">
+                    <input type="password" class="form__input" id="password" placeholder="Contraseña" required>
+                    <i class="fa-solid fa-eye form__icon"></i>
+                </div>
+                <div class="form__group form__group--checkbox">
+                    <input type="checkbox" name="recordarme" id="recordarme" class="form__checkbox">
+                    <label for="recordarme" class="form__label">Recordarme</label>
+                </div>
+                <div class="form__group form__group--forgotpass">
+                    <a href="#" class="form__link">¿Has olvidado tu contraseña?</a>
+                </div>
+                <div class="form__group form__group--register">
+                    <a href="#" class="form__link">¿No tienes cuenta? Regístrate</a>
+
+
+                </div>
+
+
+                <input type="submit" class="form__submit" value="Siguiente">
+            </form>
+        </div>
+
 
     </main>
 </body>
