@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logoAulaRapida-removebg-preview.png" type="image/x-icon">
+    <title>Modificar datos</title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="layout__container">
+
+            <main class="layout__main">
+                <h1 class="main__title">Modifica tus datos</h1>
+
+                <div class="main__form-datos">
+                    <h2 class="form__title">Datos personales</h2>
+                    <form action="#" class="form">
+
+                        <label class="form__label" for="form__name">Nombre</label>
+                        <input type="text" class="form__input" id="form__name" placeholder="Introduce tu nombre"
+                            required>
+
+                        <label class="form__label" for="form__secondName">Apellidos</label>
+                        <input type="text" class="form__input" id="form__secondName"
+                            placeholder="Introduce tus apellidos" required>
+
+                        <label class="form__label" for="form__mail">Email</label>
+                        <input type="email" class="form__input" id="form__mail"
+                            placeholder="Introduce tu correo electrónico" required>
+
+                        <label class="form__label" for="form__date">Fecha de nacimiento</label>
+                        <input type="date" class="form__input" id="form__date" required>
+
+                        <label class="form__label" for="form__password">Contraseña</label>
+                        <input type="password" class="form__input" id="form__password"
+                            placeholder="Introduce tu contraseña" required>
+
+                        <label class="form__label" for="form__passwordRepetir">Repetir contraseña</label>
+                        <input type="password" class="form__input" id="form__passwordRepetir"
+                            placeholder="Repite la contraseña" required>
+
+                        <label for="gender" class="form__label">Género:</label>
+                        <select id="gender" name="gender" class="form__select" required>
+                            <option value="" disabled selected>Seleccione su género</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+
+                        <label class="form__label" for="form__domicilio">Domicilio</label>
+                        <input type="text" class="form__input" id="form__domicilio" placeholder="Domicilio" required>
+
+                        <label class="form__label" for="form__localidad">Localidad</label>
+                        <input type="text" class="form__input" id="form__localidad" placeholder="Localidad" required>
+
+                        <label class="form__label" for="form__provincia">Provincia</label>
+                        <input type="text" class="form__input" id="form__provincia" placeholder="Provincia" required>
+
+                        <label class="form__label" for="form__textarea">Descripción adicional</label>
+                        <textarea class="form__textarea" id="form__textarea" placeholder="Escribe algo..."></textarea>
+
+                        <label for="photo" class="form__label">Subir foto:</label>
+                        <input type="file" id="photo" class="form__input" name="photo" accept="image/*">
+
+                        <h2 class="form__title">Datos del vehículo</h2>
+
+                        <label class="form__label" for="form__modelo">Modelo</label>
+                        <input type="text" class="form__input" id="form__modelo" placeholder="Modelo del vehículo"
+                            required>
+
+                        <label class="form__label" for="form__matricula">Matrícula</label>
+                        <input type="text" class="form__input" id="form__matricula" placeholder="Matrícula" required>
+
+                        <label class="form__label" for="form__numPlazas">Plazas</label>
+                        <input type="number" class="form__input" id="form__numPlazas" placeholder="Número de plazas"
+                            required>
+
+                        <input type="submit" class="form__submit" value="Registrarse">
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/28e986ba1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/login.css">
+    <title>Login</title>
+</head>
+
+
+<body>
+    <main class="layout__container">
+
+        <form action="#" class="form">
+
+            <div class="form__group form__group--user">
+                <input type="text" class="form__input" id="form__name" placeholder="Usuario" required>
+            </div>
+
+            <div class="form__group form__group--password">
+                <input type="password" class="form__input" id="password" placeholder="Contraseña" required>
+                <i class="fa-solid fa-eye form__icon"></i>
+            </div>
+            <div class="form__group form__group--checkbox">
+                <input type="checkbox" name="recordarme" id="recordarme" class="form__checkbox">
+                <label for="recordarme" class="form__label">Recordarme</label>
+            </div>
+            <div class="form__group form__group--options">
+                <a href="#" class="form__link">¿Has olvidado tu contraseña?</a>
+                <a href="#" class="form__link">¿No tienes cuenta? Regístrate</a>
+            </div>
+
+            <input type="submit" class="form__submit" value="Siguiente">
+        </form>
+
+    </main>
+</body>
+
+</html>
