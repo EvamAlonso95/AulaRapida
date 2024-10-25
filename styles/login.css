@@ -1,3 +1,4 @@
+/* Estilos base */
 * {
     padding: 0;
     margin: 0;
@@ -9,15 +10,42 @@ html {
     width: auto;
     background-color: #204b5e;
     height: 100vh;
+    position: relative;
 
 }
 
+/* ---------------------------------------------------- */
+/* MAIN */
+
+.layout__login {
+    position: absolute;
+    width: calc(75% - 4rem);
+    height: auto;
+    text-align: justify;
+    right: 13%;
+    /* top: -8%; */
+    /* left: 50%; */
+    /* margin: 4rem auto; */
+    border: 1px solid white;
+    /* box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8); */
+    background-color: white;
+    border-radius: 2rem;
+    top: 9rem;
+    padding: 2rem;
+
+}
+
+/* ---------------------------------------------------- */
+/* FORMULARIO */
+
+
 .layout__form {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 7rem;
+
+    /* margin-top: 7rem; */
 
     width: calc(100% - 4rem);
     height: 100%;
@@ -39,7 +67,7 @@ form {
     align-items: center;
 
     gap: 1rem;
-    /* padding: 16px; */
+
 }
 
 .form__group {
@@ -53,6 +81,9 @@ form {
     position: relative;
     margin-bottom: 1.5rem;
 }
+
+
+/* Inputs formulario */
 
 .form__input {
     width: 100%;
@@ -77,7 +108,7 @@ form {
     /* Posiciona el icono de forma absoluta */
     top: 50%;
     /* Centra verticalmente */
-    left: 39rem;
+    left: 36rem;
     /* Ajusta la distancia desde la izquierda según sea necesario */
     transform: translateY(-50%);
     /* Centra el icono verticalmente */
@@ -133,12 +164,15 @@ form {
     font-weight: bold;
     cursor: pointer;
     transition: all 300ms ease;
+
 }
 
 .form__submit:hover {
     background-color: #2f6d88;
 }
 
+/* ---------------------------------------------------- */
+/* MEDIA QUERY */
 
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {

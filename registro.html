@@ -17,7 +17,7 @@
             <ul class="header__menu">
                 <div class="menu__logo">
                     <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">
+                        <a href="menu.html" class="header__menu-link">
                             <img src="./img/logoAulaRapida-removebg-preview.png" alt="Logo Aula Rápida"
                                 class="header__menu-logo" />
                         </a>
@@ -31,7 +31,7 @@
                         <a href="#" class="header__menu-link">Sobre Aula Rápida</a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">
+                        <a href="busqueda.html" class="header__menu-link">
                             <i class="fa-solid fa-magnifying-glass header__menu-icon"></i>Buscar
                         </a>
                     </li>
@@ -42,96 +42,79 @@
                         </a>
                         <ul class="dropdown__menu">
                             <li><a href="login.html">Iniciar sesión</a></li>
-                            <li><a href="#">Registrarse</a></li>
+                            <li><a href="registro.html">Registrarse</a></li>
                         </ul>
                     </li>
+
                 </div>
             </ul>
         </nav>
     </header>
 
-    <main class="layout">
+    <main class="layout__registro">
         <div class="layout__form">
             <h2 class="form__title">Regístrate en Aula Rápida</h2>
 
-            <div class="main__form-datos">
-                <form action="#" class="form">
 
-                    <div class="form__personal">
+            <form action="registroCoche.html" class="form">
 
-                        <h3 class="form__title">Datos personales</h3>
+                <div class="form__personal">
 
-                        <label class="form__label" for="form__name">Nombre</label>
-                        <input type="text" class="form__input" id="form__name" placeholder="Introduce tu nombre"
-                            required>
+                    <h3 class="form__subtitle">Datos personales</h3>
 
-                        <label class="form__label" for="form__secondName">Apellidos</label>
-                        <input type="text" class="form__input" id="form__secondName"
-                            placeholder="Introduce tus apellidos" required>
+                    <label class="form__label" for="form__name">Nombre</label>
+                    <input type="text" class="form__input" id="form__name" placeholder="Introduce tu nombre" required>
 
+                    <label class="form__label" for="form__secondName">Apellidos</label>
+                    <input type="text" class="form__input" id="form__secondName" placeholder="Introduce tus apellidos"
+                        required>
 
 
-                        <label class="form__label" for="form__mail">Email</label>
-                        <input type="email" class="form__input" id="form__mail"
-                            placeholder="Introduce tu correo electrónico" required>
+
+                    <label class="form__label" for="form__mail">Email</label>
+                    <input type="email" class="form__input" id="form__mail"
+                        placeholder="Introduce tu correo electrónico" required>
 
 
-                        <label class="form__label" for="form__password">Contraseña</label>
-                        <input type="password" class="form__input" id="form__password"
-                            placeholder="Introduce tu contraseña" required>
+                    <label class="form__label" for="form__password">Contraseña</label>
+                    <input type="password" class="form__input" id="form__password" placeholder="Introduce tu contraseña"
+                        required>
 
-                        <label class="form__label" for="form__passwordRepetir">Repetir contraseña</label>
-                        <input type="password" class="form__input" id="form__passwordRepetir"
-                            placeholder="Repite la contraseña" required>
-                        <label class="form__label" for="form__date">Fecha de nacimiento</label>
-                        <input type="date" class="form__input" id="form__date" required>
+                    <label class="form__label" for="form__passwordRepetir">Repetir contraseña</label>
+                    <input type="password" class="form__input" id="form__passwordRepetir"
+                        placeholder="Repite la contraseña" required>
+                    <label class="form__label" for="form__date">Fecha de nacimiento</label>
+                    <input type="date" class="form__input" id="form__date" required>
 
-                        <label for="gender" class="form__label">Género:</label>
-                        <select id="gender" name="gender" class="form__select" required>
-                            <option value="" disabled selected>Seleccione su género</option>
-                            <option value="masculino">Masculino</option>
-                            <option value="femenino">Femenino</option>
-                            <option value="otro">Otro</option>
-                        </select>
+                    <label for="gender" class="form__label">Género:</label>
+                    <select id="gender" name="gender" class="form__select" required>
+                        <option value="" disabled selected>Seleccione su género</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
 
-                        <label class="form__label" for="form__domicilio">Domicilio</label>
-                        <input type="text" class="form__input" id="form__domicilio" placeholder="Domicilio" required>
+                    <label class="form__label" for="form__domicilio">Domicilio</label>
+                    <input type="text" class="form__input" id="form__domicilio" placeholder="Domicilio" required>
 
-                        <label class="form__label" for="form__localidad">Localidad</label>
-                        <input type="text" class="form__input" id="form__localidad" placeholder="Localidad" required>
+                    <label class="form__label" for="form__localidad">Localidad</label>
+                    <input type="text" class="form__input" id="form__localidad" placeholder="Localidad" required>
 
-                        <label class="form__label" for="form__provincia">Provincia</label>
-                        <input type="text" class="form__input" id="form__provincia" placeholder="Provincia" required>
+                    <label class="form__label" for="form__provincia">Provincia</label>
+                    <input type="text" class="form__input" id="form__provincia" placeholder="Provincia" required>
 
-                        <label class="form__label" for="form__textarea">Descripción adicional</label>
-                        <textarea class="form__textarea" id="form__textarea" placeholder="Escribe algo..."></textarea>
+                    <label class="form__label" for="form__textarea">Descripción adicional</label>
+                    <textarea class="form__textarea" id="form__textarea" placeholder="Escribe algo..."></textarea>
 
-                        <label for="photo" class="form__label">Subir foto:</label>
-                        <input type="file" id="photo" class="form__input" name="photo" accept="image/*">
-                    </div>
+                    <label for="photo" class="form__label">Subir foto:</label>
+                    <input type="file" id="photo" class="form__input" name="photo" accept="image/*">
+                    <button type="submit" class="form__submit"><a href="registroCoche.html">Siguiente</a></button>
+                </div>
 
-
-                    <div class="form__coche">
-                        <h3 class="form__title">Datos del vehículo</h3>
-
-                        <label class="form__label" for="form__modelo">Modelo</label>
-                        <input type="text" class="form__input" id="form__modelo" placeholder="Modelo del vehículo"
-                            required>
-
-                        <label class="form__label" for="form__matricula">Matrícula</label>
-                        <input type="text" class="form__input" id="form__matricula" placeholder="Matrícula" required>
-
-                        <label class="form__label" for="form__numPlazas">Plazas</label>
-                        <input type="number" class="form__input" id="form__numPlazas" placeholder="Número de plazas"
-                            required>
-
-                    </div>
-
-                    <input type="submit" class="form__submit" value="Registrarse">
-                </form>
-            </div>
-
+            </form>
         </div>
+
+
 
     </main>
 

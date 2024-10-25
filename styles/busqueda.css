@@ -1,37 +1,42 @@
+/* Estilos base */
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
 }
 
 html {
+    font-family: "Afacad Flux", sans-serif;
     font-size: 16px;
+    width: auto;
+    background-color: #204b5e;
     height: 100vh;
+    position: relative;
+
 }
 
-body {
-    height: auto;
-    background-color: #204b5e;
-}
 
 /* Diseño General */
-.layout {
-    width: 75%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    margin: 0 auto;
+.layout__busqueda {
+    position: absolute;
+    width: calc(75% - 4rem);
+    height: auto;
+    text-align: justify;
+    right: 13%;
+    /* top: -8%; */
+    /* left: 50%; */
+    /* margin: 4rem auto; */
     border: 1px solid white;
-    box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
+    /* box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8); */
     background-color: white;
+    border-radius: 2rem;
+    top: 7rem;
+    padding: 2rem;
 }
 
 .layout__cabecera {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     margin-top: 2rem;
 }
@@ -44,7 +49,7 @@ body {
 
 .layout__form {
     position: absolute;
-    top: 50%;
+    top: 65%;
     /* Cambia este valor para mover el elemento hacia arriba o abajo */
     left: 50%;
     /* Centra horizontalmente */
@@ -52,9 +57,9 @@ body {
     /* Asegura que el centro del formulario esté en el centro del contenedor */
     width: 63%;
     height: 3rem;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     background-color: gold;
     border-radius: 3rem;
     z-index: 1;
@@ -64,7 +69,7 @@ body {
 form {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
 }

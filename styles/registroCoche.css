@@ -61,7 +61,7 @@ body {
     gap: 1rem;
 }
 
-.form__personal {
+.form__coche {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -114,13 +114,10 @@ body {
     /* display: flex; */
     align-self: center;
 
-    a {
-
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 300ms ease;
-    }
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 300ms ease;
 
 }
 

@@ -11,15 +11,18 @@
 </head>
 
 <body>
-    <!-- <header class="header"> 
+    <header class="header">
         <nav class="header__navbar">
             <ul class="header__menu">
                 <div class="menu__logo">
                     <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">
+                        <a href="menu.html" class="header__menu-link">
                             <img src="./img/logoAulaRapida-removebg-preview.png" alt="Logo Aula Rápida"
                                 class="header__menu-logo" />
                         </a>
+                    </li>
+                    <li class="header__menu-title">
+                        <h1>Aula Rápida</h1>
                     </li>
                 </div>
                 <div class="menu__enlaces">
@@ -27,23 +30,27 @@
                         <a href="#" class="header__menu-link">Sobre Aula Rápida</a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">
-                            <i class="fa-solid fa-magnifying-glass"></i>Buscar
+                        <a href="busqueda.html" class="header__menu-link">
+                            <i class="fa-solid fa-magnifying-glass header__menu-icon"></i>Buscar
                         </a>
                     </li>
-                    <li class="header__menu-item">
+                    <li class="header__menu-item header__menu-dropdown">
                         <a href="#" class="header__menu-link">
-                            <i class="fa-regular fa-user"></i>
+                            <i class="fa-regular fa-user header__menu-icon"></i>
                             <i class="fa-solid fa-caret-down"></i>
                         </a>
+                        <ul class="dropdown__menu">
+                            <li><a href="login.html">Iniciar sesión</a></li>
+                            <li><a href="registro.html">Registrarse</a></li>
+                        </ul>
                     </li>
 
                 </div>
             </ul>
         </nav>
-    </header>  -->
+    </header>
 
-    <main class="layout">
+    <main class="layout__busqueda">
         <div class="layout__cabecera">
             <h1>¿A dónde quieres ir?</h1>
             <img src="./img/4164_coche.jpeg" alt="Imagen coche">

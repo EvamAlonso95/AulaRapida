@@ -1,3 +1,4 @@
+/* Estilos base */
 * {
     padding: 0;
     margin: 0;
@@ -12,15 +13,35 @@ html {
 
 }
 
+/* ---------------------------------------------------- */
+/* MAIN */
 
+.layout__contrasenia {
+    position: absolute;
+    width: calc(75% - 4rem);
+    height: auto;
+    text-align: justify;
+    right: 13%;
+    /* top: -8%; */
+    /* left: 50%; */
+    /* margin: 4rem auto; */
+    border: 1px solid white;
+    /* box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8); */
+    background-color: white;
+    border-radius: 2rem;
+    top: 9rem;
+    padding: 2rem;
+
+}
+
+/* ---------------------------------------------------- */
+/* FORMULARIO */
 
 .layout__form {
     display: flex;
     justify-content: start;
     flex-direction: column;
     align-items: center;
-    margin-top: 7rem;
-
     width: calc(100% - 4rem);
     height: 100%;
     padding: 2rem;
@@ -29,18 +50,18 @@ html {
 .form__title {
     color: #204b5e;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 
 }
 
 form {
     width: 75%;
     display: flex;
-    justify-content: center;
+    /* justify-content: space-around; */
     flex-direction: column;
     align-items: center;
 
-    gap: 1rem;
+    gap: 1.5rem;
     /* padding: 16px; */
 }
 
@@ -51,11 +72,8 @@ form {
     align-items: center;
 }
 
-.form__group--password {
-    position: relative;
-    margin-bottom: 1.5rem;
-}
 
+/* Inputs */
 .form__input {
     width: 100%;
     /* Ajusta el ancho según tus necesidades */
@@ -72,53 +90,6 @@ form {
     box-sizing: border-box;
     outline: none;
 
-}
-
-.form__icon {
-
-    position: absolute;
-    /* Posiciona el icono de forma absoluta */
-    top: 50%;
-    /* Centra verticalmente */
-    left: 39rem;
-    /* Ajusta la distancia desde la izquierda según sea necesario */
-    transform: translateY(-50%);
-    /* Centra el icono verticalmente */
-    color: #204b5e;
-    /* Color del icono */
-    cursor: pointer;
-    /* Cambia el cursor al pasar sobre el icono */
-}
-
-.form__group--checkbox {
-    display: flex;
-    justify-content: start;
-    gap: 0.5rem;
-    margin-top: -2rem;
-
-}
-
-.form__group--forgotpass {
-    display: inline;
-    margin-top: -0.5rem;
-}
-
-.form__group--register {
-    display: inline;
-    margin-top: -0.5rem;
-}
-
-.form__link {
-    color: #204b5e;
-    font-weight: 100;
-    font-size: 0.8rem;
-}
-
-.form__link:hover {
-    color: #204b5e;
-    font-weight: 100;
-    font-size: 0.8rem;
-    text-decoration: underline;
 }
 
 .form__submit {
@@ -142,6 +113,8 @@ form {
     background-color: #2f6d88;
 }
 
+/* ---------------------------------------------------- */
+/* MEDIA QUERY */
 
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
@@ -152,12 +125,6 @@ form {
         /* Reducir padding */
     }
 
-    .form__icon {
-        left: 0.5rem;
-        /* Ajustar la posición del icono */
-        font-size: 1.2rem;
-        /* Ajustar el tamaño del icono */
-    }
 }
 
 @media (max-width: 480px) {
@@ -168,16 +135,4 @@ form {
         /* Reducir aún más el padding */
     }
 
-    .form__icon {
-        font-size: 1rem;
-        /* Ajustar el tamaño del icono aún más */
-    }
 }
-
-
-/* .form__group--options {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-
-} */

@@ -13,7 +13,9 @@ html {
 
 }
 
+/* ---------------------------------------------------- */
 
+/* HEADER */
 
 .header__navbar {
     width: 100%;
@@ -58,7 +60,6 @@ html {
 }
 
 
-
 /* Estilos de los enlaces */
 
 .menu__enlaces {
@@ -96,20 +97,6 @@ a:hover {
     margin-right: 0.5rem;
 }
 
-/* Main */
-.layout {
-    width: 75%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    margin: 0 auto;
-    border: 1px solid white;
-    box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
-    background-color: white;
-
-}
 
 /* Estilos menu desplegable */
 .header__menu-dropdown {
@@ -154,6 +141,30 @@ a:hover {
 .header__menu-dropdown:hover .dropdown__menu {
     display: flex;
 }
+
+/* ---------------------------------------------------- */
+
+/* MAIN */
+.layout {
+    width: calc(75% - 4rem);
+    height: auto;
+    /* display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center; */
+    text-align: justify;
+    margin: 4rem auto;
+    border: 1px solid white;
+    box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
+    background-color: white;
+    top: 1rem;
+    padding: 2rem;
+
+}
+
+/* ---------------------------------------------------- */
+/* MEDIA QUERY */
 
 /* Para dispositivos móviles, ajustamos el ancho del dropdown */
 @media (max-width: 768px) {
