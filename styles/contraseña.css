@@ -116,23 +116,3 @@ form {
 /* ---------------------------------------------------- */
 /* MEDIA QUERY */
 
-/* Media queries para dispositivos móviles */
-@media (max-width: 768px) {
-    .form__input {
-        font-size: 0.9rem;
-        /* Tamaño de fuente más pequeño en móviles */
-        padding: 0.8rem;
-        /* Reducir padding */
-    }
-
-}
-
-@media (max-width: 480px) {
-    .form__input {
-        font-size: 0.8rem;
-        /* Tamaño de fuente aún más pequeño en pantallas pequeñas */
-        padding: 0.5rem;
-        /* Reducir aún más el padding */
-    }
-
-}

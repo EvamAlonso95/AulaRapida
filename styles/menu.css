@@ -160,74 +160,10 @@ a:hover {
     background-color: white;
     top: 1rem;
     padding: 2rem;
+    
 
 }
 
 /* ---------------------------------------------------- */
 /* MEDIA QUERY */
 
-/* Para dispositivos móviles, ajustamos el ancho del dropdown */
-@media (max-width: 768px) {
-    .dropdown__menu {
-        width: 100%;
-        /* Se ajusta al 100% en móviles */
-        position: static;
-        box-shadow: none;
-    }
-
-    .dropdown__menu li a {
-        text-align: center;
-    }
-}
-
-/* Media queries para dispositivos móviles */
-@media (max-width: 768px) {
-    .header__menu {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .menu__enlaces {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    .header__menu-item {
-        width: 100%;
-        text-align: center;
-        padding: 1rem 0;
-    }
-
-    .header__menu-logo {
-        width: 4rem;
-        /* Reduce el tamaño del logo en pantallas pequeñas */
-    }
-
-    .header__menu-link {
-        font-size: 1.2rem;
-    }
-}
-
-/* Media queries para pantallas pequeñas (teléfonos móviles) */
-@media (max-width: 480px) {
-    .header__menu {
-        font-size: 0.9rem;
-    }
-
-    .header__menu-logo {
-        width: 3rem;
-        /* Tamaño más pequeño para el logo */
-    }
-
-    .menu__enlaces li {
-        padding: 0.8rem 0;
-    }
-
-    .header__menu-link {
-        font-size: 1rem;
-        /* Tamaño de fuente más pequeño en enlaces */
-    }
-}
