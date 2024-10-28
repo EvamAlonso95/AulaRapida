@@ -23,10 +23,11 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 300px;
-    margin-top: 8%;
+    margin-top: 3%;
+    width: 90%;
 }
 
-.buscar__formulario, .publicar__formulario {  
+.buscar__formulario {  
     border-radius: 10px;
     width: 90%;
     background-color: white;
@@ -38,8 +39,9 @@ body {
     margin: 1%;
 }
 
-.buscar__formulario {
-
+.buscar__titulo {
+    text-align: center;
+    margin-top: 2%;
 }
 
 input {
@@ -56,9 +58,20 @@ input {
     font-size: 14px;
 }
 
+.publicar__titulo {
+    text-align: center;
+    margin-top: 2%;
+    color: white;
+}
+
 .publicar__encabezado {
     background-color: #BAAB6A;
+    width: 90%;
     margin-top: 5%;
+}
+
+.publicar__formulario {
+    margin: 5%;
 }
 
 .destinos__titulo {
@@ -66,7 +79,7 @@ input {
 }
 
 .destinos__encabezado {
-    width: 80%;
+    width: 94%;
     margin: 20px auto;
 }
 
@@ -90,6 +103,12 @@ input {
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.destinos__detalles {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .destinos__origen {
