@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/menu.css">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
@@ -56,20 +56,21 @@
 
     <main class="layout">
 
+        <h2 class="buscar__titulo">¡Encuentra tu viaje!</h2>
         <section class="buscar__encabezado">
-            <h2 class="buscar__titulo">¡Encuentra tu viaje!</h2>
             <!-- <img class="buscar__imagen" src="../img/buscar_imagen.jpeg" alt="Aula Rápida. Conectamos estudiantes"> -->
             <div class="buscar__formulario">
                 <form>
                     <label>Desde: <input type="text"></label>
                     <label>Hasta: <input type="text"></label>
                     <label>Día: <input type="date"></label>
-                    <label>Hora: <input type="datetime-local"></label> 
-                    <label>Pasajeros: <input type="number" min="1"></label> 
+                    <label>Hora: <input type="datetime-local"></label>
+                    <label>Pasajeros: <input type="number" min="1"></label>
                     <button type="submit" class="buscar__submit">Buscar</button>
                 </form>
             </div>
         </section>
+
 
         <section class="publicar__encabezado">
             <h2 class="publicar__titulo">¡Publica tu viaje y comparte el trayecto!</h2>
@@ -90,8 +91,10 @@
             <div class="destinos__opciones">
                 <div class="destinos__item">
                     <img src="../img/barcelona.jpg" alt="Barcelona" class="destinos__imagen">
-                    <p class="destinos__origen">Madrid - Barcelona</p>
-                    <p class="destinos__precio">Desde 6,99€</p>
+                    <div class="destinos__detalles">
+                        <p class="destinos__origen">Madrid - Barcelona</p>
+                        <p class="destinos__precio">Desde 6,99€</p>
+                    </div>
                 </div>
                 <div class="destinos__item">
                     <img src="../img/valencia.webp" alt="Valencia" class="destinos__imagen">
@@ -113,7 +116,8 @@
             <a href="https://www.facebook.com"><img src="../img/facebook.png" alt="Facebook" class="redes__icono"></a>
             <a href="https://www.twitter.com"><img src="../img/twitter.png" alt="Twitter" class="redes__icono"></a>
             <a href="https://www.youtube.com"><img src="../img/youtube.png" alt="YouTube" class="redes__icono"></a>
-            <a href="https://www.instagram.com"><img src="../img/instagram.png" alt="Instagram" class="redes__icono"></a>
+            <a href="https://www.instagram.com"><img src="../img/instagram.png" alt="Instagram"
+                    class="redes__icono"></a>
         </div>
         <div class="aula">
             <img src="../img/logo.jpeg" alt="Logo Aula Rápida" class="aula__logo">
