@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+header {
+  width: 80%;
+  padding: 20px;
+  text-align: left;
+}
+
+.perfil_header {
+  width: 80%;
+  background-color: #d8c083;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.tamanio_pag {
+  width: 80%;
+  align-content: center;
+}
+
+.flexbox-container {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.flex1 {
+  display: flex;
+}
+
+.flex2 {
+  height: 250px;
+  width: 400px;
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+  /* Mover el contenido hacia la parte inferior */
+  padding: 10px;
+  font-size: small;
+}
+
+h4 {
+  margin-top: 15px;
+}
+
+.noNegrita {
+  font-weight: normal;
+}
+
+hr {
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  border-bottom: 1.5px solid #000000;
+  
+}
+
+.titulo_cond h2 {
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+.info_perfil {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.foto_perfil img {
+  align-items: center;
+  height: 250px;
+}
+
+.valoracion {
+  font-size: medium;
+  color: #e03131;
+}
+
+.editar_datos {
+  padding: 10px 10px;
+  background-color: #cccccc;
+  border: none;
+  cursor: pointer;
+}
+
+.tipo_perfil {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.seleccion_cond_pasj {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.perfil_cond,
+.perfil_pasj {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  display: inline-block;
+  width: 250px;
+  height: auto;
+}
+
+/* Opcional: puedes agregar estilos diferentes para cada cuadro */
+.perfil_cond {
+  background-color: #fbea80;
+}
+
+.perfil_pasj {
+  background-color: #7ccab9;
+}
+
+.perfil_cond,
+.perfil_pasj,
+li {
+  list-style: none;
+}
+
+.info_personal,
+.vehiculos {
+  width: 100%;
+  padding: 10px;
+}
+
+.info_personal_text {
+  width: 50%;
+}
+
+.vehiculos ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.anadir_vehiculo {
+  font-size: small;
+  padding: 10px;
+  cursor: pointer;
+  color: #e03131;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Estilos Responsive */
+@media (max-width: 1024px) {
+  .flexbox-container {
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .flex1,
+  .flex2 {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .flexbox-container {
+    width: 100%;
+    flex-direction: column;
+    /* Cambiar a columnas en pantallas pequeñas */
+    align-items: center;
+    /* Centrar el contenido */
+  }
+
+  .flex1,
+  .flex2 {
+    width: 100%;
+    text-align: center;
+    /* Centramos el texto en pantallas pequeñas */
+  }
+
+  .flex2 {
+    padding-left: 0;
+    /* Eliminar padding cuando el contenido esté centrado */
+  }
+
+  .foto_perfil img {
+    width: 100px;
+    /* Reducir el tamaño de la imagen en móviles */
+    height: auto;
+  }
+}
+
+.info_personal_text {
+  width: 50%;
+}
+
+.tamanio_pag {
+  width: 80%;
+}
+
+@media (max-width: 480px) {
+  header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .perfil_header {
+    width: 80%;
+  }
+
+  .flex1 {
+    width: 80%;
+  }
+
+  .flex2 {
+    padding-top: 10px;
+  }
+
+  .foto_perfil img {
+    width: 100px;
+    height: auto;
+  }
+
+  .info_personal_text,
+  .vehiculos ul {
+    width: 100%;
+  }
+
+  .editar_datos {
+    width: 100%;
+  }
+}

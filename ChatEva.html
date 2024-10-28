@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ChatEva.css">
+
+    <title>ChatEva</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="avatarEva.jpg" class="foto" />
+        <div class="chat-container">
+            <div class="messages" id="messages">
+                <!-- Mensajes predeterminados -->
+                <div class="message received">Buenos dias! llego en 5 minutos que mi perro se ha cagado en el salon y me
+                    ha
+                    tocado limpiarlo. Lo siento</div>
+            </div>
+            <div class="input-container">
+                <input type="text" id="messageInput" placeholder="Escribe un mensaje...">
+                <button onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+
+        <button class="atras" type="button" onclick="location.href='file:Mensajes.html'">Atrás</button>
+    </div>
+    <script>
+        // Cargar mensajes guardados al iniciar
+        document.addEventListener("DOMContentLoaded", function () {
+            loadMessages();
+        });
+
+        function loadMessages() {
+            const messagesContainer = document.getElementById("messages");
+            const savedMessages = JSON.parse(localStorage.getItem("chatMessages")) || [];
+
+            savedMessages.forEach((messageText) => {
+                const messageElement = document.createElement("div");
+                messageElement.classList.add("message", "sent");
+                messageElement.textContent = messageText;
+                messagesContainer.appendChild(messageElement);
+            });
+
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+        }
+
+        function sendMessage() {
+            const messageInput = document.getElementById("messageInput");
+            const messageText = messageInput.value.trim();
+
+            if (messageText !== "") {
+                const messagesContainer = document.getElementById("messages");
+
+                // Crear y añadir el nuevo mensaje en la interfaz
+                const messageElement = document.createElement("div");
+                messageElement.classList.add("message", "sent");
+                messageElement.textContent = messageText;
+                messagesContainer.appendChild(messageElement);
+
+                // Guardar el mensaje en localStorage
+                saveMessage(messageText);
+
+                // Limpiar el cuadro de entrada y desplazarse al último mensaje
+                messageInput.value = "";
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }
+        }
+
+        function saveMessage(messageText) {
+            const savedMessages = JSON.parse(localStorage.getItem("chatMessages")) || [];
+            savedMessages.push(messageText);
+            localStorage.setItem("chatMessages", JSON.stringify(savedMessages));
+        }
+
+        // Permitir enviar el mensaje presionando "Enter"
+        document.getElementById("messageInput").addEventListener("keypress", function (event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
