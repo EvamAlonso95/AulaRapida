@@ -31,6 +31,10 @@ html {
     border-radius: 2rem;
     top: 7rem;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
  .layout__cabecera {
@@ -49,16 +53,16 @@ html {
 
 .layout__form {
     position: absolute;
-    top: 65%;
+    top: 62%;
     /* Cambia este valor para mover el elemento hacia arriba o abajo */
     left: 50%;
     /* Centra horizontalmente */
     transform: translate(-50%, -420%);
     /* Asegura que el centro del formulario esté en el centro del contenedor */
-    width: 63%;
+    width: 90%;
     height: 3rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center; 
     background-color: gold;
     border-radius: 3rem;
@@ -75,7 +79,7 @@ form {
 }
 
 input {
-    width: 7rem;
+    width: 6.66rem;
     height: 2rem;
     border-radius: 1rem;
     outline: none;
@@ -86,6 +90,12 @@ input::placeholder {
     text-indent: 0.5rem;
 }
 
+input[type="date"],
+input[type="time"]{
+    text-indent: 0.2rem;
+    font-weight: 100;
+}
+
 .boton {
     cursor: pointer;
 }
@@ -93,7 +103,7 @@ input::placeholder {
 .layout__section {
     position: relative;
     padding: 1rem;
-    width: calc(75% - 1rem);
+    width: calc(85% - 1rem);
     margin-top: 1rem;
     border: 1px solid black;
     display: flex;
@@ -102,6 +112,7 @@ input::placeholder {
     background-color: lightgoldenrodyellow;
     border-radius: 15px;
     gap: 1rem;
+    padding: 1rem;
 }
 
 .section__article {
