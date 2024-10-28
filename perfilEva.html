@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <title>Perfil de Conductor</title>
+  <link rel="stylesheet" href="perfilEva.css" />
+  <script src="perfilEva.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>PERFIL</h1>
+  </header>
+
+  <section class="perfil_header">
+    <div class="titulo_cond">
+      <h2>AWISOUMI DRIVER</h2>
+    </div>
+  </section>
+
+  <section class="tamanio_pag">
+    <section class="info_perfil">
+      <div class="flexbox-container">
+        <div class="flex1">
+          <div class="foto_perfil">
+            <img src="avatarEva.jpg" alt="Conductora" />
+          </div>
+        </div>
+        <div class="flex2">
+          <div class="texto">
+            <h4>Nombre:<a class="noNegrita"> Eva Alonso</a></h4>
+            <h4>Edad: <a class="noNegrita"> 29</a></h4>
+            <h4>Ciudad: <a class="noNegrita"> Madrid. Alcobendas</a></h4>
+            <h4>Genero: <a class="noNegrita"> Femenino</a></h4>
+            <h4>Tipo de viajero:<a class="noNegrita"> Conductora y pasajera</a></h4>
+            <h4>Valoración: <span class="valoracion">★★★★★</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <hr />
+      <button class="editar_datos">Editar datos personales</button>
+      <hr />
+    </section>
+
+    <section class="tipo_perfil">
+      <div class="seleccion_cond_pasj">
+        <label>
+          <input type="radio" name="perfil" id="cond" checked /> Conductora
+        </label>
+        <label>
+          <input type="radio" name="perfil" id="pasj" /> Pasajera
+        </label>
+      </div>
+
+      <!-- Cuadro para el perfil de Conductor -->
+      <div class="perfil_cond">
+        <ul>
+          <li>Perfil verificado</li>
+          <li>Bajo índice de cancelación</li>
+          <li>Viaja regularmente</li>
+          <li>Tiempo de respuesta rápido</li>
+          <li>Excelentes opiniones</li>
+        </ul>
+      </div>
+
+      <!-- Cuadro para el perfil de Pasajero -->
+      <div class="perfil_pasj" style="display: none">
+        <ul>
+          <li>Muy habladora</li>
+          <li>Puntual</li>
+          <li>No fuma</li>
+          <li>Bajo índice de cancelación</li>
+          <li>Excelentes opiniones</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="info_personal">
+      <hr />
+      <h4>Información personal</h4>
+      <section class="info_personal_text">
+        Soy muy habladora cuando estoy cómoda, no fumo. Tengo la aplicación
+        desde hace tiempo pero no viajé mucho y ahora he comenzado a viajar.
+      </section>
+      <hr />
+    </section>
+
+    <section class="vehiculos">
+      <h4>Vehículos</h4>
+      <ul id="lista-vehiculos">
+        <li>Renault Clio (Rojo)</li>
+      </ul>
+      <a id="boton-aniadir-vehiculo" class="anadir_vehiculo"> + Añadir Vehículo</a> |
+      <a id="boton-eliminar-vehiculo" class="anadir_vehiculo"> - Eliminar Vehículo</a>
+    </section>
+  </section>
+  <footer></footer>
+
+</body>
+
+</html>
