@@ -23,6 +23,7 @@ body {
     background-size: cover;
     background-position: center;
     min-height: 300px;
+    margin-top: 8%;
 }
 
 .buscar__formulario, .publicar__formulario {  
@@ -57,10 +58,11 @@ input {
 
 .publicar__encabezado {
     background-color: #BAAB6A;
+    margin-top: 5%;
 }
 
 .destinos__titulo {
-    margin: auto;
+    text-align: center;
 }
 
 .destinos__encabezado {
@@ -105,6 +107,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     border: 1px solid black;
+    background-color: white;
 }
 
 .redes {
