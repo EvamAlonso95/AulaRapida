@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula rápida</title>
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+
+        <section class="buscar__encabezado">
+            <h2 class="buscar__titulo">¡Encuentra tu viaje!</h2>
+            <!-- <img class="buscar__imagen" src="../img/buscar_imagen.jpeg" alt="Aula Rápida. Conectamos estudiantes"> -->
+            <div class="buscar__formulario">
+                <form>
+                    <label>Desde: <input type="text"></label>
+                    <label>Hasta: <input type="text"></label>
+                    <label>Día: <input type="date"></label>
+                    <label>Hora: <input type="datetime-local"></label> 
+                    <label>Pasajeros: <input type="number" min="1"></label> 
+                    <button type="submit" class="buscar__submit">Buscar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="publicar__encabezado">
+            <h2 class="publicar__titulo">¡Publica tu viaje y comparte el trayecto!</h2>
+            <div class="publicar__formulario">
+                <form>
+                    <label>Desde: <input type="text"></label>
+                    <label>Hasta: <input type="text"></label>
+                    <label>Día: <input type="date"></label>
+                    <label>Hora: <input type="datetime-local"></label>
+                    <label>Pasajeros: <input type="number" min="1"></label>
+                    <button type="submit" class="buscar__submit">Publicar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="destinos__encabezado">
+            <h2 class="destinos__titulo">Destinos populares</h2>
+            <div class="destinos__opciones">
+                <div class="destinos__item">
+                    <img src="../img/barcelona.jpg" alt="Barcelona" class="destinos__imagen">
+                    <p class="destinos__origen">Madrid - Barcelona</p>
+                    <p class="destinos__precio">Desde 6,99€</p>
+                </div>
+                <div class="destinos__item">
+                    <img src="../img/valencia.webp" alt="Valencia" class="destinos__imagen">
+                    <p>Madrid - Valencia</p>
+                    <p class="destinos__precio">Desde 6,99€</p>
+                </div>
+                <div class="destinos__item">
+                    <img src="../img/granada.jpg" alt="Granada" class="destinos__imagen">
+                    <p>Málaga - Granada</p>
+                    <p class="destinos__precio">Desde 6,99€</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com"><img src="../img/facebook.png" alt="Facebook" class="redes__icono"></a>
+            <a href="https://www.twitter.com"><img src="../img/twitter.png" alt="Twitter" class="redes__icono"></a>
+            <a href="https://www.youtube.com"><img src="../img/youtube.png" alt="YouTube" class="redes__icono"></a>
+            <a href="https://www.instagram.com"><img src="../img/instagram.png" alt="Instagram" class="redes__icono"></a>
+        </div>
+        <div class="aula">
+            <img src="../img/logo.jpeg" alt="Logo Aula Rápida" class="aula__logo">
+            <span class="aula__nombre">Aula Rápida, 2024 &copy;</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

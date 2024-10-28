@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.buscar__encabezado, .publicar__encabezado {
+    margin: auto;
+    border-radius: 20px;
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buscar__encabezado {
+    background-image: url('../img/buscar_imagen.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
+
+.buscar__formulario, .publicar__formulario {  
+    border-radius: 10px;
+    width: 90%;
+    background-color: white;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 1%;
+}
+
+.buscar__formulario {
+
+}
+
+input {
+    width: 10%;
+    margin-bottom: 10px;
+}
+
+.buscar__submit {
+    background-color: #FDFAC7;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.publicar__encabezado {
+    background-color: #BAAB6A;
+}
+
+.destinos__titulo {
+    margin: auto;
+}
+
+.destinos__encabezado {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.destinos__opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.destinos__item {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destinos__imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.destinos__origen {
+    text-align: left;
+}
+
+.destinos__precio {
+    text-align: right;
+}
+
+footer {
+    margin: 50px 0 0;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.redes {
+    display: flex;
+    gap: 10px;
+}
+
+.redes__icono {
+    width: 30px;
+    height: auto;
+}
+
+.aula {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.aula__logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.aula__nombre {
+    font-weight: bold;
+    font-size: medium;
+}
