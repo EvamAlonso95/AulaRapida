@@ -7,6 +7,10 @@ body {
     box-sizing: border-box;
 }
 
+main {
+    height: 100%;
+}
+
 .buscar__encabezado, .publicar__encabezado {
     margin: auto;
     border-radius: 20px;
@@ -25,6 +29,9 @@ body {
     min-height: 300px;
     margin-top: 3%;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .buscar__formulario {  
@@ -32,11 +39,11 @@ body {
     width: 90%;
     background-color: white;
     padding: 1%;
+    margin-top: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-    margin: 1%;
 }
 
 .buscar__titulo {
@@ -106,7 +113,7 @@ input {
 }
 
 .destinos__detalles {
-    margin-top: 3%;
+    margin-top: 4%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
