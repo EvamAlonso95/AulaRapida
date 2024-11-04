@@ -160,10 +160,42 @@ a:hover {
     background-color: white;
     top: 1rem;
     padding: 2rem;
-    
+
 
 }
 
 /* ---------------------------------------------------- */
 /* MEDIA QUERY */
+/* Dispositivos muy pequeños */
+@media (max-width: 600px) {
+    .header__menu {
+        display: none;
+        /* Ocultar menú horizontal en móviles */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 5rem;
+        background-color: white;
+        z-index: 1000;
+    }
 
+    .header__menu li {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .header__menu li a {
+        font-size: 1.2rem;
+    }
+
+    /* Mostrar icono de hamburguesa */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Clase para mostrar el menú desplegable en móviles */
+    .header__menu.show {
+        display: flex;
+    }
+
+}
