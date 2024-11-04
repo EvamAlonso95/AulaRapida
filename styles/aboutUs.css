@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.destacados {
+    margin: 5% auto;
+    width: 80%;
+}
+
+.destacados__imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+
+.destacados__descubre__imagen,
+.destacados__confianza__imagen, 
+.destacados__elige__imagen {
+    width: 15%;
+    
+}
+
+.destacados__entradas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+}
+
+.destacados__descubre,
+.destacados__confianza,
+.destacados__elige {
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  background-color: #cbf0f4;
+  border-radius: 6%;
+  margin-top: 4%;
+  text-align: center;
+}
+
+
+
