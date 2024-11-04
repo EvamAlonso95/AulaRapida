@@ -1,0 +1,367 @@
+/* Estilos base */
+* {
+    padding: 0;
+    margin: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 16px;
+    background-color: #204b5e;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Diseño General */
+.layout__busqueda {
+    position: absolute;
+    width: calc(75% - 4rem);
+    height: auto;
+    text-align: justify;
+    right: 13%;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 2rem;
+    top: 7rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos de la cabecera */
+.layout__cabecera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/* Imagen de la cabecera */
+.layout__cabecera img {
+    width: 75%;
+    border-radius: 15px;
+    margin-top: 1rem;
+}
+
+/* Estilos del layout del formulario */
+.layout__form {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -420%);
+    width: 90%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gold;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+/* FORMULARIO + INPUTS */
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+input {
+    width: 6.66rem;
+    height: 2rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    padding-left: 1rem;
+}
+
+input[type="date"],
+input[type="time"] {
+    padding-right: 0.5rem;
+    font-weight: 100;
+}
+
+.boton {
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Layout section - BUSQUEDA */
+.layout__section {
+    width: calc(85% - 2rem);
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+    border-radius: 15px;
+    /* margin-bottom: ; */
+    padding: 1rem;
+}
+
+/* Tarjeta búsqueda */
+.section__article {
+    height: 8rem;
+    border: 1px solid black;
+    background-color: white;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+    /* gap: 1rem; */
+}
+
+/* Dos primeras tarjetas */
+.section__article:nth-child(1),
+.section__article:nth-child(2) {
+    margin-top: 2rem;
+}
+
+/* Div contenedor de los datos de tarjeta */
+.article__datos {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 0.5rem; */
+    padding: 1rem;
+    font-size: 0.7rem;
+}
+
+/* Datos de los destinos */
+.datos__destinos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 1rem; */
+
+}
+
+/* Modifica estilos de la hora */
+.destinos__destino {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+/* Modifica los destinos y tiempo de llegada */
+.destinos__origen {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Texto de los destinos */
+.destinos {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+/* Detalles del viaje */
+.datos__detalles {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    i {
+        margin-right: -0.9rem;
+    }
+}
+
+/* Asientos */
+.article__asientos {
+    width: 20%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+    border: 1px solid rgb(0, 79, 216);
+    border-radius: 10px;
+    background-color: skyblue;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+
+/* Cada asiento - por defecto libre*/
+.asiento {
+    width: 2rem;
+    padding: 0.1rem;
+    border: 1px solid greenyellow;
+    cursor: pointer;
+    background-color: lightgreen;
+    border-radius: 0.5rem;
+}
+
+/* Asiento ocupado */
+.asiento--ocupado {
+    background-color: lightcoral;
+    border: 1px solid lightsalmon;
+}
+
+/* Contenedor del precio */
+.article__precio {
+    width: calc(20% - 1rem);
+    height: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    span {
+        font-weight: bolder;
+    }
+
+    .contratar {
+        text-align: center;
+        padding: 0;
+        background-color: skyblue;
+        cursor: pointer;
+    }
+
+}
+
+/* Media Queries para Diseño Responsive */
+
+/* Pantallas grandes (desde 1200px) */
+/* ok */
+@media (min-width: 1200px) {
+    .layout__busqueda {
+        width: calc(75% - 6rem);
+        padding: 3rem;
+    }
+
+    .article__datos {
+        width: 50%;
+    }
+
+    .article__asientos,
+    .article__precio {
+        width: 20%;
+    }
+}
+
+/* Pantallas medianas (992px a 1199px) */
+@media (min-width: 992px) {
+    .layout__busqueda {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .layout__section {
+
+        width: calc(95% - 1rem);
+        /* grid-template-columns: repeat(2, 1fr); */
+    }
+
+    .layout__form{
+        top:53%;
+    }
+    
+    .section__article {
+        display: flex;
+        width: 95%;
+    }
+    
+    .section__article:nth-child(1),
+    .section__article:nth-child(2) {
+        margin-top: 2.5rem;
+    }
+    .article__datos {
+        width: 40%;
+        
+        
+    }
+
+    .article__asientos{
+        width:30%;
+
+    }
+
+    .article__precio{
+        width: 10%;
+        font-size: 0.9rem;
+       .contratar{
+        width: 4.5rem;
+       }
+
+}
+
+/* Tablets (768px a 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .layout__busqueda {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .layout__section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .article__datos {
+        width: 100%;
+    }
+}
+
+/* Smartphones (hasta 767px) */
+@media (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+
+    .layout__busqueda {
+        width: 95%;
+        padding: 1rem;
+        top: 5rem;
+    }
+
+    .layout__section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .layout__cabecera img {
+        width: 100%;
+    }
+
+    .layout__form {
+        width: 100%;
+        top: 50%;
+        transform: translate(-50%, -350%);
+    }
+
+    input {
+        width: 5rem;
+        height: 1.8rem;
+    }
+}
+}
