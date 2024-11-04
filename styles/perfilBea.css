@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
 
 body {
   display: flex;
@@ -14,7 +8,24 @@ body {
   margin-right: 200px;
 }
 
-header {
+main {
+  height: auto;
+  /* display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; */
+  text-align: justify;
+  margin: 4rem auto;
+  border: 1px solid white;
+  background-color: white;
+  top: 1rem;
+  padding: 2rem;
+  
+
+}
+
+.titulo {
   width: 80%;
   padding: 20px;
   text-align: left;

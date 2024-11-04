@@ -2,104 +2,149 @@
 <html lang="es">
 
 <head>
+  <title>Perfil de Conductor</title>
   <meta charset="UTF-8" />
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <title>Perfil de Conductor</title>
-  <link rel="stylesheet" href="styles/perfilEva.css" />
-  <script src="perfilEva.js" defer></script>
+    <script src="https://kit.fontawesome.com/28e986ba1e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/perfilBea.css" />
+    <script src="perfilBea.js" defer></script>
 </head>
 
 <body>
-  <header>
-    <h1>PERFIL</h1>
-  </header>
-
-  <section class="perfil_header">
-    <div class="titulo_cond">
-      <h2>NIMBUS2000 DRIVER</h2>
-    </div>
-  </section>
-
-  <section class="tamanio_pag">
-    <section class="info_perfil">
-      <div class="flexbox-container">
-        <div class="flex1">
-          <div class="foto_perfil">
-            <img src="avatarBea.jpg" alt="Conductora" />
-          </div>
+  <header class="cabecera">
+    <nav class="header__navbar">
+      <ul class="header__menu">
+        <div class="menu__logo">
+          <li class="header__menu-item">
+            <a href="menu.html" class="header__menu-link">
+              <img src="./img/logoAulaRapida-removebg-preview.png" alt="Logo Aula Rápida" class="header__menu-logo" />
+            </a>
+          </li>
+          <li class="header__menu-title">
+            <h1>Aula Rápida</h1>
+          </li>
         </div>
-        <div class="flex2">
-          <div class="texto">
-            <h4>Nombre:<a class="noNegrita"> Beatriz González</a></h4>
-            <h4>Edad: <a class="noNegrita"> 32</a></h4>
-            <h4>Ciudad: <a class="noNegrita"> Madrid. Tres Cantos</a></h4>
-            <h4>Genero: <a class="noNegrita"> Femenino</a></h4>
-            <h4>Tipo de viajero:<a class="noNegrita"> Conductora y pasajera</a></h4>
-            <h4>Valoración: <span class="valoracion">★★★★★</span>
-            </h4>
-          </div>
+        <div class="menu__enlaces">
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Sobre Aula Rápida</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="busqueda.html" class="header__menu-link">
+              <i class="fa-solid fa-magnifying-glass header__menu-icon"></i>Buscar
+            </a>
+          </li>
+          <li class="header__menu-item header__menu-dropdown">
+            <a href="#" class="header__menu-link">
+              <i class="fa-regular fa-user header__menu-icon"></i>
+              <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <ul class="dropdown__menu">
+              <li><a href="login.html">Iniciar sesión</a></li>
+              <li><a href="registro.html">Registrarse</a></li>
+            </ul>
+          </li>
+
         </div>
-      </div>
-      </div>
-
-      <hr />
-      <button class="editar_datos">Editar datos personales</button>
-      <hr />
-    </section>
-
-    <section class="tipo_perfil">
-      <div class="seleccion_cond_pasj">
-        <label>
-          <input type="radio" name="perfil" id="cond" checked /> Conductora
-        </label>
-        <label>
-          <input type="radio" name="perfil" id="pasj" /> Pasajera
-        </label>
-      </div>
-
-      <!-- Cuadro para el perfil de Conductor -->
-      <div class="perfil_cond">
-        <ul>
-          <li>Perfil verificado</li>
-          <li>Bajo índice de cancelación</li>
-          <li>Viaja regularmente</li>
-          <li>Tiempo de respuesta rápido</li>
-          <li>Excelentes opiniones</li>
-        </ul>
-      </div>
-
-      <!-- Cuadro para el perfil de Pasajero -->
-      <div class="perfil_pasj" style="display: none">
-        <ul>
-          <li>Muy habladora</li>
-          <li>Puntual</li>
-          <li>No fuma</li>
-          <li>Bajo índice de cancelación</li>
-          <li>Excelentes opiniones</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="info_personal">
-      <hr />
-      <h4>Información personal</h4>
-      <section class="info_personal_text">
-        Soy muy habladora cuando estoy cómoda, no fumo. Tengo la aplicación
-        desde hace tiempo pero no viajé mucho y ahora he comenzado a viajar.
-      </section>
-      <hr />
-    </section>
-
-    <section class="vehiculos">
-      <h4>Vehículos</h4>
-      <ul id="lista-vehiculos">
-        <li>Toyota Corolla (Gris)</li>
       </ul>
-      <a id="boton-aniadir-vehiculo" class="anadir_vehiculo"> + Añadir Vehículo</a> |
-      <a id="boton-eliminar-vehiculo" class="anadir_vehiculo"> - Eliminar Vehículo</a>
+    </nav>
+  </header>
+  <main>
+    <header>
+      <h1 class="titulo">PERFIL</h1>
+    </header>
+    <section class="perfil_header">
+      <div class="titulo_cond">
+        <h2>NIMBUS2000 DRIVER</h2>
+      </div>
     </section>
-  </section>
-  <footer></footer>
+
+    <section class="tamanio_pag">
+      <section class="info_perfil">
+        <div class="flexbox-container">
+          <div class="flex1">
+            <div class="foto_perfil">
+              <img src="img/avatarBea.jpg" alt="Conductora" />
+            </div>
+          </div>
+          <div class="flex2">
+            <div class="texto">
+              <h4>Nombre:<a class="noNegrita"> Beatriz González</a></h4>
+              <h4>Edad: <a class="noNegrita"> 32</a></h4>
+              <h4>Ciudad: <a class="noNegrita"> Madrid. Tres Cantos</a></h4>
+              <h4>Genero: <a class="noNegrita"> Femenino</a></h4>
+              <h4>Tipo de viajero:<a class="noNegrita"> Conductora y pasajera</a></h4>
+              <h4>Valoración: <span class="valoracion">★★★★★</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <hr />
+        <button class="editar_datos">Editar datos personales</button>
+        <hr />
+      </section>
+
+      <section class="tipo_perfil">
+        <div class="seleccion_cond_pasj">
+          <label>
+            <input type="radio" name="perfil" id="cond" checked /> Conductora
+          </label>
+          <label>
+            <input type="radio" name="perfil" id="pasj" /> Pasajera
+          </label>
+        </div>
+
+        <!-- Cuadro para el perfil de Conductor -->
+        <div class="perfil_cond">
+          <ul>
+            <li>Perfil verificado</li>
+            <li>Bajo índice de cancelación</li>
+            <li>Viaja regularmente</li>
+            <li>Tiempo de respuesta rápido</li>
+            <li>Excelentes opiniones</li>
+          </ul>
+        </div>
+
+        <!-- Cuadro para el perfil de Pasajero -->
+        <div class="perfil_pasj" style="display: none">
+          <ul>
+            <li>Muy habladora</li>
+            <li>Puntual</li>
+            <li>No fuma</li>
+            <li>Bajo índice de cancelación</li>
+            <li>Excelentes opiniones</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="info_personal">
+        <hr />
+        <h4>Información personal</h4>
+        <section class="info_personal_text">
+          Soy muy habladora cuando estoy cómoda, no fumo. Tengo la aplicación
+          desde hace tiempo pero no viajé mucho y ahora he comenzado a viajar.
+        </section>
+        <hr />
+      </section>
+
+      <section class="vehiculos">
+        <h4>Vehículos</h4>
+        <ul id="lista-vehiculos">
+          <li>Toyota Corolla (Gris)</li>
+        </ul>
+        <a id="boton-aniadir-vehiculo" class="anadir_vehiculo"> + Añadir Vehículo</a> |
+        <a id="boton-eliminar-vehiculo" class="anadir_vehiculo"> - Eliminar Vehículo</a>
+      </section>
+    </section>
+  </main>
+    <footer></footer>
+  
 </body>
+
 </html>
