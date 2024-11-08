@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
 }
 
@@ -8,14 +9,15 @@ body {
 }
 
 .destacados {
-    margin: 5% auto;
+    margin: auto;
+    margin-top: 5%;
     width: 80%;
 }
 
 .destacados__imagenes {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
+    grid-template-columns: 2fr 2fr 2fr;
+    justify-items: center;
 }
 
 .destacados__descubre__imagen,
@@ -28,7 +30,9 @@ body {
 .destacados__entradas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10%;
+    gap: 5%;
+    justify-items: center;
+    margin: 1%;
 }
 
 .destacados__descubre,
@@ -41,6 +45,22 @@ body {
   border-radius: 6%;
   margin-top: 4%;
   text-align: center;
+}
+
+.destacados__texto {
+    padding: 10%;
+}
+
+.aboutUs {
+    margin: auto;
+    margin-top: 5%;
+    width: 90%;
+    border: 1px solid black;
+}
+
+.aboutUs__titulo {
+    font-style: italic;
+    text-align: unset;
 }
 
 
