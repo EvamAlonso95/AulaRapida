@@ -176,6 +176,42 @@ li {
   font-style: italic;
 }
 
+footer {
+  margin: 50px 0 0;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.redes {
+  display: flex;
+  gap: 10px;
+}
+
+.redes__icono {
+  width: 30px;
+  height: auto;
+}
+
+.aula {
+  display: flex;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.aula__logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.aula__nombre {
+  font-weight: bold;
+  font-size: medium;
+}
+
 /* Estilos Responsive */
 @media (max-width: 1024px) {
   .flexbox-container {
