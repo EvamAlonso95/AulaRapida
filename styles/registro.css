@@ -133,6 +133,8 @@ textarea {
     max-height: 300px;
 }
 
+
+
 /* Pantallas Extra Pequeñas (Smartphones) */
 @media (max-width: 575px) {
     .layout__registro{

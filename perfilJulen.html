@@ -2,106 +2,165 @@
 <html lang="es">
 
 <head>
+  <title>Perfil de Conductor</title>
   <meta charset="UTF-8" />
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <title>Perfil de Conductor</title>
-  <link rel="stylesheet" href="styles/perfilJulen.css" />
-  <script src="perfilJulen.js" defer></script>
+    <script src="https://kit.fontawesome.com/28e986ba1e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/perfilJulen.css" />
+    <script src="js/perfilJulen.js" defer></script>
 </head>
 
 <body>
-  <header>
-    <h1>PERFIL</h1>
-  </header>
+  <header class="header">
+    <nav class="header__navbar">
+        <ul class="header__menu">
+            <div class="menu__logo">
+                <li class="header__menu-item">
+                    <a href="index.html" class="header__menu-link">
+                        <img src="./img/logoAulaRapida-removebg-preview.png" alt="Logo Aula Rápida"
+                            class="header__menu-logo" />
+                    </a>
+                </li>
+                <li class="header__menu-title">
+                    <a href="index.html" class="header__menu-link">
+                        <h1>Aula Rápida</h1>
 
-  <section class="perfil_header">
-    <div class="titulo_cond">
-      <h2>SUPER DRIVER</h2>
-    </div>
-  </section>
+                    </a>
+                </li>
+            </div>
+            <div class="menu__enlaces">
+                <li class="header__menu-item">
+                    <a href="aboutUs.html" class="header__menu-link">Sobre Aula Rápida</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="busqueda.html" class="header__menu-link">
+                        <i class="fa-solid fa-magnifying-glass header__menu-icon"></i>Buscar
+                    </a>
+                </li>
+                <li class="header__menu-item header__menu-dropdown">
+                    <a href="#" class="header__menu-link">
+                        <i class="fa-regular fa-user header__menu-icon"></i>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown__menu">
+                        <li><a href="perfilJulen.html">Perfil</a></li>
+                        <li><a href="Mensajes.html">Mensajes</a></li>
+                        <li><a href="tusViajes.html">Tus viajes</a></li>
+                        <li><a href="Transferencias.html">Transferencias</a></li>
+                        <li><a href="pagosReembolsos.html">Pagos y reembolsos</a></li>
+                        <li><a href="index.html">Cerrar sesión</a></li>
+                    </ul>
+                </li>
 
-  <section class="tamanio_pag">
-    <section class="info_perfil">
-      <div class="flexbox-container">
-        <div class="flex1">
-          <div class="foto_perfil">
-            <img src="avatar.jpg" alt="Conductor" />
-          </div>
-        </div>
-        <div class="flex2">
-          <div class="texto">
-            <h4>Nombre:<a class="noNegrita"> Julen</a></h4>
-            <h4>Edad: <a class="noNegrita"> 29</a></h4>
-            <h4>Ciudad: <a class="noNegrita"> Madrid. Colmenar Viejo</a></h4>
-            <h4>Genero: <a class="noNegrita"> Masculino</a></h4>
-            <h4>Tipo de viajero:<a class="noNegrita"> Conductor y pasajero</a></h4>
-            <h4>Valoración: <span class="valoracion">★★★★★</span>
-            </h4>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      <hr />
-      <button class="editar_datos">Editar datos personales</button>
-      <hr />
-    </section>
-
-    <section class="tipo_perfil">
-      <div class="seleccion_cond_pasj">
-        <label>
-          <input type="radio" name="perfil" id="cond" checked /> Conductor
-        </label>
-        <label>
-          <input type="radio" name="perfil" id="pasj" /> Pasajero
-        </label>
-      </div>
-
-      <!-- Cuadro para el perfil de Conductor -->
-      <div class="perfil_cond">
-        <ul>
-          <li>Perfil verificado</li>
-          <li>Bajo índice de cancelación</li>
-          <li>Viaja regularmente</li>
-          <li>Tiempo de respuesta rápido</li>
-          <li>Excelentes opiniones</li>
+            </div>
         </ul>
-      </div>
-
-      <!-- Cuadro para el perfil de Pasajero -->
-      <div class="perfil_pasj" style="display: none">
-        <ul>
-          <li>Muy hablador</li>
-          <li>Puntual</li>
-          <li>No fuma</li>
-          <li>Bajo índice de cancelación</li>
-          <li>Excelentes opiniones</li>
-        </ul>
+    </nav>
+</header>
+<main>
+    <section class="perfil_header">
+      <div class="titulo_cond">
+        <h2>SUPER DRIVER</h2>
       </div>
     </section>
 
-    <section class="info_personal">
-      <hr />
-      <h4>Información personal</h4>
-      <section class="info_personal_text">
-        Soy muy hablador cuando estoy cómodo, no fumo. Tengo la aplicación
-        desde hace tiempo pero no viajé mucho y ahora he comenzado a viajar.
+    <section class="tamanio_pag">
+      <section class="info_perfil">
+        <div class="flexbox-container">
+          <div class="flex1">
+            <div class="foto_perfil">
+              <img src="img/avatar.jpg" alt="Conductora" />
+            </div>
+          </div>
+          <div class="flex2">
+            <div class="texto">
+              <h4>Nombre:<a class="noNegrita"> Julen Alonso</a></h4>
+              <h4>Edad: <a class="noNegrita"> 29</a></h4>
+              <h4>Ciudad: <a class="noNegrita"> Madrid. Colmenar Viejo</a></h4>
+              <h4>Genero: <a class="noNegrita"> Masculino</a></h4>
+              <h4>Tipo de viajero:<a class="noNegrita"> Conductor y pasajero</a></h4>
+              <h4>Valoración: <span class="valoracion">★★★★★</span>  
+              </h4>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <hr />
+        <button class="editar_datos">Editar datos personales</button>
+        <hr />
       </section>
-      <hr />
-    </section>
 
-    <section class="vehiculos">
-      <h4>Vehículos</h4>
-      <ul id="lista-vehiculos">
-        <li>KIA CEED (Negro)</li>
-      </ul>
-      <a id="boton-aniadir-vehiculo" class="anadir_vehiculo"> + Añadir Vehículo</a> |
-      <a id="boton-eliminar-vehiculo" class="anadir_vehiculo"> - Eliminar Vehículo</a>
-    </section>
-  </section>
-  <footer></footer>
+      <section class="tipo_perfil">
+        <div class="seleccion_cond_pasj">
+          <label>
+            <input type="radio" name="perfil" id="cond" checked /> Conductor
+          </label>
+          <label>
+            <input type="radio" name="perfil" id="pasj" /> Pasajero
+          </label>
+        </div>
 
+        <!-- Cuadro para el perfil de Conductor -->
+        <div class="perfil_cond">
+          <ul>
+            <li>Perfil verificado</li>
+            <li>Bajo índice de cancelación</li>
+            <li>Viaja regularmente</li>
+            <li>Tiempo de respuesta rápido</li>
+            <li>Excelentes opiniones</li>
+          </ul>
+        </div>
+
+        <!-- Cuadro para el perfil de Pasajero -->
+        <div class="perfil_pasj" style="display: none">
+          <ul>
+            <li>Muy habladora</li>
+            <li>Puntual</li>
+            <li>No fuma</li>
+            <li>Bajo índice de cancelación</li>
+            <li>Excelentes opiniones</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="info_personal">
+        <hr />
+        <h4>Información personal</h4>
+        <section class="info_personal_text">
+          Soy muy hablador cuando estoy cómodo, no fumo. Tengo la aplicación
+          desde hace tiempo pero no viajé mucho y ahora he comenzado a viajar.
+        </section>
+        <hr />
+      </section>
+
+      <section class="vehiculos">
+        <h4>Vehículos</h4>
+        <ul id="lista-vehiculos">
+          <li>KIA CEED (Gris)</li>
+        </ul>
+        <a id="boton-aniadir-vehiculo" class="anadir_vehiculo"> + Añadir Vehículo</a> |
+        <a id="boton-eliminar-vehiculo" class="anadir_vehiculo"> - Eliminar Vehículo</a>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <div class="redes">
+        <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook" class="redes__icono"></a>
+        <a href="https://www.twitter.com"><img src="img/twitter.png" alt="Twitter" class="redes__icono"></a>
+        <a href="https://www.youtube.com"><img src="img/youtube.png" alt="YouTube" class="redes__icono"></a>
+        <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram"
+                class="redes__icono"></a>
+    </div>
+    <div class="aula">
+        <img src="img/logo.jpeg" alt="Logo Aula Rápida" class="aula__logo">
+        <span class="aula__nombre">Aula Rápida, 2024 &copy;</span>
+    </div>
+</footer>  
 </body>
 
 </html>

@@ -1,20 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
 
-body {
+html {
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 16px;
+  width: auto;
+  background-color: #204b5e;
+  height: 100vh;
+}
+ 
+main {
+  width: calc(75% - 4rem);
+  height: auto;
   display: flex;
+  position: relative;
   flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
-  margin-left: 200px;
-  margin-right: 200px;
+  justify-content: start;
+  align-items: center; 
+  text-align: justify;
+  margin: 4rem auto;
+  border: 1px solid white;
+  box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
+  background-color: white;
+  top: 1rem;
+  padding: 2rem;
 }
 
-header {
+.titulo {
   width: 80%;
   padding: 20px;
   text-align: left;
@@ -70,7 +80,6 @@ hr {
   width: 70%;
   margin-top: 20px;
   margin-bottom: 20px;
-  
   border-bottom: 1.5px solid #000000;
   
 }
@@ -166,6 +175,43 @@ li {
   font-weight: bold;
   font-style: italic;
 }
+
+footer {
+  margin: 50px 0 0;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.redes {
+  display: flex;
+  gap: 10px;
+}
+
+.redes__icono {
+  width: 30px;
+  height: auto;
+}
+
+.aula {
+  display: flex;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.aula__logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.aula__nombre {
+  font-weight: bold;
+  font-size: medium;
+}
+
 
 /* Estilos Responsive */
 @media (max-width: 1024px) {

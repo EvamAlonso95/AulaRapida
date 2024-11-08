@@ -12,51 +12,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/perfilBea.css" />
-    <script src="perfilBea.js" defer></script>
+    <script src="js/perfilBea.js" defer></script>
 </head>
 
 <body>
-  <header class="cabecera">
+  <header class="header">
     <nav class="header__navbar">
-      <ul class="header__menu">
-        <div class="menu__logo">
-          <li class="header__menu-item">
-            <a href="menu.html" class="header__menu-link">
-              <img src="./img/logoAulaRapida-removebg-preview.png" alt="Logo Aula Rápida" class="header__menu-logo" />
-            </a>
-          </li>
-          <li class="header__menu-title">
-            <h1>Aula Rápida</h1>
-          </li>
-        </div>
-        <div class="menu__enlaces">
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Sobre Aula Rápida</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="busqueda.html" class="header__menu-link">
-              <i class="fa-solid fa-magnifying-glass header__menu-icon"></i>Buscar
-            </a>
-          </li>
-          <li class="header__menu-item header__menu-dropdown">
-            <a href="#" class="header__menu-link">
-              <i class="fa-regular fa-user header__menu-icon"></i>
-              <i class="fa-solid fa-caret-down"></i>
-            </a>
-            <ul class="dropdown__menu">
-              <li><a href="login.html">Iniciar sesión</a></li>
-              <li><a href="registro.html">Registrarse</a></li>
-            </ul>
-          </li>
+        <ul class="header__menu">
+            <div class="menu__logo">
+                <li class="header__menu-item">
+                    <a href="index.html" class="header__menu-link">
+                        <img src="./img/logoAulaRapida-removebg-preview.png" alt="Logo Aula Rápida"
+                            class="header__menu-logo" />
+                    </a>
+                </li>
+                <li class="header__menu-title">
+                    <a href="index.html" class="header__menu-link">
+                        <h1>Aula Rápida</h1>
 
-        </div>
-      </ul>
+                    </a>
+                </li>
+            </div>
+            <div class="menu__enlaces">
+                <li class="header__menu-item">
+                    <a href="aboutUs.html" class="header__menu-link">Sobre Aula Rápida</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="busqueda.html" class="header__menu-link">
+                        <i class="fa-solid fa-magnifying-glass header__menu-icon"></i>Buscar
+                    </a>
+                </li>
+                <li class="header__menu-item header__menu-dropdown">
+                    <a href="#" class="header__menu-link">
+                        <i class="fa-regular fa-user header__menu-icon"></i>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown__menu">
+                        <li><a href="login.html">Iniciar sesión</a></li>
+                        <li><a href="registro.html">Registrarse</a></li>
+                    </ul>
+                </li>
+
+            </div>
+        </ul>
     </nav>
-  </header>
+</header>
   <main>
-    <header>
-      <h1 class="titulo">PERFIL</h1>
-    </header>
     <section class="perfil_header">
       <div class="titulo_cond">
         <h2>NIMBUS2000 DRIVER</h2>
@@ -143,8 +144,19 @@
       </section>
     </section>
   </main>
-    <footer></footer>
-  
+  <footer>
+    <div class="redes">
+        <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook" class="redes__icono"></a>
+        <a href="https://www.twitter.com"><img src="img/twitter.png" alt="Twitter" class="redes__icono"></a>
+        <a href="https://www.youtube.com"><img src="img/youtube.png" alt="YouTube" class="redes__icono"></a>
+        <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram"
+                class="redes__icono"></a>
+    </div>
+    <div class="aula">
+        <img src="img/logo.jpeg" alt="Logo Aula Rápida" class="aula__logo">
+        <span class="aula__nombre">Aula Rápida, 2024 &copy;</span>
+    </div>
+</footer>  
 </body>
 
 </html>

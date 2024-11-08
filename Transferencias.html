@@ -12,24 +12,28 @@
     <link rel="stylesheet" href="styles/Transferencias.css" />
     <title>Transferencias</title>
 </head>
+
 <body>
     <header class="header">
         <nav class="header__navbar">
             <ul class="header__menu">
                 <div class="menu__logo">
                     <li class="header__menu-item">
-                        <a href="menu.html" class="header__menu-link">
+                        <a href="index.html" class="header__menu-link">
                             <img src="./img/logoAulaRapida-removebg-preview.png" alt="Logo Aula Rápida"
                                 class="header__menu-logo" />
                         </a>
                     </li>
                     <li class="header__menu-title">
-                        <h1>Aula Rápida</h1>
+                        <a href="index.html" class="header__menu-link">
+                            <h1>Aula Rápida</h1>
+
+                        </a>
                     </li>
                 </div>
                 <div class="menu__enlaces">
                     <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">Sobre Aula Rápida</a>
+                        <a href="aboutUs.html" class="header__menu-link">Sobre Aula Rápida</a>
                     </li>
                     <li class="header__menu-item">
                         <a href="busqueda.html" class="header__menu-link">
@@ -42,18 +46,20 @@
                             <i class="fa-solid fa-caret-down"></i>
                         </a>
                         <ul class="dropdown__menu">
-                            <li><a href="login.html">Iniciar sesión</a></li>
-                            <li><a href="registro.html">Registrarse</a></li>
+                            <li><a href="perfilJulen.html">Perfil</a></li>
+                            <li><a href="Mensajes.html">Mensajes</a></li>
+                            <li><a href="tusViajes.html">Tus viajes</a></li>
+                            <li><a href="Transferencias.html">Transferencias</a></li>
+                            <li><a href="pagosReembolsos.html">Pagos y reembolsos</a></li>
+                            <li><a href="index.html">Cerrar sesión</a></li>
                         </ul>
                     </li>
-
                 </div>
             </ul>
         </nav>
     </header>
-
-    <main class = "layout">
-        <h1 class = "titulo">TRANSFERENCIAS</h1>
+    <main class="layout">
+        <h1 class="titulo">TRANSFERENCIAS</h1>
         <section class="tamanio_pag">
             <h2>30 de septiembre </h2>
             <div class="viajes">
@@ -171,23 +177,18 @@
                     <li><span class="dinero"> - 3.00€</span></li>
                 </ul>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </main>
+    </main>
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook" class="redes__icono"></a>
+            <a href="https://www.twitter.com"><img src="img/twitter.png" alt="Twitter" class="redes__icono"></a>
+            <a href="https://www.youtube.com"><img src="img/youtube.png" alt="YouTube" class="redes__icono"></a>
+            <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram"
+                    class="redes__icono"></a>
+        </div>
+        <div class="aula">
+            <img src="img/logo.jpeg" alt="Logo Aula Rápida" class="aula__logo">
+            <span class="aula__nombre">Aula Rápida, 2024 &copy;</span>
+        </div>
+    </footer>
 </html>
