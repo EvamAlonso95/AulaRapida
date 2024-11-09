@@ -154,7 +154,10 @@ a:hover {
     justify-content: start;
     align-items: center; */
     text-align: justify;
-    margin: 4rem auto;
+    margin-top: 4rem;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid white;
     box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
     background-color: white;
