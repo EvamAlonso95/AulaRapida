@@ -11,7 +11,7 @@ body {
 .destacados {
     margin: auto;
     margin-top: 5%;
-    width: 80%;
+    width: 99%;
 }
 
 .destacados__imagenes {
@@ -54,13 +54,15 @@ body {
 .aboutUs {
     margin: auto;
     margin-top: 5%;
-    width: 90%;
-    border: 1px solid black;
+    width: 80%;
 }
 
 .aboutUs__titulo {
     font-style: italic;
-    text-align: unset;
+}
+
+.aboutUs__cuerpo {
+    text-align: left;
 }
 
 

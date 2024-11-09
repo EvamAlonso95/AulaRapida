@@ -127,12 +127,12 @@ input {
 }
 
 footer {
-    margin: 50px 0 0;
+    /* margin: 50px 0 0; */
     padding: 1%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+    
     background-color: white;
 }
 
