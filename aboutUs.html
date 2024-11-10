@@ -64,11 +64,12 @@
             <!-- <img class="buscar__imagen" src="../img/buscar_imagen.jpeg" alt="Aula Rápida. Conectamos estudiantes"> -->
             <div class="buscar__formulario">
                 <form>
-                    <label>Desde: <input type="text"></label>
-                    <label>Hasta: <input type="text"></label>
-                    <label>Día: <input type="date"></label>
-                    <label>Hora: <input type="datetime-local"></label>
-                    <label>Pasajeros: <input type="number" min="1"></label>
+                    <input type="text" name="desdeBuscar" id="desdeBuscar" placeholder=" Desde" required>
+                    <input type="text" name="hastaBuscar" id="hastaBuscar" placeholder=" Hasta" required>
+                    <input type="date" name="fechaBuscar" id="fechaBuscar" required>
+                    <input type="time" name="horaBuscar" id="horaBuscar" required>
+                    <input type="number" name="pasajerosBuscar" id="pasajerosBuscar" placeholder="Pasajeros" min="1"
+                        required>
                     <button type="submit" class="buscar__submit">Buscar</button>
                 </form>
             </div>
@@ -78,12 +79,13 @@
             <h2 class="publicar__titulo">¡Publica tu viaje y comparte el trayecto!</h2>
             <div class="publicar__formulario">
                 <form>
-                    <label>Desde: <input type="text"></label>
-                    <label>Hasta: <input type="text"></label>
-                    <label>Día: <input type="date"></label>
-                    <label>Hora: <input type="datetime-local"></label>
-                    <label>Pasajeros: <input type="number" min="1"></label>
-                    <button type="submit" class="buscar__submit">Publicar</button>
+                    <input type="text" name="desdePublicar" id="desdePublicar" placeholder=" Desde" required>
+                    <input type="text" name="hastaPublicar" id="hastaPublicar" placeholder=" Hasta" required>
+                    <input type="date" name="fechaPublicar" id="fechaPublicar" required>
+                    <input type="time" name="horaPublicar" id="horaPublicar" required>
+                    <input type="number" name="pasajerosPublicar" id="pasajerosPublicar" placeholder="Pasajeros" min="1"
+                        required>
+                    <button type="submit" class="buscar__submit">Buscar</button>
                 </form>
             </div>
         </section>
@@ -95,29 +97,42 @@
                 <img src="../img/elige.png" class="destacados__elige__imagen" alt="¡Busca, elige y ponte en marcha!">
             </div>
             <div class="destacados__entradas">
-                <div class="destacados__descubre">
-                    <div class="destacados__texto">
-                        <p class="destacados__descubre__titulo">Descubre los viajes ideales:</p><br><br>
-                        <p>Nuestra comunidad de viajeros te acompaña en todo momento. No importa dónde estés, encuentra
-                            el
-                            trayecto perfecto con salidas y llegadas en los lugares más cercanos a ti.</p>
+                <div class="destacados__descubre tarjeta">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__frente">
+                            <p class="tarjeta__titulo"><b>Descubre los viajes ideales</b></p>
+                        </div>
+                        <div class="tarjeta__trasera">
+                            <p>Nuestra comunidad de viajeros te acompaña en todo momento. No importa dónde estés,
+                                encuentra el
+                                trayecto perfecto con salidas y llegadas en los lugares más cercanos a ti.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="destacados__confianza">
-                    <div class="destacados__texto">
-                        <p class="destacados__descubre__titulo">Viaja con confianza:</p><br><br>
-                        <p>Nos preocupamos por la seguridad de nuestros viajeros. Por eso, revisamos cuidadosamente los
-                            perfiles
-                            y las opiniones de cada usuario, asegurándote que siempre sabrás con quién compartirás el
-                            viaje.
-                            Reserva tu próximo trayecto con total confianza.</p>
+
+                <div class="destacados__confianza tarjeta">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__frente">
+                            <p class="tarjeta__titulo"><b>Viaja con confianza</b></p>
+                        </div>
+                        <div class="tarjeta__trasera">
+                            <p>Nos preocupamos por la seguridad de nuestros viajeros. Por eso, revisamos cuidadosamente
+                                los perfiles y las opiniones de cada usuario, asegurándote que siempre sabrás con quién
+                                compartirás el viaje. Reserva tu próximo trayecto con total confianza.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="destacados__elige">
-                    <div class="destacados__texto">
-                        <p class="destaca+dos__elige__titulo">¡Busca, elige y ponte en marcha!</p><br><br>
-                        <p>¡Reservar un viaje nunca ha sido tan fácil! Con nuestra intuitiva aplicación y su avanzada
-                            tecnología, podrás encontrar y reservar un trayecto cercano en cuestión de segundos.</p>
+
+                <div class="destacados__elige tarjeta">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__frente">
+                            <p class="tarjeta__titulo"><b>¡Busca, elige y ponte en marcha!</b></p>
+                        </div>
+                        <div class="tarjeta__trasera">
+                            <p>¡Reservar un viaje nunca ha sido tan fácil! Con nuestra intuitiva aplicación y su
+                                avanzada tecnología, podrás encontrar y reservar un trayecto cercano en cuestión de
+                                segundos.</p>
+                        </div>
                     </div>
                 </div>
             </div>

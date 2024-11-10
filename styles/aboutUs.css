@@ -21,10 +21,10 @@ body {
 }
 
 .destacados__descubre__imagen,
-.destacados__confianza__imagen, 
+.destacados__confianza__imagen,
 .destacados__elige__imagen {
     width: 15%;
-    
+
 }
 
 .destacados__entradas {
@@ -35,26 +35,60 @@ body {
     margin: 1%;
 }
 
-.destacados__descubre,
-.destacados__confianza,
-.destacados__elige {
-  width: 100%;
-  padding: 10px;
-  margin: auto;
-  background-color: #cbf0f4;
-  border-radius: 6%;
-  margin-top: 4%;
-  text-align: center;
+.tarjeta {
+    width: 100%;
+    /* O un tamaño fijo como 300px si lo prefieres */
+    height: 250px;
+    /* Define una altura adecuada */
+    perspective: 1000px;
 }
 
-.destacados__texto {
-    padding: 10%;
+.tarjeta__contenido {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.tarjeta:hover .tarjeta__contenido {
+    transform: rotateY(180deg);
+}
+
+.tarjeta__frente,
+.tarjeta__trasera {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6%;
+    /* Ajustable según tu diseño */
+    padding: 10px;
+    text-align: center;
+}
+
+.tarjeta__frente {
+    background-color: #cbf0f4;
+    /* Color de fondo de la parte frontal */
+}
+
+.tarjeta__trasera {
+    transform: rotateY(180deg);
+    background-color: #6fc6d0;
+    /* Color de fondo de la parte trasera */
 }
 
 .aboutUs {
     margin: auto;
     margin-top: 5%;
+    margin-bottom: 5%;
     width: 80%;
+    -webkit-box-shadow: 18px 10px 11px 4px rgba(203, 240, 244, 1);
+    -moz-box-shadow: 18px 10px 11px 4px rgba(203, 240, 244, 1);
+    box-shadow: 18px 10px 11px 4px rgba(203, 240, 244, 1);
 }
 
 .aboutUs__titulo {
@@ -64,6 +98,3 @@ body {
 .aboutUs__cuerpo {
     text-align: left;
 }
-
-
-
