@@ -3,8 +3,11 @@
     padding: 0;
     margin: 0;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 html {
@@ -18,16 +21,21 @@ html {
 
 /* Diseño General */
 .layout__busqueda {
-    position: absolute;
+    /* position: absolute; */
     width: calc(75% - 4rem);
     height: auto;
     text-align: justify;
-    right: 13%;
+    margin-top: 4rem;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid white;
     background-color: white;
-    border-radius: 2rem;
-    top: 7rem;
-    padding: 2rem;
+    border: 1px solid white;
+    box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
+   
+    /* top: 7rem;
+    padding: 2rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +60,7 @@ html {
 
 /* Estilos del layout del formulario */
 .layout__form {
-    position: absolute;
+    /* position: absolute; */
     top: 55%;
     left: 50%;
     transform: translate(-50%, -420%);
@@ -72,7 +80,7 @@ form {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 input {
@@ -118,7 +126,7 @@ input[type="time"] {
     border: 1px solid black;
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
     border-radius: 15px;
@@ -141,7 +149,7 @@ input[type="time"] {
     align-items: center;
     flex-direction: column;
     /* gap: 0.5rem; */
-    padding: 1rem; 
+    padding: 1rem;
     font-size: 0.7rem;
 }
 
@@ -249,6 +257,45 @@ input[type="time"] {
 
 }
 
+/* FOOTER */
+
+footer {
+    /* margin: 50px 0 0; */
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.redes {
+    display: flex;
+    gap: 10px;
+}
+
+.redes__icono {
+    width: 30px;
+    height: auto;
+}
+
+.aula {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.aula__logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.aula__nombre {
+    font-weight: bold;
+    font-size: medium;
+}
+
+
 /* Media Queries para Diseño Responsive */
 
 /* Pantallas grandes (desde 1200px) */
@@ -283,87 +330,89 @@ input[type="time"] {
         /* grid-template-columns: repeat(2, 1fr); */
     }
 
-    .layout__form{
-        top:53%;
+    .layout__form {
+        top: 53%;
     }
-    
+
     .section__article {
         display: flex;
         width: 95%;
     }
-    
+
     .section__article:nth-child(1),
     .section__article:nth-child(2) {
         margin-top: 2.5rem;
     }
+
     .article__datos {
         width: 40%;
-        
-        
-    }
 
-    .article__asientos{
-        width:30%;
 
     }
 
-    .article__precio{
+    .article__asientos {
+        width: 30%;
+
+    }
+
+    .article__precio {
         width: 10%;
         font-size: 0.9rem;
-       .contratar{
-        width: 4.5rem;
-       }
 
-}
+        .contratar {
+            width: 4.5rem;
+        }
 
-/* Tablets (768px a 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-    .layout__busqueda {
-        width: 90%;
-        padding: 1.5rem;
     }
 
-    .layout__section {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
+    /* Tablets (768px a 991px) */
+    @media (min-width: 768px) and (max-width: 991px) {
+        .layout__busqueda {
+            width: 90%;
+            padding: 1.5rem;
+        }
+
+        .layout__section {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, auto);
+        }
+
+        .article__datos {
+            width: 100%;
+        }
     }
 
-    .article__datos {
-        width: 100%;
-    }
-}
+    /* Smartphones (hasta 767px) */
+    @media (max-width: 767px) {
+        html {
+            font-size: 14px;
+        }
 
-/* Smartphones (hasta 767px) */
-@media (max-width: 767px) {
-    html {
-        font-size: 14px;
-    }
+        .layout__busqueda {
+            width: 95%;
+            padding: 1rem;
+            top: 5rem;
+        }
 
-    .layout__busqueda {
-        width: 95%;
-        padding: 1rem;
-        top: 5rem;
-    }
+        .layout__section {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
 
-    .layout__section {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
+        .layout__cabecera img {
+            width: 100%;
+        }
 
-    .layout__cabecera img {
-        width: 100%;
-    }
+        .layout__form {
+            width: 100%;
+            top: 50%;
+            transform: translate(-50%, -350%);
+        }
 
-    .layout__form {
-        width: 100%;
-        top: 50%;
-        transform: translate(-50%, -350%);
+        input {
+            width: 5rem;
+            height: 1.8rem;
+        }
     }
-
-    input {
-        width: 5rem;
-        height: 1.8rem;
-    }
-}
 }
