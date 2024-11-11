@@ -21,7 +21,7 @@ html {
 
 /* Diseño General */
 .layout__busqueda {
-    /* position: absolute; */
+    position: relative;
     width: calc(75% - 4rem);
     height: auto;
     text-align: justify;
@@ -60,10 +60,10 @@ html {
 
 /* Estilos del layout del formulario */
 .layout__form {
-    /* position: absolute; */
+    position: absolute;
     top: 55%;
     left: 50%;
-    transform: translate(-50%, -420%);
+    transform: translate(-50%, -380%);
     width: 90%;
     height: 3rem;
     display: flex;
