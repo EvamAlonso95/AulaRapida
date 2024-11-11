@@ -203,17 +203,17 @@ input[type="time"] {
 
 /* Asientos */
 .article__asientos {
-    width: 20%;
-    height: 80%;
+  
+    height: 78%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    margin-right: 1rem;
+    
     border: 1px solid rgb(0, 79, 216);
     border-radius: 10px;
     background-color: skyblue;
-    gap: 0.8rem;
+    gap: 0.6rem;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -222,18 +222,23 @@ input[type="time"] {
 
 /* Cada asiento - por defecto libre*/
 .asiento {
-    width: 2rem;
+    width: 4rem;
     padding: 0.1rem;
-    border: 1px solid greenyellow;
+   
     cursor: pointer;
     background-color: lightgreen;
     border-radius: 0.5rem;
 }
 
+.asiento:hover{
+    background-color: grey;
+    border: none;
+}
+
 /* Asiento ocupado */
 .asiento--ocupado {
     background-color: lightcoral;
-    border: 1px solid lightsalmon;
+    
 }
 
 /* Contenedor del precio */
@@ -247,15 +252,22 @@ input[type="time"] {
     align-items: center;
     padding: 1rem;
 
-    span {
+    .precio {
         font-weight: bolder;
+        margin-bottom: 22px;
     }
 
     .contratar {
+        width: 5.5rem;
         text-align: center;
         padding: 0;
         background-color: skyblue;
         cursor: pointer;
+    }
+
+    .contratar:hover{
+        background-color: #eca400;
+        
     }
 
 }
@@ -363,7 +375,7 @@ footer {
         font-size: 0.9rem;
 
         .contratar {
-            width: 4.5rem;
+            width: 5rem;
         }
 
     }
