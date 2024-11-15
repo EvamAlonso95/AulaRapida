@@ -1,24 +1,24 @@
 // ------- PERFIL CONDUCTOR / PASAJERO -------
 // Seleccionamos los elementos de los botones de radio y los cuadros de perfil
-const condRadio = document.getElementById('cond');
-const pasjRadio = document.getElementById('pasj');
-const perfilCond = document.querySelector('.perfil_cond');
-const perfilPasj = document.querySelector('.perfil_pasj');
+const condRadioEva = document.getElementById('cond');
+const pasjRadioEva = document.getElementById('pasj');
+const perfilCondEva = document.querySelector('.perfil_cond_eva');
+const perfilPasjEva = document.querySelector('.perfil_pasj_eva');
 
 // Función que cambia la visibilidad dependiendo del radio seleccionado
 function cambiarPerfil() {
-    if (condRadio.checked) {
-        perfilCond.style.display = 'block';  // Muestra la lista del conductor
-        perfilPasj.style.display = 'none';   // Oculta la lista del pasajero
+    if (condRadioEva.checked) {
+        perfilCondEva.style.display = 'block';  // Muestra la lista del conductor
+        perfilPasjEva.style.display = 'none';   // Oculta la lista del pasajero
     } else {
-        perfilCond.style.display = 'none';   // Oculta la lista del conductor
-        perfilPasj.style.display = 'block';  // Muestra la lista del pasajero
+        perfilCondEva.style.display = 'none';   // Oculta la lista del conductor
+        perfilPasjEva.style.display = 'block';  // Muestra la lista del pasajero
     }
 }
 
 // Event listeners para cuando cambian las opciones de radio
-condRadio.addEventListener('change', cambiarPerfil);
-pasjRadio.addEventListener('change', cambiarPerfil);
+condRadioEva.addEventListener('change', cambiarPerfil);
+pasjRadioEva.addEventListener('change', cambiarPerfil);
 
 // Ejecutamos la función una vez al cargar la página para asegurarnos del estado inicial
 cambiarPerfil();
@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // ------- ELIMINAR VEHICULO -------
+
     const botonEliminarVehiculo = document.getElementById("boton-eliminar-vehiculo");
 
     botonEliminarVehiculo.addEventListener("click", function (event) {

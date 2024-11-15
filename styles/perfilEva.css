@@ -32,7 +32,7 @@ main {
 
 .perfil_header {
   width: 80%;
-  background-color: #d8c083;
+  background-color:#9ce5ec;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -128,8 +128,8 @@ hr {
   margin-bottom: 10px;
 }
 
-.perfil_cond,
-.perfil_pasj {
+.perfil_cond_eva,
+.perfil_pasj_eva {
   border: 1px solid #cccccc;
   padding: 10px;
   display: inline-block;
@@ -138,16 +138,16 @@ hr {
 }
 
 /* Opcional: puedes agregar estilos diferentes para cada cuadro */
-.perfil_cond {
+.perfil_cond_eva {
   background-color: #fbea80;
 }
 
-.perfil_pasj {
+.perfil_pasj_eva {
   background-color: #7ccab9;
 }
 
-.perfil_cond,
-.perfil_pasj,
+.perfil_cond_eva,
+.perfil_pasj_eva,
 li {
   list-style: none;
 }
