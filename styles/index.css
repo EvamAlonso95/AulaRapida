@@ -11,7 +11,8 @@ body {
     height: 100%;
 }
 
-.buscar__encabezado, .publicar__encabezado {
+.buscar__encabezado,
+.publicar__encabezado {
     margin: auto;
     border-radius: 20px;
     width: 80%;
@@ -34,7 +35,7 @@ body {
     justify-content: flex-end;
 }
 
-.buscar__formulario {  
+.buscar__formulario {
     border-radius: 10px;
     width: 90%;
     background-color: gold;
@@ -66,12 +67,15 @@ input {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 14px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transición suave */
 }
 
 .buscar__submit:hover {
-    background-color: #f0f0f0; /* Gris suave */
-    color: #333; /* Color de texto oscuro */
+    background-color: #f0f0f0;
+    /* Gris suave */
+    color: #333;
+    /* Color de texto oscuro */
 }
 
 .publicar__titulo {
@@ -90,7 +94,7 @@ input {
     background-color: gold;
     border-radius: 40px;
     padding: 1%;
-    width: 100%;
+    width: 90%;
 }
 
 .destinos__titulo {
@@ -144,7 +148,8 @@ input {
 
 .tarjeta__contenido {
     width: 100%;
-    height: 100px; /* Ajusta según tu diseño */
+    height: 100px;
+    /* Ajusta según tu diseño */
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
@@ -170,14 +175,15 @@ input {
 }
 
 .tarjeta__frente {
-    background-color: #f0f0f0; /* Color de la parte delantera */
+    background-color: #f0f0f0;
+    /* Color de la parte delantera */
 }
 
 .tarjeta__trasera {
-    background-color: #cbf0f4; /* Color de la parte trasera */
+    background-color: #cbf0f4;
+    /* Color de la parte trasera */
     transform: rotateY(180deg);
 }
-
 
 footer {
     /* margin: 50px 0 0; */
@@ -213,4 +219,41 @@ footer {
 .aula__nombre {
     font-weight: bold;
     font-size: medium;
+}
+
+@media screen and (max-width: 500px) {
+    .destinos__opciones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjeta__contenido {
+        width: 100%;
+        height: 100px;
+        /* Ajusta según tu diseño */
+        position: none;
+        transform-style: none;
+        transition: none;
+    }
+
+    .tarjeta:hover .tarjeta__contenido {
+        transform: none;
+    }
+    
+    .tarjeta__frente,
+    .tarjeta__trasera {
+        position: none;
+        width: none;
+        height: none;
+        margin-top: none;
+        backface-visibility: none;
+        display: none;
+        align-items: none;
+        justify-content: none;
+        border-radius: none;
+        padding: none;
+        box-sizing: none;
+    }
+
+
 }
