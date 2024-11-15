@@ -1,20 +1,19 @@
-
+/* Estilos generales para el layout base */
 html {
   font-family: "Afacad Flux", sans-serif;
   font-size: 16px;
-  width: auto;
   background-color: #204b5e;
   height: 100vh;
+  margin: 0;
 }
- 
+
 main {
   width: calc(75% - 4rem);
   height: auto;
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: start;
-  align-items: center; 
+  align-items: center;
   text-align: justify;
   margin: 4rem auto;
   border: 1px solid white;
@@ -32,7 +31,7 @@ main {
 
 .perfil_header {
   width: 80%;
-  background-color:#9ce5ec;
+  background-color: #9ce5ec;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -63,7 +62,6 @@ main {
   flex-direction: column;
   display: flex;
   justify-content: flex-end;
-  /* Mover el contenido hacia la parte inferior */
   padding: 10px;
   font-size: small;
 }
@@ -81,7 +79,6 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: 1.5px solid #000000;
-  
 }
 
 .titulo_cond h2 {
@@ -137,7 +134,6 @@ hr {
   height: auto;
 }
 
-/* Opcional: puedes agregar estilos diferentes para cada cuadro */
 .perfil_cond_bea {
   background-color: #fbea80;
 }
@@ -212,57 +208,61 @@ footer {
   font-size: medium;
 }
 
+/* Estilos Responsivos */
 
-/* Estilos Responsive */
+/* Para pantallas de 1024px o menos */
 @media (max-width: 1024px) {
   .flexbox-container {
     width: 80%;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .flex1,
-  .flex2 {
-    width: 40%;
-  }
-}
-
-@media (max-width: 768px) {
-  .flexbox-container {
-    width: 100%;
     flex-direction: column;
-    /* Cambiar a columnas en pantallas pequeñas */
-    align-items: center;
-    /* Centrar el contenido */
+    justify-content: center;
   }
 
   .flex1,
   .flex2 {
     width: 100%;
     text-align: center;
-    /* Centramos el texto en pantallas pequeñas */
-  }
-
-  .flex2 {
-    padding-left: 0;
-    /* Eliminar padding cuando el contenido esté centrado */
   }
 
   .foto_perfil img {
-    width: 100px;
-    /* Reducir el tamaño de la imagen en móviles */
+    width: 150px;
     height: auto;
   }
 }
 
-.info_personal_text {
-  width: 50%;
+/* Para pantallas de 768px o menos */
+@media (max-width: 768px) {
+  .perfil_header {
+    width: 90%;
+  }
+
+  .flexbox-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex1,
+  .flex2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .foto_perfil img {
+    width: 150px;
+    height: auto;
+  }
+
+  .info_personal_text {
+    width: 100%;
+    font-size: small;
+  }
+
+  .vehiculos ul {
+    width: 100%;
+  }
 }
 
-.tamanio_pag {
-  width: 80%;
-}
-
+/* Para pantallas de 480px o menos */
 @media (max-width: 480px) {
   header {
     width: 100%;
@@ -270,11 +270,11 @@ footer {
   }
 
   .perfil_header {
-    width: 80%;
+    width: 100%;
   }
 
   .flex1 {
-    width: 80%;
+    width: 100%;
   }
 
   .flex2 {

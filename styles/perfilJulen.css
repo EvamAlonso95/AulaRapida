@@ -32,7 +32,7 @@ main {
 
 .perfil_header {
   width: 80%;
-  background-color: #d8c083;
+  background-color:#9ce5ec;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -212,56 +212,62 @@ footer {
   font-size: medium;
 }
 
-/* Estilos Responsive */
+
+/* Estilos Responsivos */
+
+/* Para pantallas de 1024px o menos */
 @media (max-width: 1024px) {
   .flexbox-container {
     width: 80%;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .flex1,
-  .flex2 {
-    width: 40%;
-  }
-}
-
-@media (max-width: 768px) {
-  .flexbox-container {
-    width: 100%;
     flex-direction: column;
-    /* Cambiar a columnas en pantallas pequeñas */
-    align-items: center;
-    /* Centrar el contenido */
+    justify-content: center;
   }
 
   .flex1,
   .flex2 {
     width: 100%;
     text-align: center;
-    /* Centramos el texto en pantallas pequeñas */
-  }
-
-  .flex2 {
-    padding-left: 0;
-    /* Eliminar padding cuando el contenido esté centrado */
   }
 
   .foto_perfil img {
-    width: 100px;
-    /* Reducir el tamaño de la imagen en móviles */
+    width: 150px;
     height: auto;
   }
 }
 
-.info_personal_text {
-  width: 50%;
+/* Para pantallas de 768px o menos */
+@media (max-width: 768px) {
+  .perfil_header {
+    width: 90%;
+  }
+
+  .flexbox-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex1,
+  .flex2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .foto_perfil img {
+    width: 150px;
+    height: auto;
+  }
+
+  .info_personal_text {
+    width: 100%;
+    font-size: small;
+  }
+
+  .vehiculos ul {
+    width: 100%;
+  }
 }
 
-.tamanio_pag {
-  width: 80%;
-}
-
+/* Para pantallas de 480px o menos */
 @media (max-width: 480px) {
   header {
     width: 100%;
@@ -269,11 +275,11 @@ footer {
   }
 
   .perfil_header {
-    width: 80%;
+    width: 100%;
   }
 
   .flex1 {
-    width: 80%;
+    width: 100%;
   }
 
   .flex2 {
