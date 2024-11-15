@@ -1,27 +1,27 @@
-
 html {
   font-family: "Afacad Flux", sans-serif;
   font-size: 16px;
-  width: auto;
+  width: 100%; /* Cambié 'auto' a 100% para que ocupe todo el ancho */
   background-color: #204b5e;
   height: 100vh;
 }
- 
+
 main {
   width: calc(75% - 4rem);
   height: auto;
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: start;
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   text-align: justify;
-  margin: 4rem auto;
+  margin-top: 4rem;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid white;
   box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
   background-color: white;
-  top: 1rem;
-  padding: 2rem;
 }
 
 .titulo {
@@ -31,8 +31,9 @@ main {
 }
 
 .perfil_header {
+  margin-top: 3rem;
   width: 80%;
-  background-color:#9ce5ec;
+  background-color: #9ce5ec;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -53,8 +54,13 @@ main {
   padding: 20px 0;
 }
 
-.flex1 {
+.flex1,
+.flex2 {
   display: flex;
+}
+
+.flex1 {
+  flex: 1;
 }
 
 .flex2 {
@@ -62,8 +68,7 @@ main {
   width: 400px;
   flex-direction: column;
   display: flex;
-  justify-content: flex-end;
-  /* Mover el contenido hacia la parte inferior */
+  justify-content: flex-end; /* Mover el contenido hacia la parte inferior */
   padding: 10px;
   font-size: small;
 }
@@ -81,7 +86,6 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: 1.5px solid #000000;
-  
 }
 
 .titulo_cond h2 {
@@ -137,7 +141,6 @@ hr {
   height: auto;
 }
 
-/* Opcional: puedes agregar estilos diferentes para cada cuadro */
 .perfil_cond_eva {
   background-color: #fbea80;
 }
@@ -177,7 +180,6 @@ li {
 }
 
 footer {
-  margin: 50px 0 0;
   padding: 1%;
   display: flex;
   justify-content: space-between;
@@ -212,19 +214,17 @@ footer {
   font-size: medium;
 }
 
-
 /* Estilos Responsivos */
 
 /* Para pantallas de 1024px o menos */
 @media (max-width: 1024px) {
   .flexbox-container {
-    width: 80%;
+    width: 90%;
     flex-direction: column;
     justify-content: center;
   }
 
-  .flex1,
-  .flex2 {
+  .flex1, .flex2 {
     width: 100%;
     text-align: center;
   }
@@ -232,6 +232,26 @@ footer {
   .foto_perfil img {
     width: 150px;
     height: auto;
+  }
+  
+  .titulo {
+    width: 90%;
+  }
+
+  .perfil_header {
+    width: 90%;
+  }
+
+  .info_perfil {
+    align-items: center;
+  }
+
+  .info_personal_text {
+    width: 100%;
+  }
+
+  .vehiculos ul {
+    width: 100%;
   }
 }
 
@@ -246,8 +266,7 @@ footer {
     align-items: center;
   }
 
-  .flex1,
-  .flex2 {
+  .flex1, .flex2 {
     width: 100%;
     text-align: center;
   }
@@ -265,6 +284,10 @@ footer {
   .vehiculos ul {
     width: 100%;
   }
+
+  .titulo {
+    width: 100%;
+  }
 }
 
 /* Para pantallas de 480px o menos */
@@ -278,12 +301,9 @@ footer {
     width: 100%;
   }
 
-  .flex1 {
+  .flex1, .flex2 {
     width: 100%;
-  }
-
-  .flex2 {
-    padding-top: 10px;
+    padding: 10px 0;
   }
 
   .foto_perfil img {
@@ -298,5 +318,13 @@ footer {
 
   .editar_datos {
     width: 100%;
+  }
+
+  .aula__logo {
+    width: 40px;
+  }
+  
+  .aula__nombre {
+    font-size: smaller;
   }
 }
