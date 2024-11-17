@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -17,8 +18,8 @@ html {
 
 /* HEADER */
 
-.abir__menu{
-    /* display: noe; */
+#menu__hamburguesa {
+    display: none;
 }
 
 .header__navbar {
@@ -97,6 +98,7 @@ a:hover {
     font-weight: bolder;
 } */
 
+
 .header__menu-icon {
     margin-right: 0.5rem;
 }
@@ -152,11 +154,7 @@ a:hover {
 .layout {
     width: calc(75% - 4rem);
     height: auto;
-    /* display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center; */
+
     text-align: justify;
     margin-top: 4rem;
     margin-bottom: 0px;
@@ -174,35 +172,89 @@ a:hover {
 /* ---------------------------------------------------- */
 /* MEDIA QUERY */
 /* Dispositivos muy pequeños */
-@media (max-width: 600px) {
-    .header__menu {
+@media (min-width:768px) {
+    .menu__hamburguesa{
         display: none;
-        /* Ocultar menú horizontal en móviles */
-        flex-direction: column;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .header__menu {
+        z-index: 9999;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .menu__enlaces {
         width: 100%;
         position: absolute;
+        top: -5rem;
+        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        transition: all 300ms ease;
+        z-index: -999999;
+    }
+
+    #menu__hamburguesa:checked~.menu__enlaces {
         top: 5rem;
-        background-color: white;
-        z-index: 1000;
+        height: 20rem;
+
     }
 
-    .header__menu li {
-        padding: 1rem;
+
+    .hamburguesa {
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+
+    .menu__logo {
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+
+    .menu__enlaces .header__menu-item-enlace {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        /* Centra texto e ícono */
+        background-color: #204b5e;
+        border-bottom: 1px solid #173542;
+        width: 100%;
+        height: 100%;
+
+        a {
+            color: white;
+        }
+
     }
 
-    .header__menu li a {
+    .header__menu-item-enlace:hover {
+        background-color: #9ce5ec;
+
+        a {
+            color: black;
+        }
+
+    }
+
+    .header__menu-dropdown:hover .dropdown__menu {
+        width: 100%;
+
+    }
+
+    .menu__enlaces .header__menu-item-enlace .header__menu-link {
         font-size: 1.2rem;
-    }
-
-    /* Mostrar icono de hamburguesa */
-    .hamburger {
-        display: flex;
-    }
-
-    /* Clase para mostrar el menú desplegable en móviles */
-    .header__menu.show {
-        display: flex;
+        /* Tamaño adaptado para pantallas pequeñas */
     }
 
 }
