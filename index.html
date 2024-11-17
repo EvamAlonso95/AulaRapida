@@ -14,87 +14,11 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header">        
         <nav class="header__navbar">
             <ul class="header__menu">
                 <div class="menu__logo">
-                    <li class="header__menu-item">
-                        <a href="index.html" class="header__menu-link">
-                            <img src="./img/logoAulaRapida-removebg-preview.png" alt="Logo Aula Rápida"
-                                class="header__menu-logo" />
-                        </a>
-                    </li>
-                    <li class="header__menu-title">
-                        <a href="index.html" class="header__menu-link">
-                            <h1>Aula Rápida</h1>
-                        </a>
-                    </li>
-                </div>
-                <div class="menu__enlaces">
-                    <li class="header__menu-item">
-                        <a href="aboutUs.html" class="header__menu-link">Sobre Aula Rápida</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="busqueda.html" class="header__menu-link">
-                            <i class="fa-solid fa-magnifying-glass header__menu-icon"></i>Buscar
-                        </a>
-                    </li>
-                    <li class="header__menu-item header__menu-dropdown">
-                        <a href="#" class="header__menu-link">
-                            <i class="fa-regular fa-user header__menu-icon"></i>
-                            <i class="fa-solid fa-caret-down"></i>
-                        </a>
-                        <ul class="dropdown__menu">
-                            <li><a href="login.html">Iniciar sesión</a></li>
-                            <li><a href="registro.html">Registrarse</a></li>
-                        </ul>
-                    </li>
-                </div>
-            </ul>
-        </nav>
-    </header>
-
-    <nav class="header__navbar">
-        <ul class="header__menu">
-            <div class="menu__logo">
-                <li class="header__menu-item">
-                    <a href="index.html" class="header__menu-link">
-                        <img src="./img/logoAulaRapida-removebg-preview.png" alt="Logo Aula Rápida"
-                            class="header__menu-logo" />
-                    </a>
-                </li>
-                <li class="header__menu-title">
-                    <h1>Aula Rápida</h1>
-                </li>
-            </div>
-            <div class="menu__enlaces">
-                <li class="header__menu-item">
-                    <a href="aboutUs.html" class="header__menu-link">Sobre Aula Rápida</a>
-                </li>
-                <li class="header__menu-item">
-                    <a href="busqueda.html" class="header__menu-link">
-                        <i class="fa-solid fa-magnifying-glass header__menu-icon"></i>Buscar
-                    </a>
-                </li>
-                <li class="header__menu-item header__menu-dropdown">
-                    <a href="#" class="header__menu-link">
-                        <i class="fa-regular fa-user header__menu-icon"></i>
-                        <i class="fa-solid fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown__menu">
-                        <li><a href="login.html">Iniciar sesión</a></li>
-                        <li><a href="registro.html">Registrarse</a></li>
-                    </ul>
-                </li>
-
-            </div>
-        </ul>
-    </nav>
-    <header class="header">
-        <nav class="header__navbar">
-            <ul class="header__menu">
-                <div class="menu__logo">
-                    <li class="header__menu-item">
+                    <li class="header__menu-item header_menu-item-logo">
                         <a href="index.html" class="header__menu-link">
                             <img src="./img/logoAulaRapida-removebg-preview.png" alt="Logo Aula Rápida"
                                 class="header__menu-logo" />
@@ -107,16 +31,23 @@
                         </a>
                     </li>
                 </div>
+                <label class="menu__hamburguesa" for="menu__hamburguesa">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-list list_icon hamburguesa" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                </label>
+                <input type="checkbox" name="" id="menu__hamburguesa">
                 <div class="menu__enlaces">
-                    <li class="header__menu-item">
+                    <li class="header__menu-item-enlace">
                         <a href="aboutUs.html" class="header__menu-link">Sobre Aula Rápida</a>
                     </li>
-                    <li class="header__menu-item">
+                    <li class="header__menu-item-enlace">
                         <a href="busqueda.html" class="header__menu-link">
-                            <i class="fa-solid fa-magnifying-glass header__menu-icon"></i>Buscar
+                            <i class="fa-solid fa-magnifying-glass header__menu-icon"></i> Buscar
                         </a>
                     </li>
-                    <li class="header__menu-item header__menu-dropdown">
+                    
+                    <li class="header__menu-item-enlace header__menu-dropdown">
                         <a href="#" class="header__menu-link">
                             <i class="fa-regular fa-user header__menu-icon"></i>
                             <i class="fa-solid fa-caret-down"></i>
@@ -126,7 +57,6 @@
                             <li><a href="registro.html">Registrarse</a></li>
                         </ul>
                     </li>
-
                 </div>
             </ul>
         </nav>
