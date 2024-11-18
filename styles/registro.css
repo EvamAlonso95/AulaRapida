@@ -209,6 +209,7 @@ textarea {
     /* Ajustar el tamaño general */
     html {
         font-size: 14px; /* Tamaño de fuente reducido ligeramente */
+        height: 100%;
     }
 
     .layout__registro {
