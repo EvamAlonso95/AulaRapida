@@ -2,7 +2,9 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
+
 
 html {
     font-family: "Afacad Flux", sans-serif;
@@ -14,18 +16,22 @@ html {
 
 }
 
+body{
+    height: 100vh;
+}
+
 /* ---------------------------------------------------- */
 /* MAIN */
 
 .layout__login {
-    position: absolute;
+    /* position: absolute; */
     width: calc(75% - 4rem);
-    height: auto;
+    height: 100%;
     text-align: justify;
     right: 13%;
     /* top: -8%; */
     /* left: 50%; */
-    /* margin: 4rem auto; */
+    margin: 6rem auto;
     border: 1px solid white;
     /* box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8); */
     background-color: white;
@@ -40,6 +46,7 @@ html {
 
 
 .layout__form {
+    height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -164,9 +171,13 @@ form {
     background-color: #2f6d88;
 }
 
+
+
+
+
 /* ---------------------------------------------------- */
 /* MEDIA QUERY */
-@media (max-width: 480px) {   
+@media (max-width: 768px) {   
 
 
     /* Ajustes para pantallas muy pequeñas */
@@ -175,10 +186,11 @@ form {
     }
 
     .layout__login {
-        background-color: pink;
+        background-color: rgb(255, 255, 255);
         width: 95%;
         right: 2.5%;
         padding: 1rem;
+        display: flex;
     }
 
     .layout__form {
@@ -218,5 +230,60 @@ form {
     .form__group--register {
         margin-top: 0.2rem;
         font-size: 0.7rem;
+    }
+}
+
+/* MEDIA QUERY: Pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Ajustar el tamaño general */
+    html {
+        font-size: 14px; /* Tamaño de fuente reducido ligeramente */
+    }
+
+    .layout__login {
+        width: 85%; /* Reducir el ancho para pantallas medianas */
+        right: 7.5%; /* Centrar */
+        top: 7rem; /* Ajustar la posición superior */
+        padding: 1.5rem; /* Reducir padding */
+    }
+
+    .layout__form {
+        padding: 1rem;
+    }
+
+    .form__title {
+        font-size: 2rem; /* Reducir el tamaño del título */
+    }
+
+    form {
+        width: 85%; /* Más espacio horizontal */
+        gap: 1rem; /* Espaciado adecuado */
+    }
+
+    .form__input {
+        font-size: 0.9rem; /* Ajustar el tamaño del texto */
+        padding: 8px 1.5rem; /* Reducir padding */
+    }
+
+    .form__icon {
+        font-size: 1rem; /* Escalar el icono */
+        right: 8px; /* Ajustar posición */
+    }
+
+    .form__submit {
+        width: 60%; /* Botón más pequeño */
+        height: 2.5rem; /* Reducir altura */
+        font-size: 0.9rem; /* Reducir tamaño del texto */
+    }
+
+    .form__group {
+        max-width: 90%; /* Aumentar la disponibilidad horizontal */
+    }
+
+    .form__group--checkbox,
+    .form__group--forgotpass,
+    .form__group--register {
+        margin-top: 0.5rem; /* Separación más ajustada */
+        font-size: 0.75rem; /* Texto más pequeño */
     }
 }
