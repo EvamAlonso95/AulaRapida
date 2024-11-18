@@ -8,11 +8,13 @@
     <script src="https://kit.fontawesome.com/28e986ba1e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/registro.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
     <title>Registro</title>
 </head>
 
 <body>
-    <header class="header">        
+    <header class="header">
         <nav class="header__navbar">
             <ul class="header__menu">
                 <div class="menu__logo">
@@ -30,9 +32,11 @@
                     </li>
                 </div>
                 <label class="menu__hamburguesa" for="menu__hamburguesa">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-list list_icon hamburguesa" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor"
+                        class="bi bi-list list_icon hamburguesa" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
                 </label>
                 <input type="checkbox" name="" id="menu__hamburguesa">
                 <div class="menu__enlaces">
@@ -44,7 +48,7 @@
                             <i class="fa-solid fa-magnifying-glass header__menu-icon"></i> Buscar
                         </a>
                     </li>
-                    
+
                     <li class="header__menu-item-enlace header__menu-dropdown">
                         <a href="#" class="header__menu-link">
                             <i class="fa-regular fa-user header__menu-icon"></i>
@@ -114,7 +118,8 @@
                     <input type="text" class="form__input" id="form__provincia" placeholder="Provincia" required>
 
                     <label class="form__label" for="form__textarea">Descripción adicional</label>
-                    <textarea class="form__textarea" id="form__textarea" rows="5" cols="20">Escribe algo aquí...</textarea>
+                    <textarea class="form__textarea" id="form__textarea" rows="5"
+                        cols="20">Escribe algo aquí...</textarea>
 
                     <label for="photo" class="form__label">Subir foto:</label>
                     <input type="file" id="photo" class="form__input" name="photo" accept="image/*">
@@ -123,5 +128,18 @@
             </form>
         </div>
     </main>
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook" class="redes__icono"></a>
+            <a href="https://www.twitter.com"><img src="img/twitter.png" alt="Twitter" class="redes__icono"></a>
+            <a href="https://www.youtube.com"><img src="img/youtube.png" alt="YouTube" class="redes__icono"></a>
+            <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram" class="redes__icono"></a>
+        </div>
+        <div class="aula">
+            <img src="img/logo.jpeg" alt="Logo Aula Rápida" class="aula__logo">
+            <span class="aula__nombre">Aula Rápida, 2024 &copy;</span>
+        </div>
+    </footer>
 </body>
+
 </html>

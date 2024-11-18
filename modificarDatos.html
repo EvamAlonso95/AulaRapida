@@ -4,12 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/28e986ba1e.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./img/logoAulaRapida-removebg-preview.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/registro.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <title>Modificar datos</title>
 </head>
 
 <body>
-    <header class="header">        
+    <header class="header">
         <nav class="header__navbar">
             <ul class="header__menu">
                 <div class="menu__logo">
@@ -27,9 +36,11 @@
                     </li>
                 </div>
                 <label class="menu__hamburguesa" for="menu__hamburguesa">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-list list_icon hamburguesa" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor"
+                        class="bi bi-list list_icon hamburguesa" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
                 </label>
                 <input type="checkbox" name="" id="menu__hamburguesa">
                 <div class="menu__enlaces">
@@ -41,7 +52,7 @@
                             <i class="fa-solid fa-magnifying-glass header__menu-icon"></i> Buscar
                         </a>
                     </li>
-                    
+
                     <li class="header__menu-item-enlace header__menu-dropdown">
                         <a href="#" class="header__menu-link">
                             <i class="fa-regular fa-user header__menu-icon"></i>
@@ -57,81 +68,81 @@
         </nav>
     </header>
 
-    <div class="layout">
-        <div class="layout__container">
+    <main class="layout__registro">
+        <div class="layout__form">
+            <h2 class="form__title">Modifica tus datos</h2>
 
-            <main class="layout__main">
-                <h1 class="main__title">Modifica tus datos</h1>
 
-                <div class="main__form-datos">
-                    <h2 class="form__title">Datos personales</h2>
-                    <form action="#" class="form">
+            <form action="registroCoche.html" class="form">
 
-                        <label class="form__label" for="form__name">Nombre</label>
-                        <input type="text" class="form__input" id="form__name" placeholder="Introduce tu nombre"
-                            required>
+                <div class="form__personal">
 
-                        <label class="form__label" for="form__secondName">Apellidos</label>
-                        <input type="text" class="form__input" id="form__secondName"
-                            placeholder="Introduce tus apellidos" required>
+                    <h3 class="form__subtitle">Datos personales</h3>
 
-                        <label class="form__label" for="form__mail">Email</label>
-                        <input type="email" class="form__input" id="form__mail"
-                            placeholder="Introduce tu correo electrónico" required>
+                    <label class="form__label" for="form__name">Nombre</label>
+                    <input type="text" class="form__input" id="form__name" placeholder="Introduce tu nombre" required>
 
-                        <label class="form__label" for="form__date">Fecha de nacimiento</label>
-                        <input type="date" class="form__input" id="form__date" required>
+                    <label class="form__label" for="form__secondName">Apellidos</label>
+                    <input type="text" class="form__input" id="form__secondName" placeholder="Introduce tus apellidos"
+                        required>
 
-                        <label class="form__label" for="form__password">Contraseña</label>
-                        <input type="password" class="form__input" id="form__password"
-                            placeholder="Introduce tu contraseña" required>
 
-                        <label class="form__label" for="form__passwordRepetir">Repetir contraseña</label>
-                        <input type="password" class="form__input" id="form__passwordRepetir"
-                            placeholder="Repite la contraseña" required>
 
-                        <label for="gender" class="form__label">Género:</label>
-                        <select id="gender" name="gender" class="form__select" required>
-                            <option value="" disabled selected>Seleccione su género</option>
-                            <option value="masculino">Masculino</option>
-                            <option value="femenino">Femenino</option>
-                            <option value="otro">Otro</option>
-                        </select>
+                    <label class="form__label" for="form__mail">Email</label>
+                    <input type="email" class="form__input" id="form__mail"
+                        placeholder="Introduce tu correo electrónico" required>
 
-                        <label class="form__label" for="form__domicilio">Domicilio</label>
-                        <input type="text" class="form__input" id="form__domicilio" placeholder="Domicilio" required>
 
-                        <label class="form__label" for="form__localidad">Localidad</label>
-                        <input type="text" class="form__input" id="form__localidad" placeholder="Localidad" required>
+                    <label class="form__label" for="form__password">Contraseña</label>
+                    <input type="password" class="form__input" id="form__password" placeholder="Introduce tu contraseña"
+                        required>
 
-                        <label class="form__label" for="form__provincia">Provincia</label>
-                        <input type="text" class="form__input" id="form__provincia" placeholder="Provincia" required>
+                    <label class="form__label" for="form__passwordRepetir">Repetir contraseña</label>
+                    <input type="password" class="form__input" id="form__passwordRepetir"
+                        placeholder="Repite la contraseña" required>
+                    <label class="form__label" for="form__date">Fecha de nacimiento</label>
+                    <input type="date" class="form__input" id="form__date" required>
 
-                        <label class="form__label" for="form__textarea">Descripción adicional</label>
-                        <textarea class="form__textarea" id="form__textarea" placeholder="Escribe algo..."></textarea>
+                    <label for="gender" class="form__label">Género:</label>
+                    <select id="gender" name="gender" class="form__select" required>
+                        <option value="" disabled selected>Seleccione su género</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
 
-                        <label for="photo" class="form__label">Subir foto:</label>
-                        <input type="file" id="photo" class="form__input" name="photo" accept="image/*">
+                    <label class="form__label" for="form__domicilio">Domicilio</label>
+                    <input type="text" class="form__input" id="form__domicilio" placeholder="Domicilio" required>
 
-                        <h2 class="form__title">Datos del vehículo</h2>
+                    <label class="form__label" for="form__localidad">Localidad</label>
+                    <input type="text" class="form__input" id="form__localidad" placeholder="Localidad" required>
 
-                        <label class="form__label" for="form__modelo">Modelo</label>
-                        <input type="text" class="form__input" id="form__modelo" placeholder="Modelo del vehículo"
-                            required>
+                    <label class="form__label" for="form__provincia">Provincia</label>
+                    <input type="text" class="form__input" id="form__provincia" placeholder="Provincia" required>
 
-                        <label class="form__label" for="form__matricula">Matrícula</label>
-                        <input type="text" class="form__input" id="form__matricula" placeholder="Matrícula" required>
+                    <label class="form__label" for="form__textarea">Descripción adicional</label>
+                    <textarea class="form__textarea" id="form__textarea" rows="5"
+                        cols="20">Escribe algo aquí...</textarea>
 
-                        <label class="form__label" for="form__numPlazas">Plazas</label>
-                        <input type="number" class="form__input" id="form__numPlazas" placeholder="Número de plazas"
-                            required>
-
-                        <input type="submit" class="form__submit" value="Registrarse">
-                    </form>
+                    <label for="photo" class="form__label">Subir foto:</label>
+                    <input type="file" id="photo" class="form__input" name="photo" accept="image/*">
+                    <button type="submit" class="form__submit"><a href="registroCoche.html">Siguiente</a></button>
                 </div>
-            </main>
+            </form>
         </div>
-    </div>
+    </main>
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook" class="redes__icono"></a>
+            <a href="https://www.twitter.com"><img src="img/twitter.png" alt="Twitter" class="redes__icono"></a>
+            <a href="https://www.youtube.com"><img src="img/youtube.png" alt="YouTube" class="redes__icono"></a>
+            <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram" class="redes__icono"></a>
+        </div>
+        <div class="aula">
+            <img src="img/logo.jpeg" alt="Logo Aula Rápida" class="aula__logo">
+            <span class="aula__nombre">Aula Rápida, 2024 &copy;</span>
+        </div>
+    </footer>
 </body>
 
 

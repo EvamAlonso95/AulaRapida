@@ -124,3 +124,113 @@ body {
 .form__submit:hover {
     background-color: #2f6d88;
 }
+
+/* ---------------------------------------------------- */
+/* MEDIA QUERY */
+@media (max-width: 768px) {   
+
+
+    /* Ajustes para pantallas muy pequeñas */
+    html {
+        font-size: 12px;
+    }
+
+    .layout__registro {
+        background-color: rgb(255, 255, 255);
+        width: 95%;
+        right: 2.5%;
+        padding: 1rem;
+        display: flex;
+    }
+
+    .layout__form {
+        padding: 0.8rem;
+        width: 100%;
+    }
+
+    .form__title {
+        font-size: 1.8rem;
+    }
+
+    form {
+        width: 100%;
+        gap: 0.6rem;
+    }
+
+    .form__input {
+        font-size: 0.8rem;
+        padding-right: 1.8rem;
+        width: 100%;
+    }
+
+    .form__icon {
+        font-size: 0.9rem;
+    }
+
+    .form__submit {
+        width: 80%;
+        height: 2.2rem;
+        font-size: 0.8rem;
+    }
+
+    .form__group {
+        max-width: 90%;
+    }
+
+    .form__group--checkbox,
+    .form__group--forgotpass,
+    .form__group--register {
+        margin-top: 0.2rem;
+        font-size: 0.7rem;
+    }
+}
+
+/* MEDIA QUERY: Pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Ajustar el tamaño general */
+    html {
+        font-size: 14px; /* Tamaño de fuente reducido ligeramente */
+    }
+
+    .layout__registro {
+        width: 85%; /* Reducir el ancho para pantallas medianas */
+        right: 7.5%; /* Centrar */
+        top: 7rem; /* Ajustar la posición superior */
+        padding: 1.5rem; /* Reducir padding */
+    }
+
+    .layout__form {
+        padding: 1rem;
+    }
+
+    .form__title {
+        font-size: 2rem; /* Reducir el tamaño del título */
+    }
+
+    form {
+        width: 85%; /* Más espacio horizontal */
+        gap: 1rem; /* Espaciado adecuado */
+    }
+
+    .form__input {
+        font-size: 0.9rem; /* Ajustar el tamaño del texto */
+        padding: 8px 1.5rem; /* Reducir padding */
+    }
+
+    .form__icon {
+        font-size: 1rem; /* Escalar el icono */
+        right: 8px; /* Ajustar posición */
+    }
+
+    .form__submit {
+        width: 60%; /* Botón más pequeño */
+        height: 2.5rem; /* Reducir altura */
+        font-size: 0.9rem; /* Reducir tamaño del texto */
+    }
+
+    .form__group {
+        max-width: 90%; /* Aumentar la disponibilidad horizontal */
+    }
+
+    
+}
