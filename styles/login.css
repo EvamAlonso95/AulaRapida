@@ -66,15 +66,19 @@ form {
     flex-direction: column;
     align-items: center;
 
+    position: relative; /* Hacer que los elementos hijos se posicionen en relación al contenedor */
+   
+
     gap: 1rem;
 
 }
 
 .form__group {
+    position: relative;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .form__group--password {
@@ -87,17 +91,9 @@ form {
 
 .form__input {
     width: 100%;
-    /* Ajusta el ancho según tus necesidades */
-    padding: 1rem;
-    /* Añade un padding para que el texto no esté pegado al borde */
     padding-right: 2.5rem;
-    /* Espacio para el icono */
-    border: 1px solid #ccc;
-    /* Estilo del borde del input */
-    border-radius: 5px;
-    /* Esquinas redondeadas */
+    padding: 10px;
     font-size: 1rem;
-    /* Ajusta el tamaño de fuente según tus necesidades */
     box-sizing: border-box;
     outline: none;
 }
@@ -105,17 +101,13 @@ form {
 .form__icon {
 
     position: absolute;
-    /* Posiciona el icono de forma absoluta */
+    right: 10px;
     top: 50%;
-    /* Centra verticalmente */
-    left: 36rem;
-    /* Ajusta la distancia desde la izquierda según sea necesario */
     transform: translateY(-50%);
-    /* Centra el icono verticalmente */
-    color: #204b5e;
-    /* Color del icono */
+    pointer-events: none;
+    font-size: 1.2rem;
+    color: #888;
     cursor: pointer;
-    /* Cambia el cursor al pasar sobre el icono */
 }
 
 .form__group--checkbox {
@@ -174,3 +166,57 @@ form {
 
 /* ---------------------------------------------------- */
 /* MEDIA QUERY */
+@media (max-width: 480px) {   
+
+
+    /* Ajustes para pantallas muy pequeñas */
+    html {
+        font-size: 12px;
+    }
+
+    .layout__login {
+        background-color: pink;
+        width: 95%;
+        right: 2.5%;
+        padding: 1rem;
+    }
+
+    .layout__form {
+        padding: 0.8rem;
+    }
+
+    .form__title {
+        font-size: 1.8rem;
+    }
+
+    form {
+        width: 100%;
+        gap: 0.6rem;
+    }
+
+    .form__input {
+        font-size: 0.8rem;
+        padding-right: 1.8rem;
+    }
+
+    .form__icon {
+        font-size: 0.9rem;
+    }
+
+    .form__submit {
+        width: 80%;
+        height: 2.2rem;
+        font-size: 0.8rem;
+    }
+
+    .form__group {
+        max-width: 90%;
+    }
+
+    .form__group--checkbox,
+    .form__group--forgotpass,
+    .form__group--register {
+        margin-top: 0.2rem;
+        font-size: 0.7rem;
+    }
+}
