@@ -1,9 +1,35 @@
-.main {
-  max-width: 1200px;
-  /* Ajusta el ancho máximo según tu diseño */
-  width: 100%;
-  margin: 0 auto;
-  /* Centrar el contenedor */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+main {
+  width: calc(75% - 4rem);
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; 
+  text-align: justify;
+  margin-top: 4rem;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid white;
+  box-shadow: 12px 0 0px -4px rgba(255, 255, 255, 0.8), -12px 0 0px -4px rgba(230, 230, 230, 0.8);
+  background-color: white;
+  top: 1rem;
+  padding: 2rem;
+  z-index: -1;
+}
+
+
+.layout {
+  height: 100%;
 }
 
 .titulo {
@@ -15,7 +41,7 @@ h2 {
   color: #e03131;
 }
 
-.semana{
+.semana {
   margin-top: 10px;
   color: white;
   background-color: #204b5e;
@@ -25,6 +51,7 @@ h2 {
 }
 
 .tamanio_pag {
+  width: 80%;
   align-items: center;
 }
 
@@ -65,9 +92,11 @@ h2 {
 .c5 {
   padding: 10px;
 }
-
+.espacio{
+  padding: 2vh;
+}
 .box2 {
-  height:  600px;
+  height: 600px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -136,13 +165,14 @@ h2 {
 }
 
 footer {
-  margin: 50px 0 0;
+  /* margin: 50px 0 0; */
   padding: 1%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid black;
   background-color: white;
+  z-index: 1;
 }
 
 .redes {
@@ -170,3 +200,4 @@ footer {
   font-weight: bold;
   font-size: medium;
 }
+
