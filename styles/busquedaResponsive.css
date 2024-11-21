@@ -23,17 +23,17 @@ body{
 
 /* Diseño General */
 .layout__busqueda {
-    width: 80%;
-    height: 100%;
+    width: calc(75% - 4rem);
+    height: auto;
     text-align: justify;
-    /* margin-top: 6rem; */
+    margin-top: 5rem;
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid white;
     box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
     background-color: white;
-    top: 1rem;
+    top: 9rem;
     padding: 2rem;
 }
 
@@ -319,19 +319,68 @@ footer {
     }
 
     .layout__busqueda {
-        background-color: rgb(83, 15, 15);
+        background-color: white;
         width: 95%;
         right: 2.5%;
         padding: 1rem;
         display: flex;
+        flex-direction: column;
     }
 
     .layout__form {
         padding: 0.8rem;
+        /* width: 100%; */
+        /* padding: 0.8rem; */
         width: 100%;
+        /* height: 50%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .cabecera {
         font-size: 1.8rem;
     }
+
+    .layout__form {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px; /* Espacio entre los elementos */
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .form input[type="submit"] {
+        grid-column: span 2; /* Ocupa ambas columnas */
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .form input {
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form input:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+
 }
