@@ -8,6 +8,10 @@ body {
     box-sizing: border-box;
 }
 
+p {
+    padding: 1%;
+}
+
 .destacados {
     margin: auto;
     margin-top: 5%;
@@ -110,19 +114,44 @@ body {
         transform-style: none;
         transition: none;
     }
-    
+
     .tarjeta:hover .tarjeta__contenido {
         transform: none;
     }
-    
+
     .tarjeta__frente {
         background-color: #9CE5EC;
         /* Color de fondo de la parte frontal */
     }
-    
+
     .tarjeta__trasera {
         transform: none;
         background-color: #204B5E;
+    }
+
+    .destacados__entradas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .destacados__descubre,
+    .destacados__confianza,
+    .destacados__elige {
+        width: 60%;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    .aboutUs {
+        margin-top: 13%;
+    }
+
+    .aboutUs__titulo {
+        padding: 3%;
+    }
+
+    .aboutUs__cuerpo {
+        padding: 2%;
     }
 
 }
