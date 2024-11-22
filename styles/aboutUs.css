@@ -28,7 +28,6 @@ p {
 .destacados__confianza__imagen,
 .destacados__elige__imagen {
     width: 15%;
-
 }
 
 .destacados__entradas {
@@ -105,28 +104,61 @@ p {
 
 /* Media Query para pantallas medianas */
 
-@media (min-width: 501px) and (max-width: 1052px) {
+@media (min-width: 597px) and (max-width: 1052px) {
+
+    .tarjeta {
+        width: 100%;
+        /* O un tamaño fijo como 300px si lo prefieres */
+        height: 1%;
+        /* Define una altura adecuada */
+        perspective: 1000px;
+    }
+
 
     .tarjeta__contenido {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        transform-style: none;
-        transition: none;
+        transform: none;
+        /* Deshabilita la rotación */
+        display: flex;
+        /* Alinea el contenido */
+        flex-direction: column;
+        /* Apila las caras */
+        height: 60%;
     }
 
     .tarjeta:hover .tarjeta__contenido {
         transform: none;
     }
 
+    .tarjeta__frente,
+    .tarjeta__trasera {
+        position: static;
+        /* Permite que sigan el flujo normal */
+        transform: none;
+        /* Desactiva las transformaciones */
+        backface-visibility: visible;
+        /* Hace ambas caras visibles */
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
     .tarjeta__frente {
-        background-color: #9CE5EC;
-        /* Color de fondo de la parte frontal */
+        background-color: white;
+        /* Conserva el estilo distintivo */
+        /* Añade espacio entre las caras */
     }
 
     .tarjeta__trasera {
-        transform: none;
         background-color: #204B5E;
+        /* Conserva el color de fondo */
+        border-radius: 10px;
+        /* Ajusta el diseño */
+    }
+
+    .destacados__descubre__imagen,
+    .destacados__confianza__imagen,
+    .destacados__elige__imagen {
+        width: 20%;
     }
 
     .destacados__entradas {
@@ -137,13 +169,88 @@ p {
     .destacados__descubre,
     .destacados__confianza,
     .destacados__elige {
-        width: 60%;
         margin: auto;
-        margin-top: 5%;
     }
 
     .aboutUs {
-        margin-top: 13%;
+        margin-top: 3%;
+    }
+
+    .aboutUs__titulo {
+        padding: 3%;
+    }
+
+    .aboutUs__cuerpo {
+        padding: 2%;
+    }
+
+}
+
+/* Media Query para pantallas pequeñas */
+
+@media (max-width: 596px) {
+
+    .tarjeta__contenido {
+        transform: none;
+        /* Deshabilita la rotación */
+        display: flex;
+        /* Alinea el contenido */
+        flex-direction: column;
+        /* Apila las caras */
+        height: 60%;
+    }
+
+    .tarjeta:hover .tarjeta__contenido {
+        transform: none;
+    }
+
+    .tarjeta__frente,
+    .tarjeta__trasera {
+        position: static;
+        /* Permite que sigan el flujo normal */
+        transform: none;
+        /* Desactiva las transformaciones */
+        backface-visibility: visible;
+        /* Hace ambas caras visibles */
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .tarjeta__frente {
+        background-color: white;
+        /* Conserva el estilo distintivo */
+        /* Añade espacio entre las caras */
+    }
+
+    .tarjeta__trasera {
+        background-color: #204B5E;
+        /* Conserva el color de fondo */
+        border-radius: 10px;
+        /* Ajusta el diseño */
+    }
+
+    .destacados__descubre__imagen,
+    .destacados__confianza__imagen,
+    .destacados__elige__imagen {
+        width: 50%;
+    }
+
+    .destacados__entradas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .destacados__descubre,
+    .destacados__confianza,
+    .destacados__elige {
+        margin: auto;
+        height: 100%;
+    }
+
+    .aboutUs {
+        margin-top: 4%;
+        width: 100%;
     }
 
     .aboutUs__titulo {
