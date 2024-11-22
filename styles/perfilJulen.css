@@ -1,25 +1,26 @@
-
+/* Estilos generales para el layout base */
 html {
   font-family: "Afacad Flux", sans-serif;
   font-size: 16px;
-  width: auto;
   background-color: #204b5e;
-  height: 100vh;
+  margin: 0;
 }
- 
+
+.layout {
+  height: 100%;
+}
+
+
 main {
   width: calc(75% - 4rem);
   height: auto;
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: start;
-  align-items: center; 
+  align-items: center;
   text-align: justify;
+  margin: auto;
   margin-top: 4rem;
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
   border: 1px solid white;
   box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
   background-color: white;
@@ -36,7 +37,7 @@ main {
 
 .perfil_header {
   width: 80%;
-  background-color:#9ce5ec;
+  background-color: #9ce5ec;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
@@ -67,7 +68,6 @@ main {
   flex-direction: column;
   display: flex;
   justify-content: flex-end;
-  /* Mover el contenido hacia la parte inferior */
   padding: 10px;
   font-size: small;
 }
@@ -85,7 +85,6 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: 1.5px solid #000000;
-  
 }
 
 .titulo_cond h2 {
@@ -132,8 +131,8 @@ hr {
   margin-bottom: 10px;
 }
 
-.perfil_cond,
-.perfil_pasj {
+.perfil_cond_julen,
+.perfil_pasj_julen {
   border: 1px solid #cccccc;
   padding: 10px;
   display: inline-block;
@@ -141,17 +140,16 @@ hr {
   height: auto;
 }
 
-/* Opcional: puedes agregar estilos diferentes para cada cuadro */
-.perfil_cond {
+.perfil_cond_julen {
   background-color: #fbea80;
 }
 
-.perfil_pasj {
+.perfil_pasj_julen {
   background-color: #7ccab9;
 }
 
-.perfil_cond,
-.perfil_pasj,
+.perfil_cond_julen,
+.perfil_pasj_julen,
 li {
   list-style: none;
 }
@@ -181,7 +179,6 @@ li {
 }
 
 footer {
-  /* margin: 50px 0 0; */
   padding: 1%;
   display: flex;
   justify-content: space-between;
@@ -216,7 +213,6 @@ footer {
   font-weight: bold;
   font-size: medium;
 }
-
 
 /* Estilos Responsivos */
 

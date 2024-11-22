@@ -1,27 +1,32 @@
+/* Estilos generales para el layout base */
 html {
   font-family: "Afacad Flux", sans-serif;
   font-size: 16px;
-  width: 100%; /* Cambié 'auto' a 100% para que ocupe todo el ancho */
   background-color: #204b5e;
-  height: 100vh;
+  margin: 0;
 }
+
+.layout {
+  height: 100%;
+}
+
 
 main {
   width: calc(75% - 4rem);
   height: auto;
   display: flex;
-  position: relative;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: justify;
+  margin: auto;
   margin-top: 4rem;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
   border: 1px solid white;
   box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
   background-color: white;
+  top: 1rem;
+  padding: 2rem;
+  z-index: -1;
 }
 
 .titulo {
@@ -68,7 +73,8 @@ main {
   width: 400px;
   flex-direction: column;
   display: flex;
-  justify-content: flex-end; /* Mover el contenido hacia la parte inferior */
+  justify-content: flex-end;
+  /* Mover el contenido hacia la parte inferior */
   padding: 10px;
   font-size: small;
 }
@@ -186,6 +192,7 @@ footer {
   align-items: center;
   border: 1px solid black;
   background-color: white;
+  z-index: 1;
 }
 
 .redes {
@@ -224,7 +231,8 @@ footer {
     justify-content: center;
   }
 
-  .flex1, .flex2 {
+  .flex1,
+  .flex2 {
     width: 100%;
     text-align: center;
   }
@@ -233,7 +241,7 @@ footer {
     width: 150px;
     height: auto;
   }
-  
+
   .titulo {
     width: 90%;
   }
@@ -266,7 +274,8 @@ footer {
     align-items: center;
   }
 
-  .flex1, .flex2 {
+  .flex1,
+  .flex2 {
     width: 100%;
     text-align: center;
   }
@@ -301,7 +310,8 @@ footer {
     width: 100%;
   }
 
-  .flex1, .flex2 {
+  .flex1,
+  .flex2 {
     width: 100%;
     padding: 10px 0;
   }
@@ -323,7 +333,7 @@ footer {
   .aula__logo {
     width: 40px;
   }
-  
+
   .aula__nombre {
     font-size: smaller;
   }
