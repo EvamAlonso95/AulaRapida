@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: "Afacad Flux", sans-serif;
     font-size: 16px;
     width: auto;
@@ -146,7 +146,7 @@ textarea {
 
 /* ---------------------------------------------------- */
 /* MEDIA QUERY */
-@media (max-width: 768px) {   
+@media (max-width: 768px) {
 
 
     /* Ajustes para pantallas muy pequeñas */
@@ -206,16 +206,23 @@ textarea {
 
 /* MEDIA QUERY: Pantallas medianas */
 @media (min-width: 769px) and (max-width: 1024px) {
+
     /* Ajustar el tamaño general */
     html {
-        font-size: 14px; /* Tamaño de fuente reducido ligeramente */
+        font-size: 14px;
+        /* Tamaño de fuente reducido ligeramente */
+        height: 100%;
     }
 
     .layout__registro {
-        width: 85%; /* Reducir el ancho para pantallas medianas */
-        right: 7.5%; /* Centrar */
-        top: 7rem; /* Ajustar la posición superior */
-        padding: 1.5rem; /* Reducir padding */
+        width: 85%;
+        /* Reducir el ancho para pantallas medianas */
+        right: 7.5%;
+        /* Centrar */
+        top: 7rem;
+        /* Ajustar la posición superior */
+        padding: 1.5rem;
+        /* Reducir padding */
     }
 
     .layout__form {
@@ -223,33 +230,44 @@ textarea {
     }
 
     .form__title {
-        font-size: 2rem; /* Reducir el tamaño del título */
+        font-size: 2rem;
+        /* Reducir el tamaño del título */
     }
 
     form {
-        width: 85%; /* Más espacio horizontal */
-        gap: 1rem; /* Espaciado adecuado */
+        width: 85%;
+        /* Más espacio horizontal */
+        gap: 1rem;
+        /* Espaciado adecuado */
     }
 
     .form__input {
-        font-size: 0.9rem; /* Ajustar el tamaño del texto */
-        padding: 8px 1.5rem; /* Reducir padding */
+        font-size: 0.9rem;
+        /* Ajustar el tamaño del texto */
+        padding: 8px 1.5rem;
+        /* Reducir padding */
     }
 
     .form__icon {
-        font-size: 1rem; /* Escalar el icono */
-        right: 8px; /* Ajustar posición */
+        font-size: 1rem;
+        /* Escalar el icono */
+        right: 8px;
+        /* Ajustar posición */
     }
 
     .form__submit {
-        width: 60%; /* Botón más pequeño */
-        height: 2.5rem; /* Reducir altura */
-        font-size: 0.9rem; /* Reducir tamaño del texto */
+        width: 60%;
+        /* Botón más pequeño */
+        height: 2.5rem;
+        /* Reducir altura */
+        font-size: 0.9rem;
+        /* Reducir tamaño del texto */
     }
 
     .form__group {
-        max-width: 90%; /* Aumentar la disponibilidad horizontal */
+        max-width: 90%;
+        /* Aumentar la disponibilidad horizontal */
     }
 
-    
+
 }

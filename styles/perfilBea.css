@@ -3,9 +3,13 @@ html {
   font-family: "Afacad Flux", sans-serif;
   font-size: 16px;
   background-color: #204b5e;
-  height: 100vh;
   margin: 0;
 }
+
+.layout {
+  height: 100%;
+}
+
 
 main {
   width: calc(75% - 4rem);
@@ -15,12 +19,14 @@ main {
   justify-content: start;
   align-items: center;
   text-align: justify;
-  margin: 4rem auto;
+  margin: auto;
+  margin-top: 4rem;
   border: 1px solid white;
   box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
   background-color: white;
   top: 1rem;
   padding: 2rem;
+  z-index: -1;
 }
 
 .titulo {
@@ -173,13 +179,13 @@ li {
 }
 
 footer {
-  margin: 50px 0 0;
   padding: 1%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 1px solid black;
   background-color: white;
+  z-index: 1;
 }
 
 .redes {
