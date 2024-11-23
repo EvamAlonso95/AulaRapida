@@ -1,17 +1,18 @@
 /* Estilos generales para el layout base */
-html {
-  font-family: "Afacad Flux", sans-serif;
-  font-size: 16px;
-  background-color: #204b5e;
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+body {
+ 
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .layout {
   height: 100%;
-}
-
-
-main {
   width: calc(75% - 4rem);
   height: auto;
   display: flex;
@@ -29,6 +30,7 @@ main {
   z-index: -1;
 }
 
+
 .titulo {
   width: 80%;
   padding: 20px;
@@ -36,7 +38,6 @@ main {
 }
 
 .perfil_header {
-  margin-top: 3rem;
   width: 80%;
   background-color: #9ce5ec;
   padding: 20px;
@@ -50,7 +51,7 @@ main {
 }
 
 .flexbox-container {
-  width: 500px;
+  width: 600px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -59,13 +60,8 @@ main {
   padding: 20px 0;
 }
 
-.flex1,
-.flex2 {
-  display: flex;
-}
-
 .flex1 {
-  flex: 1;
+  display: flex;
 }
 
 .flex2 {
@@ -74,7 +70,6 @@ main {
   flex-direction: column;
   display: flex;
   justify-content: flex-end;
-  /* Mover el contenido hacia la parte inferior */
   padding: 10px;
   font-size: small;
 }
@@ -85,13 +80,14 @@ h4 {
 
 .noNegrita {
   font-weight: normal;
+  margin-left: 6px;
 }
 
 hr {
-  width: 70%;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-bottom: 1.5px solid #000000;
+  border-bottom: 1.5px solid #204b5e50;
 }
 
 .titulo_cond h2 {
@@ -120,15 +116,27 @@ hr {
 
 .editar_datos {
   padding: 10px 10px;
-  background-color: #cccccc;
+  background-color: #9ce5ec;  
   border: none;
   cursor: pointer;
+  border-radius: 5px;   
+  margin-left: 47px;
+  transition:  0.3s ease, color 0.3s ease;
+  
+  a{
+    font-weight: 300;
+    color: black;
+  }
+}
+
+.editar_datos:hover{
+  background-color: #eca400;
 }
 
 .tipo_perfil {
   width: 100%;
-  padding: 10px;
-  background-color: #ffffff;
+  padding: 10px;  
+  font-weight: 300;
 }
 
 .seleccion_cond_pasj {
@@ -148,11 +156,15 @@ hr {
 }
 
 .perfil_cond_eva {
-  background-color: #fbea80;
+  background-color: #eca5006c;
+  border-radius: 5px;
+  border: none;
 }
 
 .perfil_pasj_eva {
-  background-color: #7ccab9;
+  background-color: #9ce5ec68;
+  border-radius: 5px;
+  border: none;
 }
 
 .perfil_cond_eva,
@@ -165,10 +177,12 @@ li {
 .vehiculos {
   width: 100%;
   padding: 10px;
+  font-weight: 300;
+  margin-top: -23px;
 }
 
 .info_personal_text {
-  width: 50%;
+  width: 100%;
 }
 
 .vehiculos ul {
@@ -180,7 +194,7 @@ li {
   font-size: small;
   padding: 10px;
   cursor: pointer;
-  color: #e03131;
+  color: #f55437;
   font-weight: bold;
   font-style: italic;
 }
@@ -190,7 +204,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
+  border-top: 1px solid #204b5e50;
   background-color: white;
   z-index: 1;
 }
@@ -226,7 +240,7 @@ footer {
 /* Para pantallas de 1024px o menos */
 @media (max-width: 1024px) {
   .flexbox-container {
-    width: 90%;
+    width: 80%;
     flex-direction: column;
     justify-content: center;
   }
@@ -240,26 +254,6 @@ footer {
   .foto_perfil img {
     width: 150px;
     height: auto;
-  }
-
-  .titulo {
-    width: 90%;
-  }
-
-  .perfil_header {
-    width: 90%;
-  }
-
-  .info_perfil {
-    align-items: center;
-  }
-
-  .info_personal_text {
-    width: 100%;
-  }
-
-  .vehiculos ul {
-    width: 100%;
   }
 }
 
@@ -293,10 +287,6 @@ footer {
   .vehiculos ul {
     width: 100%;
   }
-
-  .titulo {
-    width: 100%;
-  }
 }
 
 /* Para pantallas de 480px o menos */
@@ -310,10 +300,12 @@ footer {
     width: 100%;
   }
 
-  .flex1,
-  .flex2 {
+  .flex1 {
     width: 100%;
-    padding: 10px 0;
+  }
+
+  .flex2 {
+    padding-top: 10px;
   }
 
   .foto_perfil img {
@@ -328,13 +320,5 @@ footer {
 
   .editar_datos {
     width: 100%;
-  }
-
-  .aula__logo {
-    width: 40px;
-  }
-
-  .aula__nombre {
-    font-size: smaller;
   }
 }

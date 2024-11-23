@@ -1,17 +1,19 @@
 /* Estilos generales para el layout base */
-html {
-  font-family: "Afacad Flux", sans-serif;
-  font-size: 16px;
-  background-color: #204b5e;
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .layout {
   height: 100%;
-}
-
-
-main {
   width: calc(75% - 4rem);
   height: auto;
   display: flex;
@@ -28,6 +30,7 @@ main {
   padding: 2rem;
   z-index: -1;
 }
+
 
 .titulo {
   width: 80%;
@@ -49,7 +52,7 @@ main {
 }
 
 .flexbox-container {
-  width: 500px;
+  width: 600px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -78,13 +81,14 @@ h4 {
 
 .noNegrita {
   font-weight: normal;
+  margin-left: 6px;
 }
 
 hr {
-  width: 70%;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-bottom: 1.5px solid #000000;
+  border-bottom: 1.5px solid #204b5e50;
 }
 
 .titulo_cond h2 {
@@ -113,15 +117,27 @@ hr {
 
 .editar_datos {
   padding: 10px 10px;
-  background-color: #cccccc;
+  background-color: #9ce5ec;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
+  margin-left: 47px;
+  transition: 0.3s ease, color 0.3s ease;
+
+  a {
+    font-weight: 300;
+    color: black;
+  }
+}
+
+.editar_datos:hover {
+  background-color: #eca400;
 }
 
 .tipo_perfil {
   width: 100%;
   padding: 10px;
-  background-color: #ffffff;
+  font-weight: 300;
 }
 
 .seleccion_cond_pasj {
@@ -141,11 +157,15 @@ hr {
 }
 
 .perfil_cond_bea {
-  background-color: #fbea80;
+  background-color: #eca5006c;
+  border-radius: 5px;
+  border: none;
 }
 
 .perfil_pasj_bea {
-  background-color: #7ccab9;
+  background-color: #9ce5ec68;
+  border-radius: 5px;
+  border: none;
 }
 
 .perfil_cond_bea,
@@ -158,10 +178,12 @@ li {
 .vehiculos {
   width: 100%;
   padding: 10px;
+  font-weight: 300;
+  margin-top: -23px;
 }
 
 .info_personal_text {
-  width: 50%;
+  width: 100%;
 }
 
 .vehiculos ul {
@@ -173,7 +195,7 @@ li {
   font-size: small;
   padding: 10px;
   cursor: pointer;
-  color: #e03131;
+  color: #f55437;
   font-weight: bold;
   font-style: italic;
 }
@@ -183,7 +205,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
+  border-top: 1px solid #204b5e50;
   background-color: white;
   z-index: 1;
 }

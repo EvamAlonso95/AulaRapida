@@ -7,7 +7,9 @@
 
 
 html {
-    font-family: "Afacad Flux", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
     font-size: 16px;
     width: auto;
     background-color: #204b5e;
@@ -19,7 +21,6 @@ html {
 body {
     height: 100vh;
 }
-
 
 /* Diseño General */
 .layout__busqueda {
@@ -60,10 +61,6 @@ body {
 /* Estilos del layout del formulario */
 .layout__form {
     position: absolute;
-
-    /* transform: translate(-50%, -380%); */
-    /* width: 90%; */
-    /* height: 3rem; */
     left: 0;
     right: 0;
     display: flex;
@@ -101,15 +98,27 @@ input[type="time"] {
 }
 
 .boton {
-    padding: 8px 16px;
-    text-align: center;
+
     cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    font-weight: 700;
 }
 
 .boton:hover {
     background-color: #204b5e;
     color: white;
-    font-weight: bolder;
+    font-weight: 700;
+}
+
+span {
+    font-weight: 300;
 }
 
 /* Layout section - BUSQUEDA */
@@ -218,8 +227,8 @@ input[type="time"] {
 
 /* Asientos */
 .article__asientos {
-    /* width: 100%; */
-    height: 78%;
+    width: 55%;
+    height: 76%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -245,6 +254,8 @@ input[type="time"] {
     cursor: pointer;
     background-color: lightgreen;
     border-radius: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .asiento:hover {
@@ -276,15 +287,20 @@ input[type="time"] {
     .contratar {
         width: 5.5rem;
         text-align: center;
-        padding: 0;
-        background-color: skyblue;
+        /* padding: 0; */
+        background-color: #204b5e;
+        color: white;
         cursor: pointer;
+        border-radius: 10px;
+        padding: 8px 16px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        font-weight: 700;
     }
 
     .contratar:hover {
         background-color: #eca400;
-        color: white;
-        font-weight: bolder;
+        color: black;
+        font-weight: 700;
 
 
     }
@@ -299,7 +315,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+    border-top: 1px solid #204b5e50;
     background-color: white;
 }
 
@@ -346,7 +362,11 @@ footer {
     }
 
     .layout__section {
-        border-radius: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-top: -3rem;
     }
 
     .layout__form {
@@ -354,8 +374,8 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* margin: 20px; */
-        border-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
         width: calc(85% - 2rem);
     }
 
@@ -373,38 +393,29 @@ footer {
     .form {
         display: flex;
         flex-direction: column;
-        /* grid-template-columns: 1fr 1fr; */
 
-        /* gap: 15px;
-        /* Espacio entre los elementos */
-        /*max-width: 500px;
-        width: 100%; */
     }
 
-    .form input[type="submit"] {
-        grid-column: span 2;
-        /* Ocupa ambas columnas */
-        background-color: #007bff;
+    .boton {
+
+        background-color: #204b5e;
         color: white;
         border: none;
-        padding: 10px;
-        font-size: 16px;
+        border-radius: 10px;
+        padding: 10px 20px;
         cursor: pointer;
-        border-radius: 5px;
-    }
-
-    .form input {
-        padding: 10px;
         font-size: 14px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
         width: 100%;
-        box-sizing: border-box;
     }
 
-    .form input:focus {
-        border-color: #007bff;
-        outline: none;
+
+
+    .boton:hover {
+        background-color: #eca400;
+        color: black;
+        font-weight: bold;
+        border: 1px solid black;
     }
 
 
@@ -417,7 +428,7 @@ footer {
     .article_infoViaje {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         padding: 0 8px;
         align-items: center;
         width: 100%;
@@ -427,6 +438,7 @@ footer {
 
     .article__asientos {
         height: 100px;
+        width: 190px;
     }
 
     .article__datos {

@@ -2,30 +2,31 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
-    font-family: "Afacad Flux", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
     font-size: 16px;
     width: auto;
     background-color: #204b5e;
-    /* height: 100vh; */
-    /* position: relative; */
+    height: 100vh;
+    position: relative;
 }
 
 body {
-
     font-size: 1rem;
-    height: 100%;
+    height: 100vh;
 }
-
 /* ---------------------------------------------------- */
 /* MAIN */
 
 .layout__registro {
     /* position: absolute; */
     width: calc(75% - 4rem);
-    height: auto;
+    height: 100%;
     text-align: justify;
     right: 13%;
     /* top: -8%; */
@@ -37,7 +38,6 @@ body {
     border-radius: 2rem;
     top: 9rem;
     padding: 2rem;
-
 }
 
 .layout__form {
@@ -131,7 +131,9 @@ body {
 }
 
 .form__submit:hover {
-    background-color: #2f6d88;
+    background-color: #eca400;
+    color: black;
+    font-weight: bold;
 }
 
 /* ---------------------------------------------------- */

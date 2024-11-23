@@ -7,7 +7,9 @@
 
 
 html {
-    font-family: "Afacad Flux", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
     font-size: 16px;
     width: auto;
     background-color: #204b5e;
@@ -16,7 +18,7 @@ html {
 
 }
 
-body{
+body {
     height: 100vh;
 }
 
@@ -24,16 +26,11 @@ body{
 /* MAIN */
 
 .layout__contrasenia {
-    /* position: absolute; */
+
     width: calc(75% - 4rem);
     height: 100%;
-  
     right: 13%;
-    /* top: -8%; */
-    /* left: 50%; */
     margin: 6rem auto;
-    border: 1px solid white;
-    /* box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8); */
     background-color: white;
     border-radius: 2rem;
     top: 9rem;
@@ -50,7 +47,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    /* gap: 2rem; */
 }
 
 .form__title {
@@ -66,8 +63,8 @@ form {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
-    position: relative; /* Hacer que los elementos hijos se posicionen en relación al contenedor */
+    position: relative;
+    /* Hacer que los elementos hijos se posicionen en relación al contenedor */
     gap: 1rem;
 }
 
@@ -77,6 +74,12 @@ form {
     max-width: 400px;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+p {
+
+    font-weight: 300;
+
 }
 
 
@@ -101,7 +104,7 @@ form {
 }
 
 .form__submit {
-    width: 50%;
+    width: 400px;
     height: 3rem;
     border-radius: 5px;
     /* Esquinas redondeadas */
@@ -119,12 +122,14 @@ form {
 }
 
 .form__submit:hover {
-    background-color: #2f6d88;
+    background-color: #eca400;
+    color: black;
+    font-weight: bold;
 }
 
 /* ---------------------------------------------------- */
 /* MEDIA QUERY */
-@media (max-width: 768px) {   
+@media (max-width: 768px) {
 
 
     .layout__login {
@@ -177,16 +182,22 @@ form {
 
 /* MEDIA QUERY: Pantallas medianas */
 @media (min-width: 769px) and (max-width: 1024px) {
+
     /* Ajustar el tamaño general */
     html {
-        font-size: 14px; /* Tamaño de fuente reducido ligeramente */
+        font-size: 14px;
+        /* Tamaño de fuente reducido ligeramente */
     }
 
     .layout__login {
-        width: 85%; /* Reducir el ancho para pantallas medianas */
-        right: 7.5%; /* Centrar */
-        top: 7rem; /* Ajustar la posición superior */
-        padding: 1.5rem; /* Reducir padding */
+        width: 85%;
+        /* Reducir el ancho para pantallas medianas */
+        right: 7.5%;
+        /* Centrar */
+        top: 7rem;
+        /* Ajustar la posición superior */
+        padding: 1.5rem;
+        /* Reducir padding */
     }
 
     .layout__form {
@@ -194,38 +205,51 @@ form {
     }
 
     .form__title {
-        font-size: 2rem; /* Reducir el tamaño del título */
+        font-size: 2rem;
+        /* Reducir el tamaño del título */
     }
 
     form {
-        width: 85%; /* Más espacio horizontal */
-        gap: 1rem; /* Espaciado adecuado */
+        width: 85%;
+        /* Más espacio horizontal */
+        gap: 1rem;
+        /* Espaciado adecuado */
     }
 
     .form__input {
-        font-size: 0.9rem; /* Ajustar el tamaño del texto */
-        padding: 8px 1.5rem; /* Reducir padding */
+        font-size: 0.9rem;
+        /* Ajustar el tamaño del texto */
+        padding: 8px 1.5rem;
+        /* Reducir padding */
     }
 
     .form__icon {
-        font-size: 1rem; /* Escalar el icono */
-        right: 8px; /* Ajustar posición */
+        font-size: 1rem;
+        /* Escalar el icono */
+        right: 8px;
+        /* Ajustar posición */
     }
 
     .form__submit {
-        width: 60%; /* Botón más pequeño */
-        height: 2.5rem; /* Reducir altura */
-        font-size: 0.9rem; /* Reducir tamaño del texto */
+        width: 60%;
+        /* Botón más pequeño */
+        height: 2.5rem;
+        /* Reducir altura */
+        font-size: 0.9rem;
+        /* Reducir tamaño del texto */
     }
 
     .form__group {
-        max-width: 90%; /* Aumentar la disponibilidad horizontal */
+        max-width: 90%;
+        /* Aumentar la disponibilidad horizontal */
     }
 
     .form__group--checkbox,
     .form__group--forgotpass,
     .form__group--register {
-        margin-top: 0.5rem; /* Separación más ajustada */
-        font-size: 0.75rem; /* Texto más pequeño */
+        margin-top: 0.5rem;
+        /* Separación más ajustada */
+        font-size: 0.75rem;
+        /* Texto más pequeño */
     }
 }

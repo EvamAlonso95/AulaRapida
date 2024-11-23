@@ -4,7 +4,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+    border-top: 1px solid #204b5e50;
     background-color: white;
 }
 

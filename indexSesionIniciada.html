@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula rápida</title>
     <script src="https://kit.fontawesome.com/28e986ba1e.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./img/logoAulaRapida-removebg-preview.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logoAulaRapida-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/menu.css">
 </head>
 
 <body>
@@ -68,74 +68,82 @@
         </nav>
     </header>
     <main class="layout">
-
         <h2 class="buscar__titulo">¡Encuentra tu viaje!</h2>
         <section class="buscar__encabezado">
             <!-- <img class="buscar__imagen" src="../img/buscar_imagen.jpeg" alt="Aula Rápida. Conectamos estudiantes"> -->
             <div class="buscar__formulario">
                 <form>
-                    <label>Desde: <input type="text"></label>
-                    <label>Hasta: <input type="text"></label>
-                    <label>Día: <input type="date"></label>
-                    <label>Hora: <input type="datetime-local"></label>
-                    <label>Pasajeros: <input type="number" min="1"></label>
-                    <button type="submit" class="buscar__submit">Buscar</button>
+                    <input type="text" name="desdeBuscar" id="desdeBuscar" placeholder=" Desde" required>
+                    <input type="text" name="hastaBuscar" id="hastaBuscar" placeholder=" Hasta" required>
+                    <input type="date" name="fechaBuscar" id="fechaBuscar" required>
+                    <input type="time" name="horaBuscar" id="horaBuscar" required>
+                    <input type="number" name="pasajerosBuscar" id="pasajerosBuscar" placeholder=" Pasajeros" min="1" required>
+                    <button type="submit" class="buscar__submit"><b>Buscar</b></button>
                 </form>
             </div>
         </section>
-
-
         <section class="publicar__encabezado">
             <h2 class="publicar__titulo">¡Publica tu viaje y comparte el trayecto!</h2>
             <div class="publicar__formulario">
                 <form>
-                    <label>Desde: <input type="text"></label>
-                    <label>Hasta: <input type="text"></label>
-                    <label>Día: <input type="date"></label>
-                    <label>Hora: <input type="datetime-local"></label>
-                    <label>Pasajeros: <input type="number" min="1"></label>
-                    <button type="submit" class="buscar__submit">Publicar</button>
+                    <input type="text" name="desdePublicar" id="desdePublicar" placeholder=" Desde" required>
+                    <input type="text" name="hastaPublicar" id="hastaPublicar" placeholder=" Hasta" required>
+                    <input type="date" name="fechaPublicar" id="fechaPublicar" required>
+                    <input type="time" name="horaPublicar" id="horaPublicar" required>
+                    <input type="number" name="pasajerosPublicar" id="pasajerosPublicar" placeholder=" Pasajeros" min="1" required>
+                    <button type="submit" class="buscar__submit"><b>Buscar</b></button>
                 </form>
             </div>
         </section>
-
         <section class="destinos__encabezado">
             <h2 class="destinos__titulo">Destinos populares</h2>
             <div class="destinos__opciones">
-                <div class="destinos__item">
-                    <img src="../img/barcelona.jpg" alt="Barcelona" class="destinos__imagen">
-                    <div class="destinos__detalles">
-                        <p class="destinos__origen">Madrid - Barcelona</p>
-                        <p class="destinos__precio">Desde 6,99€</p>
+                <div class="destinos__item tarjeta">
+                    <img src="../img/colmenarViejo.jpg" alt="Colmenar Viejo" class="destinos__imagen">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__frente">
+                            <p class="destinos__origen">Colmenar Viejo - Tres Cantos</p>
+                        </div>
+                        <div class="tarjeta__trasera">
+                            <p class="destinos__precio">Desde 6,99€</p>
+                        </div>
                     </div>
                 </div>
-                <div class="destinos__item">
-                    <img src="../img/valencia.webp" alt="Valencia" class="destinos__imagen">
-                    <div class="destinos__detalles">
-                        <p>Madrid - Valencia</p>
-                        <p class="destinos__precio">Desde 6,99€</p>
+                <div class="destinos__item tarjeta">
+                    <img src="../img/tresCantos.jpg" alt="Tres Cantos" class="destinos__imagen">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__frente">
+                            <p class="destinos__origen">Tres Cantos - Colmenar Viejo</p>
+                        </div>
+                        <div class="tarjeta__trasera">
+                            <p class="destinos__precio">Desde 6,99€</p>
+                        </div>
                     </div>
                 </div>
-                <div class="destinos__item">
-                    <img src="../img/granada.jpg" alt="Granada" class="destinos__imagen">
-                    <div class="destinos__detalles">
-                        <p class="destinos__origen">Málaga - Granada</p>
-                        <p class="destinos__precio">Desde 6,99€</p>
+                <div class="destinos__item tarjeta">
+                    <img src="../img/alcobendas.jpg" alt="Alcobendas" class="destinos__imagen">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__frente">
+                            <p class="destinos__origen">Alcobendas - Tres Cantos</p>
+                        </div>
+                        <div class="tarjeta__trasera">
+                            <p class="destinos__precio">Desde 6,99€</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        
     </main>
     <footer>
         <div class="redes">
-            <a href="https://www.facebook.com"><img src="../img/facebook.png" alt="Facebook" class="redes__icono"></a>
-            <a href="https://www.twitter.com"><img src="../img/twitter.png" alt="Twitter" class="redes__icono"></a>
-            <a href="https://www.youtube.com"><img src="../img/youtube.png" alt="YouTube" class="redes__icono"></a>
-            <a href="https://www.instagram.com"><img src="../img/instagram.png" alt="Instagram"
-                    class="redes__icono"></a>
+            <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook" class="redes__icono"></a>
+            <a href="https://www.twitter.com"><img src="img/twitter.png" alt="Twitter" class="redes__icono"></a>
+            <a href="https://www.youtube.com"><img src="img/youtube.png" alt="YouTube" class="redes__icono"></a>
+            <a href="https://www.instagram.com"><img src="img/instagram.png" alt="Instagram" class="redes__icono"></a>
         </div>
         <div class="aula">
-            <img src="../img/logo.jpeg" alt="Logo Aula Rápida" class="aula__logo">
+            <img src="img/logo.jpeg" alt="Logo Aula Rápida" class="aula__logo">
             <span class="aula__nombre">Aula Rápida, 2024 &copy;</span>
         </div>
     </footer>

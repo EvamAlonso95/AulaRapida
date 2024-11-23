@@ -7,7 +7,9 @@
 
 
 html {
-    font-family: "Afacad Flux", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
     font-size: 16px;
     width: auto;
     background-color: #204b5e;
@@ -124,6 +126,10 @@ form {
     margin-top: -2rem;
 
 }
+.form__label{
+    font-weight: 300;
+}
+
 
 .form__group--forgotpass {
     display: inline;
@@ -138,13 +144,13 @@ form {
 
 .form__link {
     color: #204b5e;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 0.8rem;
 }
 
 .form__link:hover {
     color: #204b5e;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 0.8rem;
     text-decoration: underline;
 }
@@ -168,7 +174,9 @@ form {
 }
 
 .form__submit:hover {
-    background-color: #2f6d88;
+    background-color: #eca400;
+    color: black;
+    font-weight: bold;
 }
 
 
@@ -189,6 +197,7 @@ form {
 
     .layout__form {
         padding: 0.8rem;
+        margin: 0 auto;
     }
 
     .form__title {
@@ -243,6 +252,8 @@ form {
 
     .layout__form {
         padding: 1rem;
+       
+        
     }
 
     .form__title {

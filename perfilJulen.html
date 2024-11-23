@@ -11,7 +11,10 @@
   <script src="https://kit.fontawesome.com/28e986ba1e.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/menu.css">
   <link rel="stylesheet" href="styles/menu.css">
   <link rel="stylesheet" href="styles/perfiljulen.css" />
   <script src="js/perfiljulen.js" defer></script>
@@ -69,7 +72,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="layout">
     <section class="perfil_header">
       <div class="titulo_cond">
         <h2>AWESOME DRIVER</h2>
@@ -86,22 +89,23 @@
           </div>
           <div class="flex2">
             <div class="texto">
-              <h4>Nombre:<a class="noNegrita"> Julen Alonso</a></h4>
-              <h4>Edad: <a class="noNegrita"> 29</a></h4>
-              <h4>Ciudad: <a class="noNegrita"> Madrid. Colmenar Viejo</a></h4>
-              <h4>Genero: <a class="noNegrita"> Masculino</a></h4>
-              <h4>Tipo de viajero:<a class="noNegrita"> Conductor y pasajero</a></h4>
+              <h4>Nombre:<span class="noNegrita"> Julen Alonso</a></h4>
+              <h4>Edad: <span class="noNegrita"> 29</a></h4>
+              <h4>Ciudad: <span class="noNegrita"> Madrid. Colmenar Viejo</a></h4>
+              <h4>Genero: <span class="noNegrita"> Masculino</a></h4>
+              <h4>Tipo de viajero:<span class="noNegrita"> Conductor y pasajero</a></h4>
               <h4>Valoración: <span class="valoracion">★★★★★</span>
             </div>
           </div>
         </div>
-        <hr />
+
         <button class="editar_datos"><a href="modificarDatos.html">Editar datos personales</a></button>
         <hr />
       </section>
-
       <section class="tipo_perfil">
+        <!-- <h4>Mis perfiles</h4> -->
         <div class="seleccion_cond_pasj">
+
           <label>
             <input type="radio" name="perfil" id="cond-julen" checked /> Conductor
           </label>
@@ -109,8 +113,6 @@
             <input type="radio" name="perfil" id="pasj-julen" /> Pasajero
           </label>
         </div>
-
-        <!-- Cuadro para el perfil de Conductor -->
         <div class="perfil_cond_julen">
           <ul>
             <li>Perfil verificado</li>
@@ -121,8 +123,11 @@
           </ul>
         </div>
 
+        <!-- Cuadro para el perfil de Conductor -->
+
         <!-- Cuadro para el perfil de Pasajero -->
         <div class="perfil_pasj_julen" style="display: none">
+
           <ul>
             <li>Muy hablador</li>
             <li>Puntual</li>
