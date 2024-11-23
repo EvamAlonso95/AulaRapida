@@ -148,12 +148,6 @@ textarea {
 /* MEDIA QUERY */
 @media (max-width: 768px) {
 
-
-    /* Ajustes para pantallas muy pequeñas */
-    html {
-        font-size: 12px;
-    }
-
     .layout__registro {
         background-color: rgb(255, 255, 255);
         width: 95%;

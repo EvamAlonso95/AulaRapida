@@ -173,7 +173,7 @@ a:hover {
 /* MEDIA QUERY */
 /* Dispositivos muy pequeños */
 @media (min-width:768px) {
-    .menu__hamburguesa{
+    .menu__hamburguesa {
         display: none;
     }
 }
@@ -186,6 +186,10 @@ a:hover {
         display: flex;
         justify-content: space-between;
 
+    }
+
+    .header__menu-title .header__menu-link h1 {
+        font-size: 18px;
     }
 
     .menu__enlaces {
@@ -234,6 +238,7 @@ a:hover {
 
         a {
             color: white;
+            font-size: 16px;
         }
 
     }
@@ -250,11 +255,6 @@ a:hover {
     .header__menu-dropdown:hover .dropdown__menu {
         width: 100%;
 
-    }
-
-    .menu__enlaces .header__menu-item-enlace .header__menu-link {
-        font-size: 1.2rem;
-        /* Tamaño adaptado para pantallas pequeñas */
     }
 
 }

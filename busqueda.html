@@ -78,341 +78,240 @@
             <img src="./img/4164_coche.jpeg" alt="Imagen coche">
         </div>
 
-        <div class="layout__form">
-            <form action="#" class="form">
-                <input type="text" name="desde" id="desde" placeholder="Desde" required>
-                <input type="text" name="hasta" id="hasta" placeholder="Hasta" required>
-                <input type="date" name="dia" id="dia" required>
-                <input type="time" name="hora" id="hora" required>
-                <input type="number" name="pasajeros" id="pasajeros" placeholder="Pasajeros" min="1" required>
-                <input type="submit" value="Buscar" class="boton">
-            </form>
+        <div class="contenedor__buscador">
+            <div class="layout__form">
+                <form action="#" class="form">
+                    <input type="text" name="desde" id="desde" placeholder="Desde" required>
+                    <input type="text" name="hasta" id="hasta" placeholder="Hasta" required>
+                    <input type="datetime-local" name="dia" id="dia" required>
+
+                    <input type="number" name="pasajeros" id="pasajeros" placeholder="Pasajeros" min="1" required>
+                    <input type="submit" value="Buscar" class="boton">
+                </form>
+            </div>
+
+            <section class="layout__section">
+                <article class="section__article">
+                    <div class="article__datos">
+                        <div class="datos__destinos">
+                            <div class="destinos__origen">
+                                <span class="destinos">Madrid</span>
+                                <span class="tiempo"><i class="fa-solid fa-arrow-right"></i></span>
+                                <span class="destinos">Barcelona</span>
+                            </div>
+                            <div class="destinos__destino">
+                                <span>12:00 P.M.</span>
+                                <span>-</span>
+                                <span>19:00 P.M.</span>
+                            </div>
+                        </div>
+
+                        <div class="datos__detalles">
+                            <i class="fa-regular fa-user"></i>
+                            <span>Julen</span>
+                            <i class="fa-regular fa-star"></i>
+                            <span>5,0</span>
+                            <i class="fa-solid fa-people-group"></i>
+                            <span>Max. 3</span>
+                        </div>
+                    </div>
+
+                    <div class="article_infoViaje">
+                        <div class="article__asientos">
+
+                            <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
+
+                        </div>
+
+                        <div class="article__precio">
+                            <span class="precio">38,90€</span>
+                            <input type="button" class="contratar" value="Contratar">
+                        </div>
+
+                    </div>
+                </article>
+                <article class="section__article">
+                    <div class="article__datos">
+                        <div class="datos__destinos">
+                            <div class="destinos__origen">
+                                <span class="destinos">Madrid</span>
+                                <span class="tiempo"><i class="fa-solid fa-arrow-right"></i></span>
+                                <span class="destinos">Barcelona</span>
+                            </div>
+                            <div class="destinos__destino">
+                                <span>12:00 P.M.</span>
+                                <span>-</span>
+                                <span>19:00 P.M.</span>
+                            </div>
+                        </div>
+
+                        <div class="datos__detalles">
+                            <i class="fa-regular fa-user"></i>
+                            <span>Julen</span>
+                            <i class="fa-regular fa-star"></i>
+                            <span>5,0</span>
+                            <i class="fa-solid fa-people-group"></i>
+                            <span>Max. 3</span>
+                        </div>
+                    </div>
+
+                    <div class="article_infoViaje">
+                        <div class="article__asientos">
+
+                            <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
+
+                        </div>
+
+                        <div class="article__precio">
+                            <span class="precio">38,90€</span>
+                            <input type="button" class="contratar" value="Contratar">
+                        </div>
+
+                    </div>
+                </article>
+                <article class="section__article">
+                    <div class="article__datos">
+                        <div class="datos__destinos">
+                            <div class="destinos__origen">
+                                <span class="destinos">Madrid</span>
+                                <span class="tiempo"><i class="fa-solid fa-arrow-right"></i></span>
+                                <span class="destinos">Barcelona</span>
+                            </div>
+                            <div class="destinos__destino">
+                                <span>12:00 P.M.</span>
+                                <span>-</span>
+                                <span>19:00 P.M.</span>
+                            </div>
+                        </div>
+
+                        <div class="datos__detalles">
+                            <i class="fa-regular fa-user"></i>
+                            <span>Julen</span>
+                            <i class="fa-regular fa-star"></i>
+                            <span>5,0</span>
+                            <i class="fa-solid fa-people-group"></i>
+                            <span>Max. 3</span>
+                        </div>
+                    </div>
+
+                    <div class="article_infoViaje">
+                        <div class="article__asientos">
+
+                            <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
+
+                        </div>
+
+                        <div class="article__precio">
+                            <span class="precio">38,90€</span>
+                            <input type="button" class="contratar" value="Contratar">
+                        </div>
+
+                    </div>
+                </article>
+                <article class="section__article">
+                    <div class="article__datos">
+                        <div class="datos__destinos">
+                            <div class="destinos__origen">
+                                <span class="destinos">Madrid</span>
+                                <span class="tiempo"><i class="fa-solid fa-arrow-right"></i></span>
+                                <span class="destinos">Barcelona</span>
+                            </div>
+                            <div class="destinos__destino">
+                                <span>12:00 P.M.</span>
+                                <span>-</span>
+                                <span>19:00 P.M.</span>
+                            </div>
+                        </div>
+
+                        <div class="datos__detalles">
+                            <i class="fa-regular fa-user"></i>
+                            <span>Julen</span>
+                            <i class="fa-regular fa-star"></i>
+                            <span>5,0</span>
+                            <i class="fa-solid fa-people-group"></i>
+                            <span>Max. 3</span>
+                        </div>
+                    </div>
+
+                    <div class="article_infoViaje">
+                        <div class="article__asientos">
+
+                            <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
+
+                        </div>
+
+                        <div class="article__precio">
+                            <span class="precio">38,90€</span>
+                            <input type="button" class="contratar" value="Contratar">
+                        </div>
+
+                    </div>
+                </article>
+                <article class="section__article">
+                    <div class="article__datos">
+                        <div class="datos__destinos">
+                            <div class="destinos__origen">
+                                <span class="destinos">Madrid</span>
+                                <span class="tiempo"><i class="fa-solid fa-arrow-right"></i></span>
+                                <span class="destinos">Barcelona</span>
+                            </div>
+                            <div class="destinos__destino">
+                                <span>12:00 P.M.</span>
+                                <span>-</span>
+                                <span>19:00 P.M.</span>
+                            </div>
+                        </div>
+
+                        <div class="datos__detalles">
+                            <i class="fa-regular fa-user"></i>
+                            <span>Julen</span>
+                            <i class="fa-regular fa-star"></i>
+                            <span>5,0</span>
+                            <i class="fa-solid fa-people-group"></i>
+                            <span>Max. 3</span>
+                        </div>
+                    </div>
+
+                    <div class="article_infoViaje">
+                        <div class="article__asientos">
+
+                            <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
+                            <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
+
+                        </div>
+
+                        <div class="article__precio">
+                            <span class="precio">38,90€</span>
+                            <input type="button" class="contratar" value="Contratar">
+                        </div>
+
+                    </div>
+                </article>
+
+
+            </section>
+
         </div>
 
-        <section class="layout__section">
-            <article class="section__article">
-                <div class="article__datos">
-                    <div class="datos__destinos">
-                        <div class="destinos__origen">
-                            <span class="destinos">Madrid</span>
-                            <span class="tiempo"><i class="fa-solid fa-arrow-right"></i></span>
-                            <span class="destinos">Barcelona</span>
-                        </div>
-                        <div class="destinos__destino">
-                            <span>12:00 P.M.</span>
-                            <span>-</span>
-                            <span>19:00 P.M.</span>
-                        </div>
-                    </div>
-
-                    <div class="datos__detalles">
-                        <i class="fa-regular fa-user"></i>
-                        <span>Julen</span>
-                        <i class="fa-regular fa-star"></i>
-                        <span>5,0</span>
-                        <i class="fa-solid fa-people-group"></i>
-                        <span>Max. 3</span>
-                    </div>
-                </div>
-
-                <div class="article__asientos">
-
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-
-                </div>
-
-                <div class="article__precio">
-                    <span class="precio">38,90€</span>
-                    <input type="button" class="contratar" value="Contratar">
-                </div>
-            </article>
-            <article class="section__article">
-                <div class="article__datos">
-                    <div class="datos__destinos">
-                        <div class="destinos__origen">
-                            <span class="destinos">Madrid</span>
-                            <span class="tiempo"><i class="fa-solid fa-arrow-right"></i></span>
-                            <span class="destinos">Barcelona</span>
-                        </div>
-                        <div class="destinos__destino">
-                            <span>12:00 P.M.</span>
-                            <span>-</span>
-                            <span>19:00 P.M.</span>
-                        </div>
-                    </div>
-
-                    <div class="datos__detalles">
-                        <i class="fa-regular fa-user"></i>
-                        <span>Julen</span>
-                        <i class="fa-regular fa-star"></i>
-                        <span>5,0</span>
-                        <i class="fa-solid fa-people-group"></i>
-                        <span>Max. 3</span>
-                    </div>
-                </div>
-
-                <div class="article__asientos">
-
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-
-                </div>
-
-                <div class="article__precio">
-                    <span class="precio">38,90€</span>
-                    <input type="button" class="contratar" value="Contratar">
-                </div>
-            </article>
-            <article class="section__article">
-                <div class="article__datos">
-                    <div class="datos__destinos">
-                        <div class="destinos__origen">
-                            <span class="destinos">Madrid</span>
-                            <span class="tiempo"><i class="fa-solid fa-arrow-right"></i></span>
-                            <span class="destinos">Barcelona</span>
-                        </div>
-                        <div class="destinos__destino">
-                            <span>12:00 P.M.</span>
-                            <span>-</span>
-                            <span>19:00 P.M.</span>
-                        </div>
-                    </div>
-
-                    <div class="datos__detalles">
-                        <i class="fa-regular fa-user"></i>
-                        <span>Julen</span>
-                        <i class="fa-regular fa-star"></i>
-                        <span>5,0</span>
-                        <i class="fa-solid fa-people-group"></i>
-                        <span>Max. 3</span>
-                    </div>
-                </div>
-
-                <div class="article__asientos">
-
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-
-                </div>
-
-                <div class="article__precio">
-                    <span class="precio">38,90€</span>
-                    <input type="button" class="contratar" value="Contratar">
-                </div>
-            </article>
-            <article class="section__article">
-                <div class="article__datos">
-                    <div class="datos__destinos">
-                        <div class="destinos__origen">
-                            <span class="destinos">Madrid</span>
-                            <span class="tiempo"><i class="fa-solid fa-arrow-right"></i></span>
-                            <span class="destinos">Barcelona</span>
-                        </div>
-                        <div class="destinos__destino">
-                            <span>12:00 P.M.</span>
-                            <span>-</span>
-                            <span>19:00 P.M.</span>
-                        </div>
-                    </div>
-
-                    <div class="datos__detalles">
-                        <i class="fa-regular fa-user"></i>
-                        <span>Julen</span>
-                        <i class="fa-regular fa-star"></i>
-                        <span>5,0</span>
-                        <i class="fa-solid fa-people-group"></i>
-                        <span>Max. 3</span>
-                    </div>
-                </div>
-
-                <div class="article__asientos">
-
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-
-                </div>
-
-                <div class="article__precio">
-                    <span class="precio">38,90€</span>
-                    <input type="button" class="contratar" value="Contratar">
-                </div>
-            </article>
-            <article class="section__article">
-                <div class="article__datos">
-                    <div class="datos__destinos">
-                        <div class="destinos__origen">
-                            <span class="destinos">Madrid</span>
-                            <span class="tiempo"><i class="fa-solid fa-arrow-right"></i></span>
-                            <span class="destinos">Barcelona</span>
-                        </div>
-                        <div class="destinos__destino">
-                            <span>12:00 P.M.</span>
-                            <span>-</span>
-                            <span>19:00 P.M.</span>
-                        </div>
-                    </div>
-
-                    <div class="datos__detalles">
-                        <i class="fa-regular fa-user"></i>
-                        <span>Julen</span>
-                        <i class="fa-regular fa-star"></i>
-                        <span>5,0</span>
-                        <i class="fa-solid fa-people-group"></i>
-                        <span>Max. 3</span>
-                    </div>
-                </div>
-
-                <div class="article__asientos">
-
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-
-                </div>
-
-                <div class="article__precio">
-                    <span class="precio">38,90€</span>
-                    <input type="button" class="contratar" value="Contratar">
-                </div>
-            </article>
-            <article class="section__article">
-                <div class="article__datos">
-                    <div class="datos__destinos">
-                        <div class="destinos__origen">
-                            <span class="destinos">Madrid</span>
-                            <span class="tiempo"><i class="fa-solid fa-arrow-right"></i></span>
-                            <span class="destinos">Barcelona</span>
-                        </div>
-                        <div class="destinos__destino">
-                            <span>12:00 P.M.</span>
-                            <span>-</span>
-                            <span>19:00 P.M.</span>
-                        </div>
-                    </div>
-
-                    <div class="datos__detalles">
-                        <i class="fa-regular fa-user"></i>
-                        <span>Julen</span>
-                        <i class="fa-regular fa-star"></i>
-                        <span>5,0</span>
-                        <i class="fa-solid fa-people-group"></i>
-                        <span>Max. 3</span>
-                    </div>
-                </div>
-
-                <div class="article__asientos">
-
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-
-                </div>
-
-                <div class="article__precio">
-                    <span class="precio">38,90€</span>
-                    <input type="button" class="contratar" value="Contratar">
-                </div>
-            </article>
-            <article class="section__article">
-                <div class="article__datos">
-                    <div class="datos__destinos">
-                        <div class="destinos__origen">
-                            <span class="destinos">Madrid</span>
-                            <span class="tiempo"><i class="fa-solid fa-arrow-right"></i></span>
-                            <span class="destinos">Barcelona</span>
-                        </div>
-                        <div class="destinos__destino">
-                            <span>12:00 P.M.</span>
-                            <span>-</span>
-                            <span>19:00 P.M.</span>
-                        </div>
-                    </div>
-
-                    <div class="datos__detalles">
-                        <i class="fa-regular fa-user"></i>
-                        <span>Julen</span>
-                        <i class="fa-regular fa-star"></i>
-                        <span>5,0</span>
-                        <i class="fa-solid fa-people-group"></i>
-                        <span>Max. 3</span>
-                    </div>
-                </div>
-
-                <div class="article__asientos">
-
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-
-                </div>
-
-                <div class="article__precio">
-                    <span class="precio">38,90€</span>
-                    <input type="button" class="contratar" value="Contratar">
-                </div>
-            </article>
-            <article class="section__article">
-                <div class="article__datos">
-                    <div class="datos__destinos">
-                        <div class="destinos__origen">
-                            <span class="destinos">Madrid</span>
-                            <span class="tiempo"><i class="fa-solid fa-arrow-right"></i></span>
-                            <span class="destinos">Barcelona</span>
-                        </div>
-                        <div class="destinos__destino">
-                            <span>12:00 P.M.</span>
-                            <span>-</span>
-                            <span>19:00 P.M.</span>
-                        </div>
-                    </div>
-
-                    <div class="datos__detalles">
-                        <i class="fa-regular fa-user"></i>
-                        <span>Julen</span>
-                        <i class="fa-regular fa-star"></i>
-                        <span>5,0</span>
-                        <i class="fa-solid fa-people-group"></i>
-                        <span>Max. 3</span>
-                    </div>
-                </div>
-
-                <div class="article__asientos">
-
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-                    <div class="asiento asiento--ocupado"><i class="fa-regular fa-user"></i></div>
-
-                </div>
-
-                <div class="article__precio">
-                    <span class="precio">38,90€</span>
-                    <input type="button" class="contratar" value="Contratar">
-                </div>
-            </article>
-
-
-        </section>
     </main>
 
     <footer>
