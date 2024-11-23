@@ -28,12 +28,12 @@ body {
 }
 
 .buscar__encabezado {
-    background-image: url('../img/buscar_imagen.jpeg');
+    background-image: url('../img/index.webp');
     background-size: cover;
-    background-position: center;
+    background-position: center top; /* Ajusta para mostrar más de la parte superior */
     min-height: 300px;
-    margin-top: 3%;
     width: 90%;
+    margin-top: 2%;
 }
 
 .buscar__formulario {
@@ -245,7 +245,6 @@ footer {
         position: relative;
         transform-style: preserve-3d;
         transition: transform 0.6s;
-        
     }
 
     .tarjeta:hover .tarjeta__contenido {
@@ -289,6 +288,10 @@ footer {
 
 @media (min-width: 501px) and (max-width: 942px) {
 
+    .buscar__formulario {
+        background-color: rgb(236,164,0,0.4);
+    }
+    
     form {
         display: flex;
         flex-direction: column;
@@ -296,17 +299,15 @@ footer {
 
     input {
         margin: auto;
-        margin-top: 2%;
         width: 90%;
         border: none;
         border-radius: 10px;
-        padding: 2%;
     }
 
     .buscar__submit {
         width: 50%;
         margin: auto;
-        margin-top: 5%;
+        margin-top: 3%;
     }
 
     .destinos__opciones {

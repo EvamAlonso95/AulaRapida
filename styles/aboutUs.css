@@ -15,6 +15,13 @@ p {
     font-weight: 300;
 }
 
+.buscar__imagen {
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    height: 50%;
+}
+
 .destacados {
     margin: auto;
     margin-top: 5%;
