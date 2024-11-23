@@ -1,13 +1,16 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+   
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
-main {
+.layout {
     width: calc(75% - 4rem);
     height: auto;
     display: flex;
@@ -29,9 +32,6 @@ main {
 }
 
 
-.layout {
-    height: 100%;
-}
 
 .titulo {
     margin-bottom: 20px;
@@ -71,6 +71,7 @@ h2 {
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     line-height: 1.6;
     margin-bottom: 50px;
+    font-weight: 300;
 }
 
 .viajes hr {
@@ -106,7 +107,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+    border-top: 1px solid #204b5e50;
     background-color: white;
     z-index: 1;
   }

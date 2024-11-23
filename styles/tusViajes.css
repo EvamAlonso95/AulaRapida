@@ -1,11 +1,16 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
 main {
   width: calc(75% - 4rem);
   height: auto;
@@ -13,7 +18,7 @@ main {
   position: relative;
   flex-direction: column;
   justify-content: start;
-  align-items: center; 
+  align-items: center;
   text-align: justify;
   margin-top: 4rem;
   margin-bottom: 0px;
@@ -92,14 +97,16 @@ h2 {
 .c5 {
   padding: 10px;
 }
-.espacio{
+
+.espacio {
   padding: 2vh;
 }
+
 .box2 {
-  height: 600px;
+
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-gap: 20px;
@@ -144,6 +151,7 @@ h2 {
   font-size: medium;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   line-height: 1.6;
+  font-weight: 300;
 }
 
 .viajes hr {
@@ -170,7 +178,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
+  border-top: 1px solid #204b5e50;
   background-color: white;
   z-index: 1;
 }
@@ -200,4 +208,3 @@ footer {
   font-weight: bold;
   font-size: medium;
 }
-

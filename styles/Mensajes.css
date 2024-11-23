@@ -1,6 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
-    margin-top: 20px;
+   
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    height: 100vh;
+}
+
+.layout{
+    height: 100%;
+    width: calc(75% - 4rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
+    text-align: justify;
+    margin: auto;
+    margin-top: 4rem;
+    border: 1px solid white;
+    box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
+    background-color: white;
+    top: 1rem;
+    padding: 2rem;
+    z-index: -1;
 }
 
 .titulo {
@@ -36,7 +63,7 @@ hr {
 }
 
 .t1 {
-    flex: 1;
+    flex: 2;
 }
 
 .t2 {
@@ -67,6 +94,7 @@ hr {
     flex: 2;
     padding: 10px;
     text-align: center;
+    font-weight: 300;
 }
 
 .fechas {
@@ -85,8 +113,16 @@ hr {
     object-fit: cover;
 }
 
+.perfilButton{
+    display: inline-block;
+    margin-top: 17px;
+}
+
 button {
-    background-color:gainsboro;
+    background-color: #204b5e;
+    color: white;
+    font-weight: 700;
+    border: none;
     border-radius: 5px;
     height: 40px;
     width: 100px;
@@ -95,13 +131,19 @@ button {
     cursor: pointer;
 }
 
+button:hover{
+    background-color: #eca400;
+    color: black;
+    font-weight: 700;
+}
+
 footer {
-    margin: 50px 0 0;
+    /* margin: 50px 0 0; */
     padding: 1%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+    border-top: 1px solid #204b5e50;
     background-color: white;
 }
 

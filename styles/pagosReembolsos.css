@@ -1,13 +1,17 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-main {
+body {
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.layout {
     width: calc(75% - 4rem);
     height: auto;
     display: flex;
@@ -29,9 +33,7 @@ main {
 }
 
 
-.layout {
-    height: 100%;
-}
+
 
 .titulo {
     margin-bottom: 20px;
@@ -123,6 +125,10 @@ h2 {
     margin: 20px 0;
 }
 
+li {
+    font-weight: 300;
+}
+
 .lista {
     list-style: none;
     width: 500px;
@@ -148,7 +154,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
+    border-top: 1px solid #204b5e50;
     background-color: white;
     z-index: 1;
 }
