@@ -129,6 +129,7 @@ p {
 
 /* ---------------------------------------------------- */
 /* MEDIA QUERY */
+
 @media (max-width: 768px) {
 
 
@@ -179,6 +180,7 @@ p {
         font-size: 0.7rem;
     }
 }
+
 
 /* MEDIA QUERY: Pantallas medianas */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -251,5 +253,32 @@ p {
         /* Separación más ajustada */
         font-size: 0.75rem;
         /* Texto más pequeño */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .layout__login {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        right: 2.5%;
+        padding: 1rem;
+        display: flex;
+    }
+
+    .layout__form {
+        padding: 0.6rem;
+    }
+
+    .form__title {
+        font-size: 1.3rem;
+    }
+
+    form {
+        width: 100%;
+        gap: 0.4rem;
     }
 }
