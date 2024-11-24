@@ -87,6 +87,7 @@ body {
 
 .form__label {
     color: #204b5e;
+    font-weight: 300;
 }
 
 .form__input,
