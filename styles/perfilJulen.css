@@ -4,8 +4,9 @@
   margin: 0;
   padding: 0;
 }
+
 body {
- 
+
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -116,26 +117,26 @@ hr {
 
 .editar_datos {
   padding: 10px 10px;
-  background-color: #9ce5ec;  
+  background-color: #9ce5ec;
   border: none;
   cursor: pointer;
-  border-radius: 5px;   
+  border-radius: 5px;
   margin-left: 47px;
-  transition:  0.3s ease, color 0.3s ease;
-  
-  a{
+  transition: 0.3s ease, color 0.3s ease;
+
+  a {
     font-weight: 300;
     color: black;
   }
 }
 
-.editar_datos:hover{
+.editar_datos:hover {
   background-color: #eca400;
 }
 
 .tipo_perfil {
   width: 100%;
-  padding: 10px;  
+  padding: 10px;
   font-weight: 300;
 }
 
@@ -238,45 +239,66 @@ footer {
 /* Estilos Responsivos */
 
 /* Para pantallas de 1024px o menos */
-@media (max-width: 1024px) {
+@media (width<=768px) {
+
+  .perfil_header {
+    padding: 10px;
+    margin-bottom: -50px;
+  }
+
   .flexbox-container {
-    width: 80%;
-    flex-direction: column;
+    width: 100%;
+    flex-direction: row;
     justify-content: center;
   }
 
-  .flex1,
-  .flex2 {
+
+  .info_personal_text {
     width: 100%;
-    text-align: center;
+    font-size: small;
   }
+
 
   .foto_perfil img {
     width: 150px;
     height: auto;
   }
+
+  .editar_datos {
+    margin-left: 0;
+    margin-top: -70px;
+  }
+
 }
 
-/* Para pantallas de 768px o menos */
-@media (max-width: 768px) {
+/* Media Query para pantallas pequeñas */
+@media (max-width: 596px) {
   .perfil_header {
     width: 90%;
   }
 
   .flexbox-container {
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
   }
 
-  .flex1,
-  .flex2 {
-    width: 100%;
-    text-align: center;
-  }
 
   .foto_perfil img {
     width: 150px;
     height: auto;
+  }
+
+  .editar_datos {
+    margin-left: 0;
+    margin-top: -70px;
+  }
+
+  .texto {
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+
   }
 
   .info_personal_text {
@@ -290,27 +312,46 @@ footer {
 }
 
 /* Para pantallas de 480px o menos */
-@media (max-width: 480px) {
-  header {
+@media (max-width: 595px) {
+  /* header {
     width: 100%;
     text-align: center;
+  } */
+
+  .layout {
+    width: 90%;
   }
 
   .perfil_header {
     width: 100%;
   }
 
-  .flex1 {
-    width: 100%;
+  .tamanio_pag {
+    width: 90%;
   }
 
-  .flex2 {
-    padding-top: 10px;
+  .flexbox-container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+    .flex1 {
+      margin-top: 30px;
+    }
+
+    .flex2 {
+      margin-top: -60px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .texto {
+    text-align: center;
   }
 
   .foto_perfil img {
     width: 100px;
-    height: auto;
+    /* height: auto; */
   }
 
   .info_personal_text,
