@@ -11,23 +11,20 @@ body {
     height: 100vh;
 }
 
-.layout{
-    height: 100%;
-    width: calc(75% - 4rem);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+.layout__mensajes {
+    width: calc(75% - 4rem);
+    min-height: 100vh;
     text-align: justify;
-    margin: auto;
-    margin-top: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid white;
     box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
     background-color: white;
-    top: 1rem;
+    top: 9rem;
     padding: 2rem;
-    z-index: -1;
 }
 
 .titulo {
@@ -46,6 +43,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .t1,
@@ -54,11 +52,11 @@ hr {
     flex-direction: column;
     justify-content: center;
     height: 100px;
-    width: 400px;
+    width: 70%;
     margin-top: 20px;
     margin-bottom: 20px;
     background: #9ce5ec;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 20px;
 }
 
@@ -113,7 +111,7 @@ hr {
     object-fit: cover;
 }
 
-.perfilButton{
+.perfilButton {
     display: inline-block;
     margin-top: 17px;
 }
@@ -131,44 +129,142 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #eca400;
     color: black;
     font-weight: 700;
 }
 
-footer {
-    /* margin: 50px 0 0; */
-    padding: 1%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #204b5e50;
-    background-color: white;
+
+/* Media Query: Ancho entre 1024px y 768px */
+/* Media Query: Ancho entre 1024px y 768px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tarjetas {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .t1,
+    .t2 {
+        width: 80%;
+        margin: 10px;
+        height: 120px;
+    }
+
+    .box1,
+    .box2 {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .foto {
+        width: 100px;
+        height: 100px;
+    }
+
+    button {
+        height: 35px;
+        width: 90px;
+        font-size: 0.9rem;
+    }
+
+
+
+    .redes {
+        justify-content: center;
+    }
+
+    .aula {
+        margin-right: 0;
+    }
 }
 
-.redes {
-    display: flex;
-    gap: 10px;
+/* Media Query: Ancho entre 768px y 425px */
+@media (min-width: 426px) and (max-width: 768px) {
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .t1,
+    .t2 {
+        width: 80%;
+        height: 100px;
+        margin: 10px 0;
+    }
+
+    .box1,
+    .box2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box2 {
+        background-color: #eca5006c;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .c1,
+    .c4 {
+        justify-content: center;
+    }
+
+    .foto {
+        width: 80px;
+        height: 80px;
+    }
+
+    .titulo {
+        font-size: 1.2rem;
+    }
+
+
 }
 
-.redes__icono {
-    width: 30px;
-    height: auto;
-}
+/* Media Query: Ancho entre 425px y 375px */
+@media (min-width: 376px) and (max-width: 425px) {
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
-.aula {
-    display: flex;
-    align-items: center;
-    margin-right: 10%;
-}
+    .t1,
+    .t2 {
+        width: 90%;
+        height: 90px;
+        margin: 8px 0;
+    }
 
-.aula__logo {
-    width: 50px;
-    margin-right: 10px;
-}
+    .box1,
+    .box2 {
+        flex-direction: column;
+        text-align: center;
+    }
 
-.aula__nombre {
-    font-weight: bold;
-    font-size: medium;
+    .c2,
+    .c3 {
+        font-size: 0.8rem;
+    }
+
+    .foto {
+        width: 70px;
+        height: 70px;
+    }
+
+    button {
+        height: 30px;
+        width: 80px;
+        font-size: 0.8rem;
+    }
+
+
 }
