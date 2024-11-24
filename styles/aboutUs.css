@@ -114,11 +114,11 @@ p {
 
 /* Media Query para pantallas medianas */
 
-@media (min-width: 597px) and (max-width: 1052px) {
+@media (min-width: 597px) and (max-width: 1308px) {
 
     .tarjeta {
         width: 100%;
-        /* O un tamaño fijo como 300px si lo prefieres */
+
         height: 1%;
         /* Define una altura adecuada */
         perspective: 1000px;
