@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nosotros</title>
+    <script src="https://kit.fontawesome.com/28e986ba1e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/logoAulaRapida-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/aboutUs.css">
+</head>
+
+<body>
+
+    <header class="header">        
+        <nav class="header__navbar">
+            <ul class="header__menu">
+                <div class="menu__logo">
+                    <li class="header__menu-item header_menu-item-logo">
+                        <a href="indexSesionIniciada.html" class="header__menu-link">
+                            <img src="./img/logoAulaRapida-removebg-preview.png" alt="Logo Aula Rápida"
+                                class="header__menu-logo" />
+                        </a>
+                    </li>
+                    <li class="header__menu-title">
+                        <a href="indexSesionIniciada.html" class="header__menu-link">
+                            <h1>Aula Rápida</h1>
+
+                        </a>
+                    </li>
+                </div>
+                <label class="menu__hamburguesa" for="menu__hamburguesa">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="currentColor" class="bi bi-list list_icon hamburguesa" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                </label>
+                <input type="checkbox" name="" id="menu__hamburguesa">
+                <div class="menu__enlaces">
+                    <li class="header__menu-item-enlace">
+                        <a href="aboutUsSesionIniciada.html" class="header__menu-link">Sobre Aula Rápida</a>
+                    </li>
+                    <li class="header__menu-item-enlace">
+                        <a href="busquedaSesionIniciada.html" class="header__menu-link">
+                            <i class="fa-solid fa-magnifying-glass header__menu-icon"></i> Buscar
+                        </a>
+                    </li>
+                    
+                    <li class="header__menu-item-enlace header__menu-dropdown">
+                        <a href="#" class="header__menu-link">
+                            <i class="fa-regular fa-user header__menu-icon"></i>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown__menu">
+                            <li><a href="perfilJulen.html">Perfil</a></li>
+                            <li><a href="Mensajes.html">Mensajes</a></li>
+                            <li><a href="tusViajes.html">Tus viajes</a></li>
+                            <li><a href="Transferencias.html">Transferencias</a></li>
+                            <li><a href="pagosReembolsos.html">Pagos y reembolsos</a></li>
+                            <li><a href="index.html">Cerrar sesión</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="layout">
+        <h2 class="buscar__titulo">Sobre Aula Rápida</h2>
+
+        <section class="buscar__encabezado">
+            <!-- <img class="buscar__imagen" src="../img/aboutUs.webp" alt="Aula Rápida. Conectamos estudiantes"> -->
+            <div class="buscar__formulario">
+                <form>
+                    <input type="text" name="desdeBuscar" id="desdeBuscar" placeholder=" Desde" required>
+                    <input type="text" name="hastaBuscar" id="hastaBuscar" placeholder=" Hasta" required>
+                    <input type="date" name="fechaBuscar" id="fechaBuscar" required>
+                    <input type="time" name="horaBuscar" id="horaBuscar" required>
+                    <input type="number" name="pasajerosBuscar" id="pasajerosBuscar" placeholder=" Pasajeros" min="1"
+                        required>
+                    <button type="submit" class="buscar__submit">Buscar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="publicar__encabezado">
+            <h2 class="publicar__titulo">¡Publica tu viaje y comparte el trayecto!</h2>
+            <div class="publicar__formulario">
+                <form>
+                    <input type="text" name="desdePublicar" id="desdePublicar" placeholder=" Desde" required>
+                    <input type="text" name="hastaPublicar" id="hastaPublicar" placeholder=" Hasta" required>
+                    <input type="date" name="fechaPublicar" id="fechaPublicar" required>
+                    <input type="time" name="horaPublicar" id="horaPublicar" required>
+                    <input type="number" name="pasajerosPublicar" id="pasajerosPublicar" placeholder=" Pasajeros" min="1"
+                        required>
+                    <button type="submit" class="buscar__submit">Buscar</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="destacados">
+            <div class="destacados__imagenes">
+                <img src="../img/descubre.png" class="destacados__descubre__imagen" alt="Descubre los viajes ideales">
+                <img src="../img/confianza.png" class="destacados__confianza__imagen" alt="Viaja con confianza">
+                <img src="../img/elige.png" class="destacados__elige__imagen" alt="¡Busca, elige y ponte en marcha!">
+            </div>
+            <div class="destacados__entradas">
+                <div class="destacados__descubre tarjeta">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__frente">
+                            <p class="tarjeta__titulo"><b>Descubre los viajes ideales</b></p>
+                        </div>
+                        <div class="tarjeta__trasera">
+                            <p>Nuestra comunidad de viajeros te acompaña en todo momento. No importa dónde estés,
+                                encuentra el
+                                trayecto perfecto con salidas y llegadas en los lugares más cercanos a ti.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destacados__confianza tarjeta">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__frente">
+                            <p class="tarjeta__titulo"><b>Viaja con confianza</b></p>
+                        </div>
+                        <div class="tarjeta__trasera">
+                            <p>Nos preocupamos por la seguridad de nuestros viajeros. Por eso, revisamos cuidadosamente
+                                los perfiles y las opiniones de cada usuario, asegurándote que siempre sabrás con quién
+                                compartirás el viaje. Reserva tu próximo trayecto con total confianza.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destacados__elige tarjeta">
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__frente">
+                            <p class="tarjeta__titulo"><b>¡Busca, elige y ponte en marcha!</b></p>
+                        </div>
+                        <div class="tarjeta__trasera">
+                            <p>¡Reservar un viaje nunca ha sido tan fácil! Con nuestra intuitiva aplicación y su
+                                avanzada tecnología, podrás encontrar y reservar un trayecto cercano en cuestión de
+                                segundos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="aboutUs">
+            <div class="aboutUs__titulo">
+                <h1>Acerca de nosotros</h1>
+                <br>
+            </div>
+            <div class="aboutUs__cuerpo">
+                <p>En <b>Aula Rápida</b>, creemos en la movilidad compartida como una solución eficiente, ecológica y
+                    socialmente responsable. Nuestro objetivo es conectar a estudiantes que necesitan desplazarse a sus
+                    centros
+                    educativos, facilitando la creación de viajes compartidos.</p><br>
+                <p>A través de nuestra plataforma, los usuarios pueden publicar o encontrar viajes fácilmente, compartir
+                    gastos y reducir su huella de carbono. Además, promovemos una comunidad segura y confiable,
+                    revisando
+                    perfiles y fomentando las valoraciones entre usuarios para asegurar una experiencia de viaje cómoda
+                    y eficaz.
+                </p><br>
+                <p>Únete a nosotros y comienza a compartir tu camino hacia un futuro más sostenible y colaborativo.</p>
+                <br><br>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="redes">
+            <a href="https://www.facebook.com"><img src="../img/facebook.png" alt="Facebook" class="redes__icono"></a>
+            <a href="https://www.twitter.com"><img src="../img/twitter.png" alt="Twitter" class="redes__icono"></a>
+            <a href="https://www.youtube.com"><img src="../img/youtube.png" alt="YouTube" class="redes__icono"></a>
+            <a href="https://www.instagram.com"><img src="../img/instagram.png" alt="Instagram"
+                    class="redes__icono"></a>
+        </div>
+        <div class="aula">
+            <img src="../img/logo.jpeg" alt="Logo Aula Rápida" class="aula__logo">
+            <span class="aula__nombre">Aula Rápida, 2024 &copy;</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,10 +1,11 @@
+/* Estilos base */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body {
-   
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -12,26 +13,17 @@ body {
 
 .layout {
     width: calc(75% - 4rem);
-    height: auto;
     display: flex;
-    position: relative;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
     text-align: justify;
-    margin-top: 4rem;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 4rem auto 0 auto;
     border: 1px solid white;
-    box-shadow: 12px 0 0px -4px rgba(255, 255, 255, 0.8), -12px 0 0px -4px rgba(230, 230, 230, 0.8);
+    box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
     background-color: white;
-    top: 1rem;
     padding: 2rem;
     z-index: -1;
 }
-
-
 
 .titulo {
     margin-bottom: 20px;
@@ -41,8 +33,7 @@ h2 {
     text-align: start;
     color: #000000;
     background: #9ce5ec;
-    padding: 0 20px;
-    padding-top: 3px;
+    padding: 5px 20px;
     border-radius: 5px 5px 0 0;
     margin-bottom: -1px;
 }
@@ -52,23 +43,19 @@ h2 {
     flex-direction: column;
     align-items: start;
     margin: 0 auto;
-    width: 500px;
-
+    width: 100%;
+    max-width: 500px;
 }
 
 .viajes {
     display: flex;
     width: 100%;
-    /* Ajusta el ancho para que no exceda el contenedor */
-
     background-color: #9ce5ec;
     border-radius: 0 10px 10px 10px;
     padding: 20px;
     text-align: left;
     font-size: large;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
     line-height: 1.6;
     margin-bottom: 50px;
     font-weight: 300;
@@ -81,7 +68,8 @@ h2 {
 
 .lista {
     list-style: none;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .dia {
@@ -102,16 +90,14 @@ h2 {
 }
 
 footer {
-    /* margin: 50px 0 0; */
     padding: 1%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #204b5e50;
     background-color: white;
-    z-index: 1;
-  }
-  
+}
+
 .redes {
     display: flex;
     gap: 10px;
@@ -136,4 +122,65 @@ footer {
 .aula__nombre {
     font-weight: bold;
     font-size: medium;
+}
+
+/* --- Estilos responsivos --- */
+@media (max-width: 1024px) {
+    .layout {
+        width: calc(90% - 2rem);
+        padding: 1.5rem;
+    }
+
+    .tamanio_pag {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout {
+        width: calc(95% - 2rem);
+        margin-top: 3rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .viajes {
+        font-size: medium;
+        padding: 15px;
+    }
+
+    .dia,
+    .condPasj,
+    .dinero {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .layout {
+        width: 100%;
+        padding: 1rem;
+        margin: 2rem 0;
+    }
+
+    .viajes {
+        padding: 10px;
+        font-size: small;
+    }
+
+    .titulo {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .aula__logo {
+        width: 40px;
+    }
 }

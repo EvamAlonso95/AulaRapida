@@ -57,7 +57,7 @@ html {
     align-items: center;
 
     color: #204b5e;
-    width: 20%;
+    width: 23%;
 }
 
 .header__menu-logo {
@@ -176,6 +176,8 @@ a:hover {
     .menu__hamburguesa {
         display: none;
     }
+
+   
 }
 
 
