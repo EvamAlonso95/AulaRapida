@@ -5,7 +5,6 @@
 }
 
 body {
-
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -13,27 +12,16 @@ body {
 
 .layout {
     width: calc(75% - 4rem);
-    height: auto;
     display: flex;
-    position: relative;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
-    text-align: justify;
-    margin-top: 4rem;
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 4rem auto 0 auto;
     border: 1px solid white;
     box-shadow: 12px 0 15px -4px rgba(255, 255, 255, 0.8), -12px 0 8px -4px rgba(230, 230, 230, 0.8);
     background-color: white;
-    top: 1rem;
     padding: 2rem;
     z-index: -1;
 }
-
-
-
 
 .titulo {
     margin-bottom: 20px;
@@ -41,19 +29,15 @@ body {
 
 h2 {
     font-size: 130%;
-    width: 150px;
+    width: fit-content;
     text-align: start;
     color: #000000;
     background: #9ce5ec;
-    padding: 0 20px;
-    padding-top: 3px;
+    padding: 5px 20px;
     border-radius: 5px 5px 0 0;
     margin-bottom: -1px;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
 }
-
 
 .tamanio_pag {
     display: flex;
@@ -65,64 +49,43 @@ h2 {
 .box {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 1em;
+    grid-gap: 1rem;
     justify-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
-.c1 {
-    grid: 1;
-}
-
+.c1,
 .c2 {
-    grid: 2;
-    align-content: flex-end;
+    justify-self: stretch;
 }
 
-.semana {
-    display: flex;
-    width: 500px;
-    height: auto;
-    background-color: #9ce5ec;
-    border-radius: 0 10px 10px 10px;
-    padding: 20px;
-    text-align: left;
-    font-size: large;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    line-height: 1.6;
-    margin-bottom: 50px;
-
-}
-
-.semana hr {
-    border: 1px solid #000000;
-    margin: 20px 0;
-}
-
-
+.semana,
 .viajes {
     display: flex;
-    width: 500px;
-    height: auto;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
     background-color: #9ce5ec;
-    border-radius: 10px;
+
     padding: 20px;
-    text-align: left;
     font-size: large;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.75);
     line-height: 1.6;
     margin-bottom: 50px;
-
 }
 
+.semana hr,
 .viajes hr {
     border: 1px solid #000000;
     margin: 20px 0;
+}
+
+.semana {
+    border-radius: 0 10px 10px 10px;
+}
+
+.viajes {
+    border-radius: 10px;
 }
 
 li {
@@ -131,7 +94,7 @@ li {
 
 .lista {
     list-style: none;
-    width: 500px;
+    max-width: 500px;
 }
 
 .dia {
@@ -143,20 +106,13 @@ li {
     font-weight: bold;
 }
 
-.condPasj {
-    font-style: italic;
-    font-weight: bold;
-}
-
 footer {
-    /* margin: 50px 0 0; */
     padding: 1%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #204b5e50;
     background-color: white;
-    z-index: 1;
 }
 
 .redes {
@@ -172,7 +128,6 @@ footer {
 .aula {
     display: flex;
     align-items: center;
-    margin-right: 10%;
 }
 
 .aula__logo {
@@ -183,4 +138,55 @@ footer {
 .aula__nombre {
     font-weight: bold;
     font-size: medium;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .layout {
+        width: calc(90% - 2rem);
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .c1,
+    .c2 {
+        width: 100%;
+    }
+
+    .titulo {
+        font-size: 1.75rem;
+    }
+
+    .dia {
+        font-size: 1.125rem;
+    }
+
+    .fechas {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .layout {
+        width: 100%;
+        margin: 2rem 1rem;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .dia {
+        font-size: 1rem;
+    }
+
+    .fechas {
+        font-size: 0.85rem;
+    }
 }
