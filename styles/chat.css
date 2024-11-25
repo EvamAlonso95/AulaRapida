@@ -1,0 +1,186 @@
+html {
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 16px;
+    width: auto;
+    background-color: #204b5e;
+    height: 100vh;
+}
+
+.main {
+    width: calc(75% - 4rem);
+    height: 70vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: justify;
+    margin: 10rem auto;
+    padding: 2rem;
+}
+
+.foto {
+    /* flex: 1; */
+    width: 128px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.chat-container {
+    font-size: 80%;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+    min-height: 50%;
+    width: 50%;
+    /* Mantener tamaño fijo */
+    /* height: 50%;  */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.atras {
+    margin-top: 10px;
+    width: 50%;
+    padding: 8px;
+    border-radius: 10px;
+    border-color: #d8c083;
+}
+
+.messages {
+    padding: 10px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.message.sent {
+    background-color: #d8c083;
+    align-self: flex-end;
+    width: fit-content;
+}
+
+.message.received {
+    background-color: #EAEAEA;
+    align-self: flex-start;
+    width: fit-content;
+}
+
+.input-container {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+   
+}
+
+.input-container input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.input-container button {
+    background-color: #d8c083;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 35px;
+    /* Tamaño fijo para el botón */
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    /* Centrado horizontal */
+    align-items: center;
+    /* Centrado vertical */
+}
+
+.input-container button:hover {
+    background-color: #e03131;
+}
+
+.send {
+    width: 80%;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+}
+
+footer {
+    margin: 50px 0 0;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.redes {
+    display: flex;
+    gap: 10px;
+}
+
+.redes__icono {
+    width: 30px;
+    height: auto;
+}
+
+.aula {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.aula__logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.aula__nombre {
+    font-weight: bold;
+    font-size: medium;
+}
+
+/* Para pantallas de tablets*/
+@media (width<=768px) {
+   .chat-container {
+    max-width: 100%;
+    width: 100%;
+   }
+   .atras{
+    width: 100%;
+   }
+   .foto{
+    width: 128px;
+   }
+  
+  }
+  
+  /* Media Query para pantallas pequeñas */
+  @media (max-width: 596px) {
+    .main{
+        width: auto;
+    }
+    
+  }
+  
+  

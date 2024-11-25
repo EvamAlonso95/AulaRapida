@@ -240,10 +240,13 @@ footer {
 
 /* Para pantallas de 1024px o menos */
 @media (width<=768px) {
+  .layout {
+    width: 90%;
+  }
 
   .perfil_header {
     padding: 10px;
-    margin-bottom: -50px;
+    /* margin-bottom: -50px; */
   }
 
   .flexbox-container {
